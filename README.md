@@ -1,3 +1,7 @@
 # Robotics-Website
 
-This is a work in progress for Penn High School.
+This project is a redesign for Penn High School's Robotics Website.
+
+Current Collaborators:
+  Colin Van Hoveln
+  Arda Kurama
