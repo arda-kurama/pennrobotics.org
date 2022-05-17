@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-text: white;
+  --hero-background: lightgray;
+  }
+  
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: gray;
+}
+  
+.hero {
+  color: var(--main-text);
+  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+}
+  
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  gap: 15rem;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-bar ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 0.8rem;
+}
+
+.mini-title {
+  font-size: 1.5rem;
+  font-weight: normal;
+  position: relative;
+}
+
+.mini-title:hover {
+  cursor: default;
+}
+
+.mini-title::before {
+  position: absolute;
+  content: '';
+  background-color: var(--main-text);
+  height: 3px;
+  width: 0%;
+  top: -5px;
+  left: 100%;
+  transition: width 300ms ease-in,
+    left 300ms ease-in;   
+  ; 
+}
+
+.mini-title::after {
+  position: absolute;
+  content: '';
+  background-color: var(--main-text);
+  height: 3px;
+  width: 0%;
+  bottom: -5px;
+  left: 0;
+  transition: width 300ms ease-in;
+}
+
+.mini-title:hover::after {
+  width: 100%;
+}
+
+.mini-title:hover::before {
+  width: 100%;
+  left: 0%; 
+}
+
+
+
+
+.nav-bar ul a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--main-text);
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-bar ul a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 0%;
+  background: var(--main-text);
+  transition: width 300ms ease-in;
+}
+
+.nav-bar ul a:hover::after {
+  width: 100%;
+}
+
+.hero-title {
+  padding: 13rem 15rem;
+  font-size: 1.5rem;
+}
+
+.hero-title h1 {
+  font-size: 5rem;
+  line-height: 3rem;
+  margin-bottom: 3rem;
+  text-shadow: 0px 0px 3px;
+}
+
+.hero-title p {
+  margin-bottom: 4rem;
+}
+
+.hero-title a {
+  text-decoration: none;
+  color: var(--main-text);
+  font-size: 0.9rem;
+  border-radius: 5px;
+  padding: 1em 2em;
+  background-color: #ebaf2d;
+  opacity: 70%;
+  text-transform: uppercase;
+  transition: opacity 300ms ease-in-out;
+}
+
+.hero-title a:hover {
+/*   background-color: darkorange; */
+  opacity: 100%;
+}
+
+.box {
+  background-color: white;
+  padding: 7rem;
+  z-index: 2;
+  margin: 0 3rem;
+  margin-bottom: 3rem;
+  margin-top: -3rem;
+  border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  .nav-bar {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .nav-bar ul {
+    flex-direction: column;
+  }
+}

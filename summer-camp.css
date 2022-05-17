@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+:root {
+  --primary: #ebaf2d;
+  --secondary: black;
+  --background: dimgray;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--background);
+}
+
+.hero {
+  background-color: var(--secondary);
+  padding: 2rem;
+  margin: 0 3rem;
+  margin-top: 4rem;
+}
+
+.hero-title {
+  color: var(--primary);
+  text-align: center;
+  font-size: 2rem;
+  line-height: 4rem;
+  text-shadow: 0px 0px 3px;
+  display: inline;
+}
+
+.hero-title b {
+  font-weight: bolder;
+}
+
+.box {
+  background-color: var(--primary);
+  padding: 3rem;
+  margin: 0 3rem;
+  margin-bottom: 3rem;
+  line-height: 1.5rem;
+}
+
+.box h2 {
+  font-weight: bold;
+}
+
+.box p {
+  font-size: 1.25rem;
+}
+
+.box hr {
+  border: 1px solid black;
+}
