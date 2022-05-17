@@ -18,7 +18,9 @@ body {
   
 .hero {
   color: var(--main-text);
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("main-background.jpg");
+  background-size: cover;
+  min-height: 90vh;
 }
   
 .nav-bar {
@@ -84,9 +86,6 @@ body {
   left: 0%; 
 }
 
-
-
-
 .nav-bar ul a {
   text-decoration: none;
   text-transform: uppercase;
@@ -113,6 +112,7 @@ body {
 .hero-title {
   padding: 13rem 15rem;
   font-size: 1.5rem;
+  padding-top: 20rem;
 }
 
 .hero-title h1 {
