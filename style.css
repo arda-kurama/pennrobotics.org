@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 * {
   margin: 0;
@@ -9,16 +10,18 @@
 :root {
   --main-text: white;
   --hero-background: lightgray;
-  }
+}
   
 body {
-  font-family: 'DM Sans', sans-serif;
   background-color: gray;
 }
   
 .hero {
+  font-family: 'DM Sans', sans-serif;
   color: var(--main-text);
-  background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("main-background.jpg");
+  background-size: cover;
+  min-height: 90vh;
 }
   
 .nav-bar {
@@ -84,9 +87,6 @@ body {
   left: 0%; 
 }
 
-
-
-
 .nav-bar ul a {
   text-decoration: none;
   text-transform: uppercase;
@@ -113,6 +113,7 @@ body {
 .hero-title {
   padding: 13rem 15rem;
   font-size: 1.5rem;
+  padding-top: 20rem;
 }
 
 .hero-title h1 {
@@ -144,13 +145,31 @@ body {
 }
 
 .box {
+  font-family: 'Roboto Slab', serif;
   background-color: white;
-  padding: 7rem;
+  padding: 6rem;
   z-index: 2;
   margin: 0 3rem;
   margin-bottom: 3rem;
   margin-top: -3rem;
   border-radius: 10px;
+}
+
+.box-header {
+  color: rgb(70, 70, 70);
+  text-align: center;
+}
+
+.box-header h1 {
+  font-size: 3rem;
+  line-height: 6rem;
+  font-weight: 700;
+}
+
+.box-header p {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 1;
 }
 
 @media (max-width: 700px) {

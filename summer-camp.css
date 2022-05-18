@@ -20,8 +20,7 @@ body {
 .hero {
   background-color: var(--secondary);
   padding: 2rem;
-  margin: 0 3rem;
-  margin-top: 4rem;
+  margin: 3rem 3rem 0rem;
 }
 
 .hero-title {
@@ -30,11 +29,20 @@ body {
   font-size: 2rem;
   line-height: 4rem;
   text-shadow: 0px 0px 3px;
-  display: inline;
+  margin-top: -9rem;
 }
 
 .hero-title b {
   font-weight: bolder;
+}
+
+.hero-title img {
+  height: 194px;
+  width: 300px;
+  position: relative;
+  top: 4.5em;
+  left: -13em;
+  filter: invert(1);
 }
 
 .box {
@@ -53,7 +61,6 @@ body {
   font-size: 1.25rem;
 }
 
-
 .box hr {
-  border: 1px solid black;
+  border: 1px solid var(--secondary);
 }
