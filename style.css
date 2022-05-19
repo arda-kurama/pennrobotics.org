@@ -140,7 +140,6 @@ body {
 }
 
 .hero-title a:hover {
-/*   background-color: darkorange; */
   opacity: 100%;
 }
 
@@ -167,9 +166,27 @@ body {
 }
 
 .box-header p {
-  font-size: 1.5rem;
+  color: rgb(125, 125, 125);
+  font-size: 1.25rem;
   line-height: 2rem;
-  font-weight: 1;
+  font-weight: lighter;
+  margin-bottom: 6rem;
+}
+ 
+.box-header i {
+  font-size: 4rem;
+  color: #ebaf2d;
+  transition:font-size 50ms ease-in, opacity 50ms ease-in;
+}
+ 
+.box-header i:hover {
+  font-size: 5rem;
+  opacity: 75%;
+}
+ 
+.gears {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 @media (max-width: 700px) {
