@@ -29,6 +29,8 @@ body {
 }
   
 .nav-bar {
+  color: var(--primary);
+  background-color: var(--nav-bar);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,7 +41,6 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--nav-bar);
 }
 
 .nav-bar ul {
@@ -50,9 +51,11 @@ body {
 }
 
 .mini-title {
+  color: var(--primary);
   font-size: 1.5rem;
   font-weight: normal;
   position: relative;
+  text-decoration: none;
 }
 
 .mini-title:hover {
