@@ -181,11 +181,11 @@ body {
 .box-header i {
   font-size: 4rem;
   color: var(--decoration);
-  transition:font-size 50ms ease-in, opacity 50ms ease-in;
+  transition: transform 200ms ease-in, opacity 200ms ease-in;
 }
  
 .box-header i:hover {
-  transform: translateY(-1rem);
+  transform: translateY(-0.7rem);
   opacity: 75%;
 }
  
