@@ -19,9 +19,8 @@
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
   padding: 1em 3em;
   margin: 0 auto;
   width: min(1600px, 100%);
@@ -29,7 +28,6 @@
 }
 .nav .nav-title {
   font-size: 1.2rem;
-  margin-right: auto;
   font-weight: 300;
   padding: 1em 0;
 }
@@ -43,6 +41,8 @@
 }
 .nav .links {
   display: flex;
+  justify-content: space-between;
+  width: 40%;
   gap: 2rem;
 }
 .nav .links a {
@@ -68,7 +68,7 @@
 .hero {
   width: min(1200px, 80%);
   margin: 0 auto;
-  margin-top: 15vh;
+  margin-top: 20vh;
   font-weight: bold;
   color: white;
 }
