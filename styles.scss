@@ -1,0 +1,220 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.landing-section {
+  background-image: url("/images/landing-background.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-color: hsla(0, 0%, 0%, 0.6);
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+  height: 80vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 1em 3em;
+  margin: 0 auto;
+  width: min(1600px, 100%);
+  color: $text;
+
+  .nav-title {
+    font-size: 1.2rem;
+    margin-right: auto;
+    font-weight: 300;
+    padding: 1em 0;
+  }
+
+  .dropdown {
+    position: relative;
+
+    .menu-button {
+      padding: 1em;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      i {
+        font-size: 10px;
+      }
+
+      button {
+        background-color: transparent;
+        color: $text;
+        border: none;
+      }
+    }
+
+    .dropdown-menu {
+      transition: opacity 150ms ease-in-out, transform 150ms ease-in-out;
+      opacity: 0;
+      pointer-events: none;
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      width: 100%;
+      background-color: white;
+      text-align: center;
+      box-shadow: 0px 2px 5px 2px hsla(0, 0%, 0%, 0.1);
+      transform: translateY(-10px);
+
+      a {
+        color: black;
+        text-decoration: none;
+        padding: 1em;
+        font-size: 0.7rem;
+        transition: color 150ms ease-in;
+
+        &:hover {
+          color: $yellow;
+        }
+      }
+    }
+  }
+
+  .nav-sign-up {
+    a {
+      text-decoration: none;
+      background-color: $yellow;
+      padding: 1em 2em;
+      color: $text;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 0.8rem;
+      transition: box-shadow 100ms ease-in;
+
+      &:hover {
+        box-shadow: 0px 2px 10px 0px $yellow;
+      }
+    }
+  }
+
+  .bars {
+    color: $yellow;
+    display: none;
+    font-size: 1.6rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+
+.hero {
+  width: min(1200px, 80%);
+  margin: 0 auto;
+  margin-top: 15vh;
+  font-weight: bold;
+  color: $text;
+
+  .hero-title {
+    font-size: clamp(1rem, 10vw, 4.3rem);
+    text-align: center;
+  }
+
+  .hero-typed-title {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+    margin-top: 3rem;
+    width: min(500px, 80%);
+    font-family: "Roboto Slab", serif;
+  }
+}
+
+.first-robotics-section {
+  text-align: center;
+  margin: 8rem auto;
+  width: min(1200px, 80%);
+
+  .title {
+    font-size: 37px;
+    margin-bottom: 1.7rem;
+    font-weight: 700;
+    color: $black;
+    font-family: "Roboto Slab", serif;
+  }
+
+  .title-desc {
+    font-size: 18px;
+    margin: 0 auto;
+    margin-bottom: 7rem;
+    color: $lightgray;
+    max-width: 70ch;
+    font-weight: 300;
+  }
+
+  .content-sections {
+    display: flex;
+    gap: 5rem;
+    justify-content: space-between;
+
+    .gear-section {
+      display: flex;
+      flex-direction: column;
+      gap: 1.4rem;
+
+      .gear-section-name {
+        font-size: 18px;
+        font-weight: 700;
+        font-family: "Roboto Slab", serif;
+      }
+
+      .gear-section-desc {
+        font-size: 1rem;
+        max-width: 40ch;
+        margin: 0 auto;
+        font-weight: 300;
+        color: $lightgray;
+      }
+
+      i {
+        font-size: 61px;
+        color: $yellow;
+        transition: transform 200ms ease-in, color 200ms ease-in;
+
+        &:hover {
+          transform: translateY(-7px) scale(1.1);
+          color: hsl(43, 100%, 75%);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .nav {
+    .dropdown {
+      display: none;
+    }
+
+    .nav-sign-up {
+      display: none;
+    }
+
+    .bars {
+      display: block;
+    }
+  }
+
+  .content-sections {
+    flex-direction: column;
+    gap: 4rem;
+  }
+}
