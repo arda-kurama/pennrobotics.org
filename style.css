@@ -184,7 +184,7 @@ body {
 }
 
 .box-header i:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
   opacity: 75%;
 }
 
