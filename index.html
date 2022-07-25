@@ -1,40 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Penn Robotics</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="https://kit.fontawesome.com/b0e09cc9fc.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Penn Robotics Teams</title>
+    <link
+      rel="icon"
+      href="https://pennroboticsteams.org/wp-content/uploads/2021/02/cropped-Image-10-3-20-at-8.31-PM-32x32.png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/73232d6f01.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="hero">
-      <div class="main-background">
-        <div class="nav-bar">
-          <a href="index.html" class="mini-title"> Penn Robotics</a>
-          <ul>
-            <li><a href="team-135.html">Team 135</a></li>
-            <li><a href="#">Youth Camps</a></li>
-            <li><a href="#">Mission to Engineer</a></li>
-            <li><a href="#">Parents</a></li>
-            <li><a href="https://www.gofundme.com/f/Team135?utm_campaign=p_lico+sharesheet" target="_blank">Donate</a></li>
-          </ul>
+    <!-- Twitter embed -->
+    <!-- <a
+      class="twitter-timeline"
+      data-width="500"
+      data-height="500"
+      href="https://twitter.com/FRCteam135?ref_src=twsrc%5Etfw"
+      >Tweets by FRCteam135</a
+    >
+    <script
+      async
+      src="https://platform.twitter.com/widgets.js"
+      charset="utf-8"
+    ></script> -->
+    <div class="landing-section">
+      <div class="nav">
+        <div class="nav-title">Penn Robotics Teams</div>
+        <div class="dropdown">
+          <div class="menu-button">
+            <button>Programs</button>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="dropdown-menu">
+            <a class="dropdown-content" href="#">FRC Team 135</a>
+            <a class="dropdown-content" href="#">FRC Teams</a>
+          </div>
         </div>
-        <div class="hero-title">
-          <h1>Penn Robotics <br></br>Teams</h1>
-          <p>Home of all Penn High School affiliated FIRST Robotics Programs</p>
-          <a href="summer-camp.html" target="_blank">Sign up for summer camps!</a>
+        <div class="dropdown">
+          <div class="menu-button">
+            <button>Mission to Engineer</button>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+          <div class="dropdown-menu">
+            <a class="dropdown-content" href="#">Mission to Engineer</a>
+            <a class="dropdown-content" href="#">Projects</a>
+            <a class="dropdown-content" href="#">ATIA</a>
+            <a class="dropdown-content" href="#">Adapt-A-Thon</a>
+            <a class="dropdown-content" href="#">Connect with Us</a>
+          </div>
+        </div>
+        <div class="nav-sign-up">
+          <a href="#">Sign Up</a>
+        </div>
+        <i class="fa-solid fa-bars-staggered bars"></i>
+      </div>
+      <div class="hero">
+        <div class="hero-title">Penn Robotics Teams</div>
+        <div class="hero-typed-title">
+          <div id="typed-strings">
+            <p>
+              Home of all Penn High School affiliated FIRST Robotics Programs
+            </p>
+            <p>
+              PHM Schools provide FIRST Robotics programs for students from
+              elementary to high school.
+            </p>
+            <p>Sign up for Summer Camps above!</p>
+          </div>
+          <span id="typed"></span>
         </div>
       </div>
     </div>
-    <div class="box">
-      <div class="box-header">
-        <h1> FIRST Robotics </h1>
-        <p> Penn-Harris-Madison School provide FIRST Robotics programs for students from elementary <br> to high school.</p>
-        <div class="gears">
-          <i class="fa-solid fa-gear"></i>
-          <i class="fa-solid fa-gear"></i>  
-          <i class="fa-solid fa-gear"></i>  
+    <div class="first-robotics-section">
+      <div class="title">FIRST Robotics</div>
+      <div class="title-desc">
+        Penn-Harris-Madison Schools provide FIRST Robotics programs for students
+        from elementary to high school.
+      </div>
+      <div class="content-sections">
+        <div class="gear-section">
+          <a href="#">
+            <i class="fa-solid fa-gear"></i>
+          </a>
+          <div class="gear-section-name">FRC</div>
+          <div class="gear-section-desc">
+            FIRST Robotics Competiton is offered for junior and senior high
+            school students. Students will be faced with an ultimate challenge,
+            experience how to build and program an industrial-size robot, raise
+            funds, and much more.
+          </div>
+        </div>
+        <div class="gear-section">
+          <a href="#">
+            <i class="fa-solid fa-gear"></i>
+          </a>
+          <div class="gear-section-name">FTC</div>
+          <div class="gear-section-desc">
+            FIRST Tech Challenge is offered for freshmen and sophomores high
+            school students. Students will design, build, program, and control
+            robots to compete in a challenge.
+          </div>
+        </div>
+        <div class="gear-section">
+          <a href="#">
+            <i class="fa-solid fa-gear"></i>
+          </a>
+          <div class="gear-section-name">FLL</div>
+          <div class="gear-section-desc">
+            FIRST Lego League is offered for elementary and middle school
+            students. Students learn problem-solving skills, engage in hands-on
+            STEM experiences, and completes challenges using LEGOs.
+          </div>
         </div>
       </div>
     </div>
