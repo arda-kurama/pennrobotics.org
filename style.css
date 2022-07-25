@@ -13,7 +13,7 @@
   --nav-bar: rgba(0, 0, 0, 0.8);
   --decoration: #ebaf2d;
   --main-text: rgb(70, 70, 70);
-  --secondary-text: rgb(125, 125, 125);
+  --sub-text: rgb(125, 125, 125);
 }
 
 body {
@@ -21,25 +21,32 @@ body {
 }
 
 .hero {
-  font-family: "DM Sans", sans-serif;
   color: var(--primary);
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("main-background.jpg");
+  font-family: "DM Sans", sans-serif;
+}
+
+.main-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("main-background.jpg");
   background-size: cover;
-  min-height: 90vh;
+}
+
+.team-135-background {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("team-135-background.jpg");
+  background-size: cover;
 }
 
 .nav-bar {
-  display: flex;
+  position: fixed;
   justify-content: center;
   align-items: center;
-  text-decoration: none;
-  gap: 15rem;
-  padding: 1rem;
-  position: fixed;
   top: 0;
   left: 0;
   right: 0;
+
+  display: flex;
+  gap: 15rem;
+  padding: 1rem;
+
   background-color: var(--nav-bar);
 }
 
@@ -47,51 +54,60 @@ body {
   display: flex;
   list-style: none;
   gap: 2rem;
+
   font-size: 0.8rem;
 }
 
+.mini-title::before {
+  position: absolute;
+  top: -5px;
+  right: 0;
+
+  height: 3px;
+  width: 0%;
+
+  background-color: var(--primary);
+  content: "";
+  transition: width 300ms ease-in;
+}
+
 .mini-title {
-  font-size: 1.5rem;
-  font-weight: normal;
   position: relative;
+
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.mini-title::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+
+  height: 3px;
+  width: 0%;
+
+  background-color: var(--primary);
+  content: "";
+  transition: width 300ms ease-in;
+}
+
+.mini-title:hover::before {
+  right: 0%;
+
+  width: 100%;
 }
 
 .mini-title:hover {
   cursor: default;
 }
 
-.mini-title::before {
-  position: absolute;
-  content: "";
-  background-color: var(--primary);
-  height: 3px;
-  width: 0%;
-  top: -5px;
-  left: 100%;
-  transition: width 300ms ease-in, left 300ms ease-in;
-}
-
-.mini-title::after {
-  position: absolute;
-  content: "";
-  background-color: var(--primary);
-  height: 3px;
-  width: 0%;
-  bottom: -5px;
-  left: 0;
-  transition: width 300ms ease-in;
-}
-
 .mini-title:hover::after {
   width: 100%;
 }
 
-.mini-title:hover::before {
-  width: 100%;
-  left: 0%;
-}
-
-.nav-bar ul a {
+.nav-bar ul a {  
   text-decoration: none;
   text-transform: uppercase;
   color: var(--primary);
@@ -100,13 +116,15 @@ body {
 }
 
 .nav-bar ul a::after {
-  content: "";
   position: absolute;
-  left: 0;
   bottom: -5px;
-  height: 2px;
+  left: 0;
+
   width: 0%;
+  height: 2px;
+
   background: var(--primary);
+  content: "";
   transition: width 300ms ease-in;
 }
 
@@ -115,15 +133,16 @@ body {
 }
 
 .hero-title {
-  padding: 13rem 15rem;
+  padding: 9rem 15rem;
+  
   font-size: 1.5rem;
-  padding-top: 20rem;
 }
 
 .hero-title h1 {
+  margin-bottom: 3rem;
+
   font-size: 5rem;
   line-height: 3rem;
-  margin-bottom: 3rem;
   text-shadow: 0px 0px 3px;
 }
 
@@ -132,13 +151,14 @@ body {
 }
 
 .hero-title a {
-  text-decoration: none;
-  color: var(--primary);
-  font-size: 0.9rem;
-  border-radius: 5px;
   padding: 1em 2em;
+  border-radius: 5px;
+
   background-color: var(--decoration);
+  color: var(--primary);
   opacity: 70%;
+  font-size: 0.9rem;
+  text-decoration: none;
   text-transform: uppercase;
   transition: opacity 300ms ease-in-out;
 }
@@ -148,14 +168,16 @@ body {
 }
 
 .box {
-  font-family: "Roboto Slab", serif;
-  background-color: var(--primary);
+  z-index: 1;
+
   padding: 6rem;
-  z-index: 2;
   margin: 0 3rem;
   margin-bottom: 3rem;
   margin-top: -3rem;
   border-radius: 10px;
+
+  background-color: var(--primary);
+  font-family: "Roboto Slab", serif;
 }
 
 .box-header {
@@ -170,16 +192,17 @@ body {
 }
 
 .box-header p {
+  margin-bottom: 6rem;
+  
   color: var(--secondary-text);
   font-size: 1.25rem;
   line-height: 2rem;
   font-weight: lighter;
-  margin-bottom: 6rem;
 }
 
 .box-header i {
-  font-size: 4rem;
   color: var(--decoration);
+  font-size: 4rem;
   transition: transform 200ms ease-in, opacity 200ms ease-in;
 }
 
@@ -193,7 +216,7 @@ body {
   justify-content: space-evenly;
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .nav-bar {
     flex-direction: column;
     gap: 2rem;
@@ -227,4 +250,4 @@ body {
   .nav-bar ul {
     display: none;
   }
-}
+} */
