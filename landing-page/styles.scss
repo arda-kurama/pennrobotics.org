@@ -44,9 +44,31 @@
     }
   }
 
-  a {
-    text-decoration: none;
-    color: $text;
+  .links {
+    display: flex;
+    gap: 2rem;
+
+    a {
+      text-decoration: none;
+      color: $text;
+      font-weight: 300;
+      position: relative;
+
+      &::after {
+        content: "";
+        transition: width 200ms ease-in;
+        width: 0%;
+        height: 1px;
+        background-color: $text;
+        position: absolute;
+        top: 23px;
+        left: 0;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
   }
 }
 
@@ -134,11 +156,7 @@
 
 @media (max-width: 770px) {
   .nav {
-    .dropdown {
-      display: none;
-    }
-
-    .nav-sign-up {
+    .links {
       display: none;
     }
 
