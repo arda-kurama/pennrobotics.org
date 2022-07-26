@@ -45,6 +45,7 @@
   .links {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 40%;
     gap: 2rem;
 
@@ -67,6 +68,21 @@
 
       &:hover::after {
         width: 100%;
+      }
+    }
+
+    .donate {
+      background-color: $yellow;
+      padding: 0.5em 1em;
+      border-radius: 4px;
+      text-transform: uppercase;
+
+      &::after {
+        display: none;
+      }
+
+      &:hover {
+        box-shadow: 0px 2px 10px 1px $yellow;
       }
     }
   }
