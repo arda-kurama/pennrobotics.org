@@ -26,10 +26,14 @@
   width: min(1600px, 100%);
   color: white;
 }
-.nav .nav-title {
-  font-size: 1.2rem;
-  font-weight: 300;
+.nav .nav-logo {
   padding: 1em 0;
+  width: 100px;
+  aspect-ratio: 1;
+}
+.nav .nav-logo img {
+  width: 100%;
+  filter: invert(1);
 }
 .nav .bars {
   color: #ffba07;

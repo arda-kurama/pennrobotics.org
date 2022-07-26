@@ -26,10 +26,15 @@
   width: min(1600px, 100%);
   color: $text;
 
-  .nav-title {
-    font-size: 1.2rem;
-    font-weight: 300;
+  .nav-logo {
     padding: 1em 0;
+    width: 100px;
+    aspect-ratio: 1;
+
+    img {
+      width: 100%;
+      filter: invert(1);
+    }
   }
 
   .bars {
