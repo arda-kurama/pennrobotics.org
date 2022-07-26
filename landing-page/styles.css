@@ -13,7 +13,6 @@
   background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.6);
   background-blend-mode: soft-light;
-  background-attachment: fixed;
   min-height: 90vh;
 }
 
