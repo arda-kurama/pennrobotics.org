@@ -1,0 +1,95 @@
+@import "../variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.landing-section {
+  background-image: url("/images/main-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: hsla(0, 0%, 0%, 0.6);
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+  height: 80vh;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 3em;
+  margin: 0 auto;
+  width: min(1600px, 100%);
+  color: $text;
+
+  .nav-title {
+    font-size: 1.2rem;
+    font-weight: 300;
+    padding: 1em 0;
+  }
+
+  .bars {
+    color: $yellow;
+    display: none;
+    font-size: 1.6rem;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    gap: 2rem;
+
+    a {
+      text-decoration: none;
+      color: $text;
+      font-weight: 300;
+      position: relative;
+
+      &::after {
+        content: "";
+        transition: width 200ms ease-in;
+        width: 0%;
+        height: 1px;
+        background-color: $text;
+        position: absolute;
+        top: 23px;
+        left: 0;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.hero {
+  width: min(1200px, 80%);
+  margin: 0 auto;
+  margin-top: 20vh;
+  font-weight: bold;
+  color: $text;
+
+  .hero-title {
+    font-size: clamp(1rem, 10vw, 4.3rem);
+    text-align: center;
+  }
+
+  .hero-typed-title {
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 400;
+    margin-top: 3rem;
+    width: min(500px, 80%);
+    font-family: "Roboto Slab", serif;
+  }
+}

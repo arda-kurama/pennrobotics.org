@@ -1,120 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-:root {
-  --primary: white;
-  --background: grey;
-  --nav-bar: rgba(0, 0, 0, 0.8);
-  --decoration: #ebaf2d;
-  --main-text: rgb(70, 70, 70);
-  --secondary-text: rgb(125, 125, 125);
-}
-  
-body {
-  background-color: var(--background);
-}
-  
-.hero {
-  font-family: 'DM Sans', sans-serif;
-  color: var(--primary);
-  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url("team-135-background.jpg");
-  background-position: center center;
+.landing-section {
+  background-image: url("/images/main-background.jpg");
+  background-position: center;
   background-size: cover;
-  height: 100vh;
+  background-color: hsla(0deg, 0%, 0%, 0.6);
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+  height: 80vh;
 }
-  
-.nav-bar {
-  color: var(--primary);
-  background-color: var(--nav-bar);
+
+.nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  text-decoration: none;
-  gap: 15rem;
-  padding: 1rem;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  padding: 1em 3em;
+  margin: 0 auto;
+  width: min(1600px, 100%);
+  color: white;
 }
-
-.nav-bar ul {
+.nav .nav-title {
+  font-size: 1.2rem;
+  font-weight: 300;
+  padding: 1em 0;
+}
+.nav .bars {
+  color: #ffba07;
+  display: none;
+  font-size: 1.6rem;
+}
+.nav .bars:hover {
+  cursor: pointer;
+}
+.nav .links {
   display: flex;
-  list-style: none;
+  justify-content: space-between;
+  width: 40%;
   gap: 2rem;
-  font-size: 0.8rem;
 }
-
-.mini-title {
-  color: var(--primary);
-  font-size: 1.5rem;
-  font-weight: normal;
+.nav .links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 300;
   position: relative;
-  text-decoration: none;
 }
-
-.mini-title:hover {
-  cursor: default;
-}
-
-.mini-title::before {
-  position: absolute;
-  content: '';
-  background-color: var(--primary);
-  height: 3px;
+.nav .links a::after {
+  content: "";
+  transition: width 200ms ease-in;
   width: 0%;
-  top: -5px;
-  left: 100%;
-  transition: width 300ms ease-in,
-    left 300ms ease-in;   
-  ; 
-}
-
-.mini-title::after {
+  height: 1px;
+  background-color: white;
   position: absolute;
-  content: '';
-  background-color: var(--primary);
-  height: 3px;
-  width: 0%;
-  bottom: -5px;
+  top: 23px;
   left: 0;
-  transition: width 300ms ease-in;
 }
-
-.mini-title:hover::after {
+.nav .links a:hover::after {
   width: 100%;
 }
 
-.mini-title:hover::before {
-  width: 100%;
-  left: 0%; 
-}
-
-.nav-bar ul a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: var(--primary);
+.hero {
+  width: min(1200px, 80%);
+  margin: 0 auto;
+  margin-top: 20vh;
   font-weight: bold;
-  position: relative;
+  color: white;
 }
-
-.nav-bar ul a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  height: 2px;
-  width: 0%;
-  background: var(--primary);
-  transition: width 300ms ease-in;
+.hero .hero-title {
+  font-size: clamp(1rem, 10vw, 4.3rem);
+  text-align: center;
 }
-
-.nav-bar ul a:hover::after {
-  width: 100%;
-}
+.hero .hero-typed-title {
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 400;
+  margin-top: 3rem;
+  width: min(500px, 80%);
+  font-family: "Roboto Slab", serif;
+}/*# sourceMappingURL=team-135.css.map */
