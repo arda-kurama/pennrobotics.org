@@ -14,7 +14,7 @@
   background-color: hsla(0, 0%, 0%, 0.6);
   background-blend-mode: soft-light;
   background-attachment: fixed;
-  height: 80vh;
+  min-height: 90vh;
 }
 
 .nav {
@@ -51,7 +51,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 40%;
+    min-width: 40%;
     gap: 2rem;
 
     a {
