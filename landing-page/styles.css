@@ -153,6 +153,28 @@
   color: hsl(43deg, 100%, 75%);
 }
 
+.quote-section {
+  background-image: url("/images/quote-background.jpg");
+  background-position: center;
+  background-color: hsla(0deg, 0%, 0%, 0.8);
+  background-blend-mode: soft-light;
+}
+.quote-section .title {
+  font-size: 37px;
+  font-weight: 700;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  text-align: left;
+  margin: 10rem;
+  padding: 5rem;
+}
+.quote-section .title .v1 {
+  border-left: 6px solid white;
+  height: 180px;
+  position: relative;
+  padding: 3rem;
+}
+
 @media (max-width: 770px) {
   .nav .links {
     display: none;
