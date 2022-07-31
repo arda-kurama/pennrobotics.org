@@ -11,28 +11,37 @@
   background-image: url("/images/main-background.jpg");
   background-position: center;
   background-size: cover;
-  background-color: hsla(0deg, 0%, 0%, 0.6);
+  background-color: hsla(0deg, 0%, 0%, 0.5);
   background-blend-mode: soft-light;
   min-height: 90vh;
 }
 
 .nav {
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
-  padding: 1em 3em;
-  margin: 0 auto;
-  width: min(1600px, 100%);
   color: white;
+  background-color: hsla(0deg, 0%, 0%, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .nav .nav-logo {
-  padding: 1em 0;
-  width: 100px;
+  padding: 1rem 0;
+  width: 75px;
   aspect-ratio: 1;
+  align-items: center;
 }
 .nav .nav-logo img {
   width: 100%;
   filter: invert(1);
+}
+.nav .nav-title {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  min-width: 50%;
 }
 .nav .bars {
   color: #ffba07;
@@ -44,7 +53,7 @@
 }
 .nav .links {
   display: flex;
-  justify-content: space-between;
+  justify-content: right;
   align-items: center;
   min-width: 40%;
   gap: 2rem;
@@ -83,21 +92,23 @@
 
 .hero {
   width: min(1200px, 80%);
+  position: absolute;
   margin: 0 auto;
-  margin-top: 20vh;
   font-weight: bold;
   color: white;
 }
 .hero .hero-title {
-  font-size: clamp(1rem, 10vw, 4.3rem);
+  margin-top: 30vh;
+  font-size: clamp(1rem, 10vw, 7.5rem);
   text-align: center;
 }
 .hero .hero-typed-title {
   text-align: center;
   margin: 0 auto;
   font-weight: 400;
-  margin-top: 3rem;
-  width: min(500px, 80%);
+  font-size: 1.25rem;
+  margin-top: 2rem;
+  width: min(2000px, 80%);
   font-family: "Roboto Slab", serif;
 }
 
@@ -107,7 +118,7 @@
   width: min(1200px, 80%);
 }
 .first-robotics-section .title {
-  font-size: 37px;
+  font-size: 5rem;
   margin-bottom: 1.7rem;
   font-weight: 700;
   color: rgb(60, 72, 88);
