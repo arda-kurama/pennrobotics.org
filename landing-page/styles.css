@@ -86,54 +86,51 @@
 
 .first-robotics-section {
   text-align: center;
-  margin: 8rem auto;
-  width: min(1200px, 80%);
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  color: rgb(60, 72, 88);
   font-family: "Roboto Slab", serif;
 }
 .first-robotics-section .title {
   font-size: 5rem;
-  margin-bottom: 1.5rem;
   font-weight: 700;
+  margin-bottom: 1rem;
   color: rgb(60, 72, 88);
 }
 .first-robotics-section .title-desc {
   font-size: 18px;
-  margin: 0 auto;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
   color: rgb(153, 153, 153);
-  max-width: 45rem;
   font-weight: 400;
 }
-.first-robotics-section .content-sections {
+.first-robotics-section .content {
   display: flex;
-  gap: 5rem;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
-.first-robotics-section .content-sections .gear-section {
-  display: flex;
-  flex-direction: column;
-  gap: 1.4rem;
-}
-.first-robotics-section .content-sections .gear-section .gear-section-name {
-  font-size: 18px;
-  font-weight: 700;
-  font-family: "Roboto Slab", serif;
-}
-.first-robotics-section .content-sections .gear-section .gear-section-desc {
-  font-size: 1rem;
-  max-width: 40ch;
-  margin: 0 auto;
-  font-weight: 300;
-  color: rgb(153, 153, 153);
-}
-.first-robotics-section .content-sections .gear-section i {
-  font-size: 61px;
+.first-robotics-section .content i {
+  font-size: 100px;
   color: #ffba07;
   transition: transform 200ms ease-in, color 200ms ease-in;
 }
-.first-robotics-section .content-sections .gear-section i:hover {
+.first-robotics-section .content i:hover {
   transform: translateY(-7px) scale(1.1);
   color: hsl(43deg, 100%, 75%);
+}
+.first-robotics-section .content h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+}
+.first-robotics-section .content p {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  max-width: 50ch;
+  margin: 0 auto;
+  font-weight: 300;
+  color: rgb(153, 153, 153);
 }
 
 .quote-section {

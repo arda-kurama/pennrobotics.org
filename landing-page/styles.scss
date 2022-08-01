@@ -98,60 +98,56 @@
 
 .first-robotics-section {
   text-align: center;
-  margin: 8rem auto;
-  width: min(1200px, 80%);
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  color: $black;
   font-family: "Roboto Slab", serif;
 
   .title {
     font-size: 5rem;
-    margin-bottom: 1.5rem;
     font-weight: 700;
+    margin-bottom: 1rem;
     color: $black;
   }
 
   .title-desc {
     font-size: 18px;
-    margin: 0 auto;
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
     color: $lightgray;
-    max-width: 45rem;
     font-weight: 400;
   }
 
-  .content-sections {
+  .content {
     display: flex;
-    gap: 5rem;
-    justify-content: space-between;
+    justify-content: space-evenly;
 
-    .gear-section {
-      display: flex;
-      flex-direction: column;
-      gap: 1.4rem;
+    i {
+      font-size: 100px;
+      color: $yellow;
+      transition: transform 200ms ease-in, color 200ms ease-in;
 
-      .gear-section-name {
-        font-size: 18px;
-        font-weight: 700;
-        font-family: "Roboto Slab", serif;
+      &:hover {
+        transform: translateY(-7px) scale(1.1);
+        color: hsl(43, 100%, 75%);
       }
+    }
 
-      .gear-section-desc {
-        font-size: 1rem;
-        max-width: 40ch;
-        margin: 0 auto;
-        font-weight: 300;
-        color: $lightgray;
-      }
+    h3 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: "Roboto Slab", serif;
+    }
 
-      i {
-        font-size: 61px;
-        color: $yellow;
-        transition: transform 200ms ease-in, color 200ms ease-in;
-
-        &:hover {
-          transform: translateY(-7px) scale(1.1);
-          color: hsl(43, 100%, 75%);
-        }
-      }
+    p {
+      line-height: 1.5rem;
+      font-size: 1rem;
+      max-width: 50ch;
+      margin: 0 auto;
+      font-weight: 300;
+      color: $lightgray;
     }
   }
 }
