@@ -178,18 +178,52 @@
 .contact-us {
   text-align: center;
   margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: $black;
 
   .title {
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: $black;
   }
 
   .title-desc {
     font-size: 18px;
     font-weight: 400;
+    margin-bottom: 3rem;
     color: $lightgray;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 2rem;
+
+    img {
+      height: auto;
+      width: 200px;
+      border-radius: 100px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: "Roboto Slab", serif;
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 400;
+      color: $lightgray;
+    }
   }
 }
 

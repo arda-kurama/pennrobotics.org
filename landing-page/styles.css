@@ -157,15 +157,44 @@
 .contact-us {
   text-align: center;
   margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: rgb(60, 72, 88);
 }
 .contact-us .title {
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   color: rgb(60, 72, 88);
 }
 .contact-us .title-desc {
   font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 3rem;
+  color: rgb(153, 153, 153);
+}
+.contact-us .content {
+  display: flex;
+  justify-content: space-evenly;
+  line-height: 2rem;
+}
+.contact-us .content img {
+  height: auto;
+  width: 200px;
+  border-radius: 100px;
+}
+.contact-us .content h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: "Roboto Slab", serif;
+}
+.contact-us .content h2 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.contact-us .content h3 {
+  font-size: 1rem;
   font-weight: 400;
   color: rgb(153, 153, 153);
 }
