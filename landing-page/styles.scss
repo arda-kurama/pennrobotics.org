@@ -11,6 +11,7 @@
 .landing-section {
   background-image: url("/images/main-background.jpg");
   background-position: center;
+  background-attachment: fixed;
   background-size: cover;
   background-color: hsla(0, 0%, 0%, 0.5);
   background-blend-mode: soft-light;
@@ -155,6 +156,7 @@
 .quote-section {
   background-image: url("/images/quote-background.jpg");
   background-position: center;
+  background-attachment: fixed;
   background-color: hsla(0, 0%, 0%, 0.8);
   background-blend-mode: soft-light;
   padding: 5rem 6rem;
