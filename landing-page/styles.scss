@@ -8,19 +8,17 @@
   // border: 2px solid red;
 }
 
-.landing-section {
+.landing {
   background-image: url("/images/main-background.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   background-color: hsla(0, 0%, 0%, 0.5);
   background-blend-mode: soft-light;
-  // no support on safari
-  // background-attachment: fixed;
   min-height: 90vh;
 }
 
-.nav {
+.navbar {
   display: flex;
   position: relative;
   justify-content: center;
@@ -83,13 +81,13 @@
   font-weight: bold;
   color: $text;
 
-  .hero-title {
+  .title {
     margin-top: 12rem;
     font-size: clamp(1rem, 10vw, 7.5rem);
     text-align: center;
   }
 
-  .hero-typed-title {
+  .typed-title {
     text-align: center;
     margin-top: 2rem;
     font-weight: 400;
@@ -97,7 +95,7 @@
   }
 }
 
-.first-robotics-section {
+.main {
   text-align: center;
   margin: 5rem;
   display: flex;
@@ -112,7 +110,7 @@
     color: $black;
   }
 
-  .title-desc {
+  .subtitle {
     font-size: 18px;
     margin-bottom: 4rem;
     color: $lightgray;
@@ -188,7 +186,7 @@
     color: $black;
   }
 
-  .title-desc {
+  .subtitle {
     font-size: 18px;
     font-weight: 400;
     margin-bottom: 3rem;

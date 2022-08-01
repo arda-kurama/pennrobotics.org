@@ -7,7 +7,7 @@
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-.landing-section {
+.landing {
   background-image: url("/images/main-background.jpg");
   background-position: center;
   background-attachment: fixed;
@@ -17,7 +17,7 @@
   min-height: 90vh;
 }
 
-.nav {
+.navbar {
   display: flex;
   position: relative;
   justify-content: center;
@@ -29,20 +29,20 @@
   right: 0;
   gap: 5rem;
 }
-.nav img {
+.navbar img {
   padding: 25px;
   height: auto;
   width: 200px;
   filter: invert(1);
 }
-.nav .links {
+.navbar .links {
   text-decoration: none;
   position: relative;
   color: white;
   font-weight: 350;
   font-size: 20px;
 }
-.nav .links::after {
+.navbar .links::after {
   content: "";
   width: 0%;
   height: 1px;
@@ -52,19 +52,19 @@
   top: 29px;
   left: 0;
 }
-.nav .links:hover::after {
+.navbar .links:hover::after {
   width: 100%;
 }
-.nav .donate {
+.navbar .donate {
   background-color: #ffba07;
   padding: 0.5em 1em;
   border-radius: 4px;
   text-transform: uppercase;
 }
-.nav .donate::after {
+.navbar .donate::after {
   display: none;
 }
-.nav .donate:hover {
+.navbar .donate:hover {
   box-shadow: 0px 2px 10px 1px #ffba07;
 }
 
@@ -73,19 +73,19 @@
   font-weight: bold;
   color: white;
 }
-.hero .hero-title {
+.hero .title {
   margin-top: 12rem;
   font-size: clamp(1rem, 10vw, 7.5rem);
   text-align: center;
 }
-.hero .hero-typed-title {
+.hero .typed-title {
   text-align: center;
   margin-top: 2rem;
   font-weight: 400;
   font-size: 1.25rem;
 }
 
-.first-robotics-section {
+.main {
   text-align: center;
   margin: 5rem;
   display: flex;
@@ -93,39 +93,39 @@
   color: rgb(60, 72, 88);
   font-family: "Roboto Slab", serif;
 }
-.first-robotics-section .title {
+.main .title {
   font-size: 5rem;
   font-weight: 700;
   margin-bottom: 1rem;
   color: rgb(60, 72, 88);
 }
-.first-robotics-section .title-desc {
+.main .subtitle {
   font-size: 18px;
   margin-bottom: 4rem;
   color: rgb(153, 153, 153);
   font-weight: 400;
 }
-.first-robotics-section .content {
+.main .content {
   display: flex;
   justify-content: space-evenly;
 }
-.first-robotics-section .content i {
+.main .content i {
   font-size: 100px;
   color: #ffba07;
   transition: transform 200ms ease-in, color 200ms ease-in;
 }
-.first-robotics-section .content i:hover {
+.main .content i:hover {
   transform: translateY(-7px) scale(1.1);
   color: hsl(43deg, 100%, 75%);
 }
-.first-robotics-section .content h3 {
+.main .content h3 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
   font-family: "Roboto Slab", serif;
 }
-.first-robotics-section .content p {
+.main .content p {
   line-height: 1.5rem;
   font-size: 1rem;
   max-width: 50ch;
@@ -167,7 +167,7 @@
   margin-bottom: 1rem;
   color: rgb(60, 72, 88);
 }
-.contact-us .title-desc {
+.contact-us .subtitle {
   font-size: 18px;
   font-weight: 400;
   margin-bottom: 3rem;
