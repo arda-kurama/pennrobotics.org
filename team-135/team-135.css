@@ -144,6 +144,22 @@
   font-family: "Roboto Slab", serif;
 }
 
+.chairmans-video {
+  color: rgb(60, 72, 88);
+  background-color: white;
+  text-align: center;
+  padding-top: 4rem;
+}
+.chairmans-video .title {
+  font-size: 4rem;
+  font-weight: 700;
+}
+.chairmans-video .subtitle {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
 .contact-us {
   text-align: center;
   margin: 4rem;
