@@ -181,16 +181,15 @@
 
 .contact-us {
   text-align: center;
-  margin: 4rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin: 3rem;
   color: $black;
 
   .title {
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 1rem;
     color: $black;
   }
 
