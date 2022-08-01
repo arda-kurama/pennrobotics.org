@@ -39,9 +39,9 @@
     filter: invert(1);
   }
 
-  a {
-    position: relative;
+  .links {
     text-decoration: none;
+    position: relative;
     color: $text;
     font-weight: 350;
     font-size: 20px;

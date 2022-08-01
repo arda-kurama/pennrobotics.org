@@ -35,14 +35,14 @@
   width: 200px;
   filter: invert(1);
 }
-.nav a {
-  position: relative;
+.nav .links {
   text-decoration: none;
+  position: relative;
   color: white;
   font-weight: 350;
   font-size: 20px;
 }
-.nav a::after {
+.nav .links::after {
   content: "";
   width: 0%;
   height: 1px;
@@ -52,7 +52,7 @@
   top: 29px;
   left: 0;
 }
-.nav a:hover::after {
+.nav .links:hover::after {
   width: 100%;
 }
 .nav .donate {
