@@ -131,8 +131,8 @@
   }
 }
 
-.summer-camps {
-  background-image: url("/youth-camps/summer-camp-collage.png");
+.summer-camp-header {
+  background-image: url("/youth-camps/summer-camp-header.png");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -143,62 +143,51 @@
   .title {
     font-size: 5rem;
     font-weight: 700;
-    color: $text;
-    font-family: "Roboto Slab", serif;
     margin: 0 auto;
     text-align: center;
+    color: $text;
   }
 }
 
-.contact-us {
-  text-align: center;
-  margin: 4rem;
+.summer-camps {
   display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  color: $black;
+  position: relative;
+  color: $text;
+  font-family: "Roboto Slab", serif;
+  padding: 3rem;
+  gap: 1rem;
 
-  .title {
-    font-size: 3rem;
-    font-weight: 700;
+  img {
+    width: 100%;
+    width: 400px;
+    height: auto;
     margin-bottom: 1rem;
-    color: $black;
-  }
-
-  .subtitle {
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 3rem;
-    color: $lightgray;
+    border: 3px solid $black;
   }
 
   .content {
-    display: flex;
-    justify-content: space-evenly;
-    line-height: 2rem;
+    color: $black;
+    text-align: center;
+    margin: auto 5rem;
+    font-size: 2rem;
+  }
+}
 
-    img {
-      height: auto;
-      width: 200px;
-      border-radius: 100px;
-    }
+.junior-stem-header {
+  background-image: url("/youth-camps/junior-stem-header.jpeg");
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  background-blend-mode: soft-light;
+  padding: 6rem;
 
-    h1 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      font-family: "Roboto Slab", serif;
-    }
-
-    h2 {
-      font-size: 1rem;
-      font-weight: 400;
-    }
-
-    h3 {
-      font-size: 1rem;
-      font-weight: 400;
-      color: $lightgray;
-    }
+  .title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin: 0 auto;
+    text-align: center;
+    color: $text;
   }
 }
 
