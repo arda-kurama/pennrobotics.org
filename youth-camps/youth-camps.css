@@ -121,7 +121,7 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  background-color: hsla(0deg, 0%, 0%, 0.8);
+  background-color: hsla(0deg, 0%, 0%, 0.7);
   background-blend-mode: soft-light;
   padding: 6rem;
 }
@@ -146,7 +146,7 @@
   width: 400px;
   height: auto;
   margin-bottom: 1rem;
-  border: 3px solid rgb(60, 72, 88);
+  border: 3px solid hsla(0deg, 0%, 0%, 0.8);
 }
 .summer-camps .content {
   color: rgb(60, 72, 88);
@@ -160,7 +160,7 @@
   background-position: top;
   background-attachment: fixed;
   background-size: cover;
-  background-color: hsla(0deg, 0%, 0%, 0.8);
+  background-color: hsla(0deg, 0%, 0%, 0.7);
   background-blend-mode: soft-light;
   padding: 6rem;
 }
@@ -170,6 +170,29 @@
   margin: 0 auto;
   text-align: center;
   color: white;
+}
+
+.junior-stem {
+  display: flex;
+  flex: 0;
+  position: relative;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  padding: 3rem;
+  gap: 1rem;
+}
+.junior-stem .content {
+  color: rgb(60, 72, 88);
+  text-align: center;
+  margin: auto 5rem;
+  font-size: 1.5rem;
+}
+.junior-stem img {
+  width: 100%;
+  width: 400px;
+  height: auto;
+  margin-bottom: 1rem;
+  border: 3px solid hsla(0deg, 0%, 0%, 0.8);
 }
 
 @media (max-width: 770px) {
