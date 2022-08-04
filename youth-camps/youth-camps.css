@@ -195,6 +195,23 @@
   border: 3px solid hsla(0deg, 0%, 0%, 0.8);
 }
 
+.workshops-header {
+  background-image: url("/youth-camps/workshops-header.jpeg");
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: hsla(0deg, 0%, 0%, 0.7);
+  background-blend-mode: soft-light;
+  padding: 6rem;
+}
+.workshops-header .title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
 @media (max-width: 770px) {
   .nav .links {
     display: none;
