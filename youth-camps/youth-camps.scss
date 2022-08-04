@@ -1,0 +1,250 @@
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  // border: 2px solid red;
+}
+
+.landing {
+  background-image: url("/landing-page/main-background.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  background-blend-mode: soft-light;
+  min-height: 90vh;
+}
+
+.navbar {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  color: $text;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  top: 0;
+  left: 0;
+  right: 0;
+  gap: 5rem;
+
+  img {
+    padding: 25px;
+    height: auto;
+    width: 200px;
+    filter: invert(1);
+  }
+
+  .links {
+    text-decoration: none;
+    position: relative;
+    color: $text;
+    font-weight: 350;
+    font-size: 20px;
+
+    &::after {
+      content: "";
+      width: 0%;
+      height: 1px;
+      transition: width 200ms ease-in;
+      background-color: $text;
+      position: absolute;
+      top: 29px;
+      left: 0;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  .donate {
+    background-color: $yellow;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    text-transform: uppercase;
+
+    &::after {
+      display: none;
+    }
+
+    &:hover {
+      box-shadow: 0px 2px 10px 1px $yellow;
+    }
+  }
+}
+
+.hero {
+  position: relative;
+  font-weight: bold;
+  color: $text;
+
+  .title {
+    margin-top: 12rem;
+    font-size: clamp(1rem, 10vw, 7.5rem);
+    text-align: center;
+  }
+
+  .typed-title {
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 400;
+    font-size: 1.25rem;
+  }
+}
+
+.main {
+  text-align: center;
+  margin: 5rem;
+  display: flex;
+  flex-direction: column;
+  color: $black;
+  font-family: "Roboto Slab", serif;
+
+  .title {
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: $black;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    margin-bottom: 4rem;
+    color: $lightgray;
+    font-weight: 400;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-evenly;
+
+    i {
+      font-size: 100px;
+      color: $yellow;
+      transition: transform 200ms ease-in, color 200ms ease-in;
+
+      &:hover {
+        transform: translateY(-7px) scale(1.1);
+        color: hsl(43, 100%, 75%);
+      }
+    }
+
+    h3 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: "Roboto Slab", serif;
+    }
+
+    p {
+      line-height: 1.5rem;
+      font-size: 1rem;
+      max-width: 50ch;
+      margin: 0 auto;
+      font-weight: 300;
+      color: $lightgray;
+    }
+  }
+}
+
+.quote-section {
+  background-image: url("/images/quote-background.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-color: hsla(0, 0%, 0%, 0.8);
+  background-blend-mode: soft-light;
+  padding: 5rem 6rem;
+
+  .title {
+    font-size: clamp(28px, 4vw, 37px);
+    font-weight: 700;
+    color: $text;
+    font-family: "Roboto Slab", serif;
+    border-left: 5px solid $text;
+    width: min(1600px, 90%);
+    margin: 0 auto;
+    padding: 1em 2em;
+  }
+}
+
+.contact-us {
+  text-align: center;
+  margin: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: $black;
+
+  .title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: $black;
+  }
+
+  .subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    color: $lightgray;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-evenly;
+    line-height: 2rem;
+
+    img {
+      height: auto;
+      width: 200px;
+      border-radius: 100px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      font-family: "Roboto Slab", serif;
+    }
+
+    h2 {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    h3 {
+      font-size: 1rem;
+      font-weight: 400;
+      color: $lightgray;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .nav {
+    .links {
+      display: none;
+    }
+
+    .bars {
+      display: block;
+    }
+  }
+
+  .content-sections {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .quote-section {
+    padding: 2.5em 1.5em;
+
+    .title {
+      padding: 10px 20px;
+      margin: 0;
+    }
+  }
+}
