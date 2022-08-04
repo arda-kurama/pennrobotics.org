@@ -1,4 +1,4 @@
-@import "variables";
+@import "../landing-page/variables";
 
 * {
   margin: 0;
@@ -9,13 +9,12 @@
 }
 
 .landing {
-  background-image: url("/landing-page/main-background.jpg");
-  background-position: center;
+  background-image: url("");
+  background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
   background-color: hsla(0, 0%, 0%, 0.5);
   background-blend-mode: soft-light;
-  min-height: 90vh;
 }
 
 .navbar {
@@ -76,25 +75,6 @@
   }
 }
 
-.hero {
-  position: relative;
-  font-weight: bold;
-  color: $text;
-
-  .title {
-    margin-top: 12rem;
-    font-size: clamp(1rem, 10vw, 7.5rem);
-    text-align: center;
-  }
-
-  .typed-title {
-    text-align: center;
-    margin-top: 2rem;
-    font-weight: 400;
-    font-size: 1.25rem;
-  }
-}
-
 .main {
   text-align: center;
   margin: 5rem;
@@ -151,23 +131,22 @@
   }
 }
 
-.quote-section {
-  background-image: url("/images/quote-background.jpg");
+.summer-camps {
+  background-image: url("/youth-camps/summer-camp-collage.png");
   background-position: center;
   background-attachment: fixed;
+  background-size: cover;
   background-color: hsla(0, 0%, 0%, 0.8);
   background-blend-mode: soft-light;
-  padding: 5rem 6rem;
+  padding: 6rem;
 
   .title {
-    font-size: clamp(28px, 4vw, 37px);
+    font-size: 5rem;
     font-weight: 700;
     color: $text;
     font-family: "Roboto Slab", serif;
-    border-left: 5px solid $text;
-    width: min(1600px, 90%);
     margin: 0 auto;
-    padding: 1em 2em;
+    text-align: center;
   }
 }
 
