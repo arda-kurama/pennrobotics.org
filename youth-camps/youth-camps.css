@@ -8,13 +8,12 @@
 }
 
 .landing {
-  background-image: url("/team-135/team-135-background.jpg");
-  background-position: center;
+  background-image: url("");
+  background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.5);
   background-blend-mode: soft-light;
-  min-height: 90vh;
 }
 
 .navbar {
@@ -68,23 +67,6 @@
   box-shadow: 0px 2px 10px 1px #ffba07;
 }
 
-.hero {
-  position: relative;
-  font-weight: bold;
-  color: white;
-}
-.hero .title {
-  margin-top: 12rem;
-  font-size: clamp(1rem, 10vw, 7.5rem);
-  text-align: center;
-}
-.hero .typed-title {
-  text-align: center;
-  margin-top: 2rem;
-  font-weight: 400;
-  font-size: 1.25rem;
-}
-
 .main {
   text-align: center;
   margin: 5rem;
@@ -96,8 +78,14 @@
 .main .title {
   font-size: 5rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   color: rgb(60, 72, 88);
+}
+.main .subtitle {
+  font-size: 18px;
+  margin-bottom: 4rem;
+  color: rgb(153, 153, 153);
+  font-weight: 400;
 }
 .main .content {
   display: flex;
@@ -128,80 +116,100 @@
   color: rgb(153, 153, 153);
 }
 
-.sponsors {
-  background-image: url("../team-135/main-logo.jpg");
+.summer-camp-header {
+  background-image: url("/youth-camps/summer-camp-header.png");
   background-position: center;
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-color: hsla(0deg, 0%, 0%, 0.8);
+  background-size: cover;
+  background-color: hsla(0deg, 0%, 0%, 0.7);
   background-blend-mode: soft-light;
-  padding: 5rem 20rem;
+  padding: 6rem;
 }
-.sponsors .title {
-  font-size: 2rem;
+.summer-camp-header .title {
+  font-size: 5rem;
   font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.summer-camps {
+  display: flex;
+  position: relative;
   color: white;
   font-family: "Roboto Slab", serif;
+  padding: 3rem;
+  gap: 1rem;
 }
-
-.chairmans-video {
-  color: rgb(60, 72, 88);
-  background-color: white;
-  text-align: center;
-  padding-top: 4rem;
-}
-.chairmans-video .title {
-  font-size: 4rem;
-  font-weight: 700;
-}
-.chairmans-video .subtitle {
-  font-size: 2rem;
-  font-weight: 300;
-  margin-bottom: 2rem;
-}
-
-.contact-us {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  margin: 3rem;
-  color: rgb(60, 72, 88);
-}
-.contact-us .title {
-  font-size: 3rem;
-  font-weight: 700;
-  color: rgb(60, 72, 88);
-}
-.contact-us .title-desc {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 3rem;
-  color: rgb(153, 153, 153);
-}
-.contact-us .content {
-  display: flex;
-  justify-content: space-evenly;
-  line-height: 2rem;
-}
-.contact-us .content img {
+.summer-camps img {
+  width: 100%;
+  width: 400px;
   height: auto;
-  width: 200px;
-  border-radius: 100px;
+  margin-bottom: 1rem;
+  border: 3px solid hsla(0deg, 0%, 0%, 0.8);
 }
-.contact-us .content h1 {
-  font-size: 1.5rem;
+.summer-camps .content {
+  color: rgb(60, 72, 88);
+  text-align: center;
+  margin: auto 5rem;
+  font-size: 2rem;
+}
+
+.junior-stem-header {
+  background-image: url("/youth-camps/junior-stem-header.jpeg");
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: hsla(0deg, 0%, 0%, 0.7);
+  background-blend-mode: soft-light;
+  padding: 6rem;
+}
+.junior-stem-header .title {
+  font-size: 5rem;
   font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.junior-stem {
+  display: flex;
+  flex: 0;
+  position: relative;
+  color: white;
   font-family: "Roboto Slab", serif;
+  padding: 3rem;
+  gap: 1rem;
 }
-.contact-us .content h2 {
-  font-size: 1rem;
-  font-weight: 400;
+.junior-stem .content {
+  color: rgb(60, 72, 88);
+  text-align: center;
+  margin: auto 5rem;
+  font-size: 1.5rem;
 }
-.contact-us .content h3 {
-  font-size: 1rem;
-  font-weight: 400;
-  color: rgb(153, 153, 153);
+.junior-stem img {
+  width: 100%;
+  width: 400px;
+  height: auto;
+  margin-bottom: 1rem;
+  border: 3px solid hsla(0deg, 0%, 0%, 0.8);
+}
+
+.workshops-header {
+  background-image: url("/youth-camps/workshops-header.jpeg");
+  background-position: top;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: hsla(0deg, 0%, 0%, 0.7);
+  background-blend-mode: soft-light;
+  padding: 6rem;
+}
+.workshops-header .title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
 }
 
 @media (max-width: 770px) {
@@ -222,4 +230,4 @@
     padding: 10px 20px;
     margin: 0;
   }
-}/*# sourceMappingURL=team-135.css.map */
+}/*# sourceMappingURL=youth-camps.css.map */
