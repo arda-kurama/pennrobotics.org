@@ -171,11 +171,10 @@
       width: min(400px, 90%);
       border: 3px solid var(--swiper-color);
       aspect-ratio: 1;
-      text-align: center;
 
       .swiper-slide {
         display: flex;
-        align-items: stretch;
+        align-items: center;
       }
 
       .swiper-button-prev,
