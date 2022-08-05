@@ -82,12 +82,11 @@
   flex-direction: column;
   color: $black;
   font-family: "Roboto Slab", serif;
-  min-height: 67vh;
+  min-height: 55vh;
 
   .title {
     font-size: 5rem;
     font-weight: 700;
-    margin: 6rem 0 1rem;
     color: $black;
   }
 
@@ -95,7 +94,7 @@
     font-size: 18px;
     color: $lightgray;
     font-weight: 400;
-    // margin-bottom: 10rem;
+    margin: 1rem 15rem 7rem;
   }
 
   .content {
