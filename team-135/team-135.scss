@@ -151,13 +151,43 @@
   background-repeat: no-repeat;
   background-color: hsla(0, 0%, 0%, 0.8);
   background-blend-mode: soft-light;
-  padding: 5rem 20rem;
+  padding: 5rem 0rem;
 
   .title {
     font-size: 2rem;
+    text-align: center;
     font-weight: 700;
     color: $text;
     font-family: "Roboto Slab", serif;
+    margin-bottom: 2rem;
+  }
+
+  .container {
+    img {
+      width: 100%;
+    }
+    .swiper {
+      --swiper-color: white;
+      width: min(400px, 90%);
+      border: 3px solid var(--swiper-color);
+      aspect-ratio: 1;
+      text-align: center;
+
+      .swiper-slide {
+        display: flex;
+        align-items: stretch;
+      }
+
+      .swiper-button-prev,
+      .swiper-button-next {
+        color: var(--swiper-color);
+        mix-blend-mode: difference;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: var(--swiper-color);
+      }
+    }
   }
 }
 

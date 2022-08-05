@@ -8,6 +8,10 @@
   // border: 2px solid red;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .landing {
   background-image: url("");
   background-position: bottom;
