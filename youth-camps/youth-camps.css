@@ -74,22 +74,23 @@
   flex-direction: column;
   color: rgb(60, 72, 88);
   font-family: "Roboto Slab", serif;
+  min-height: 67vh;
 }
 .main .title {
   font-size: 5rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin: 6rem 0 1rem;
   color: rgb(60, 72, 88);
 }
 .main .subtitle {
   font-size: 18px;
-  margin-bottom: 4rem;
   color: rgb(153, 153, 153);
   font-weight: 400;
 }
 .main .content {
   display: flex;
   justify-content: space-evenly;
+  margin: auto 0;
 }
 .main .content i {
   font-size: 100px;
@@ -139,20 +140,25 @@
   color: white;
   font-family: "Roboto Slab", serif;
   padding: 3rem;
-  gap: 1rem;
+  min-height: 70vh;
 }
 .summer-camps img {
   width: 100%;
-  width: 400px;
+  width: 300px;
   height: auto;
-  margin-bottom: 1rem;
-  border: 3px solid hsla(0deg, 0%, 0%, 0.8);
+  margin: 1rem;
+}
+.summer-camps .images-2 {
+  margin-top: 4rem;
 }
 .summer-camps .content {
   color: rgb(60, 72, 88);
-  text-align: center;
-  margin: auto 5rem;
-  font-size: 2rem;
+  text-align: left;
+  margin: auto 6rem;
+  font-size: 1.5rem;
+}
+.summer-camps .content li {
+  margin-bottom: 3rem;
 }
 
 .junior-stem-header {
@@ -174,25 +180,36 @@
 
 .junior-stem {
   display: flex;
-  flex: 0;
   position: relative;
   color: white;
   font-family: "Roboto Slab", serif;
   padding: 3rem;
-  gap: 1rem;
+  min-height: 70vh;
 }
 .junior-stem .content {
   color: rgb(60, 72, 88);
-  text-align: center;
-  margin: auto 5rem;
+  margin: auto 6rem;
   font-size: 1.5rem;
+  text-align: left;
+}
+.junior-stem .content p {
+  margin-bottom: 1rem;
+}
+.junior-stem .content li {
+  margin: 0.75rem 4rem;
+  color: rgb(153, 153, 153);
 }
 .junior-stem img {
   width: 100%;
-  width: 400px;
+  width: 300px;
   height: auto;
-  margin-bottom: 1rem;
-  border: 3px solid hsla(0deg, 0%, 0%, 0.8);
+  margin: 1rem;
+}
+.junior-stem .images-1 {
+  margin-top: 2rem;
+}
+.junior-stem .images-2 {
+  margin: 10rem 1rem 0;
 }
 
 .workshops-header {
@@ -210,6 +227,52 @@
   margin: 0 auto;
   text-align: center;
   color: white;
+}
+
+.workshops {
+  display: flex;
+  position: relative;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  padding: 3rem;
+  min-height: 70vh;
+}
+.workshops img {
+  width: 100%;
+  width: 450px;
+  height: auto;
+  margin: 1rem;
+}
+.workshops .images-1 {
+  margin: auto 0;
+}
+.workshops .content {
+  color: rgb(60, 72, 88);
+  text-align: left;
+  margin: 0 3rem;
+}
+.workshops .content .title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: rgb(60, 72, 88);
+  margin-top: 1rem;
+}
+.workshops .content .subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: rgb(153, 153, 153);
+}
+.workshops .content .workshop {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffba07;
+  margin: 1rem 4rem 0;
+}
+.workshops .content .workshop li {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffba07;
+  margin: 0.5rem 3rem;
 }
 
 @media (max-width: 770px) {
