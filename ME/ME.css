@@ -220,6 +220,10 @@
 .contact-us .subtitle p {
   margin: 0 15rem 1rem;
 }
+.contact-us .content {
+  margin-bottom: 5rem;
+}
+
 @media (max-width: 770px) {
   .nav .links {
     display: none;
