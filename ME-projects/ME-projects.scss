@@ -5,11 +5,11 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  // border: 2px solid red;
+  // border: 1px solid red;
 }
 
 .landing {
-  background-image: url("");
+  background-image: url("main-background.jpg");
   background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
@@ -72,6 +72,18 @@
     &:hover {
       box-shadow: 0px 2px 10px 1px $yellow;
     }
+  }
+}
+
+.hero {
+  position: relative;
+  font-weight: bold;
+  color: $text;
+
+  .title {
+    margin: 12rem;
+    font-size: clamp(1rem, 10vw, 7.5rem);
+    text-align: center;
   }
 }
 

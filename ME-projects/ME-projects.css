@@ -8,7 +8,7 @@
 }
 
 .landing {
-  background-image: url("");
+  background-image: url("main-background.jpg");
   background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
@@ -65,6 +65,17 @@
 }
 .navbar .donate:hover {
   box-shadow: 0px 2px 10px 1px #ffba07;
+}
+
+.hero {
+  position: relative;
+  font-weight: bold;
+  color: white;
+}
+.hero .title {
+  margin: 12rem;
+  font-size: clamp(1rem, 10vw, 7.5rem);
+  text-align: center;
 }
 
 .main {
@@ -225,4 +236,4 @@
     padding: 10px 20px;
     margin: 0;
   }
-}/*# sourceMappingURL=ME.css.map */
+}/*# sourceMappingURL=ME-projects.css.map */
