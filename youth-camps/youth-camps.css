@@ -78,7 +78,7 @@ html {
   flex-direction: column;
   color: rgb(60, 72, 88);
   font-family: "Roboto Slab", serif;
-  min-height: 55vh;
+  min-height: 67vh;
 }
 .main .title {
   font-size: 5rem;
@@ -89,7 +89,7 @@ html {
   font-size: 18px;
   color: rgb(153, 153, 153);
   font-weight: 400;
-  margin: 1rem 15rem 7rem;
+  margin: 1rem 15rem;
 }
 .main .content {
   display: flex;

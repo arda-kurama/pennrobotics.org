@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  // border: 1px solid red;
+  border: 1px solid red;
 }
 
 .landing {
@@ -15,75 +15,69 @@
   background-size: cover;
   background-color: hsla(0, 0%, 0%, 0.5);
   background-blend-mode: soft-light;
-}
 
-.navbar {
-  display: flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  color: $text;
-  background-color: hsla(0, 0%, 0%, 0.8);
-  top: 0;
-  left: 0;
-  right: 0;
-  gap: 5rem;
-
-  img {
-    padding: 25px;
-    height: auto;
-    width: 200px;
-    filter: invert(1);
-  }
-
-  .links {
-    text-decoration: none;
-    position: relative;
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: $text;
-    font-weight: 350;
-    font-size: 20px;
+    background-color: hsla(0, 0%, 0%, 0.8);
+    gap: 5rem;
 
-    &::after {
-      content: "";
-      width: 0%;
-      height: 1px;
-      transition: width 200ms ease-in;
-      background-color: $text;
-      position: absolute;
-      top: 29px;
-      left: 0;
+    img {
+      padding: 25px;
+      height: auto;
+      width: 200px;
+      filter: invert(1);
     }
 
-    &:hover::after {
-      width: 100%;
+    .links {
+      text-decoration: none;
+      position: relative;
+      color: $text;
+      font-weight: 350;
+      font-size: 20px;
+
+      &::after {
+        content: "";
+        width: 0%;
+        height: 1px;
+        transition: width 200ms ease-in;
+        background-color: $text;
+        position: absolute;
+        top: 29px;
+        left: 0;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+
+    .donate {
+      background-color: $yellow;
+      padding: 0.5em 1em;
+      border-radius: 4px;
+      text-transform: uppercase;
+
+      &::after {
+        display: none;
+      }
+
+      &:hover {
+        box-shadow: 0px 2px 10px 1px $yellow;
+      }
     }
   }
 
-  .donate {
-    background-color: $yellow;
-    padding: 0.5em 1em;
-    border-radius: 4px;
-    text-transform: uppercase;
-
-    &::after {
-      display: none;
+  .hero {
+    .title {
+      color: $text;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      padding: 6rem;
     }
-
-    &:hover {
-      box-shadow: 0px 2px 10px 1px $yellow;
-    }
-  }
-}
-
-.hero {
-  position: relative;
-  font-weight: bold;
-  color: $text;
-
-  .title {
-    margin: 12rem;
-    font-size: clamp(1rem, 10vw, 7.5rem);
-    text-align: center;
   }
 }
 
@@ -94,7 +88,6 @@
   flex-direction: column;
   color: $black;
   font-family: "Roboto Slab", serif;
-  min-height: 55vh;
 
   .title {
     font-size: 5rem;
@@ -140,109 +133,6 @@
       font-weight: 300;
       color: $lightgray;
     }
-  }
-}
-
-.quote-section {
-  background-image: url("ME-background.png");
-  background-position: bottom;
-  background-attachment: fixed;
-  background-color: hsla(0, 0%, 0%, 0.4);
-  background-blend-mode: soft-light;
-  padding: 6rem;
-
-  .title {
-    font-size: 5rem;
-    font-weight: 700;
-    text-align: center;
-    color: $text;
-    margin: 0 auto;
-  }
-}
-
-.summer-camps {
-  display: flex;
-  position: relative;
-  color: $text;
-  font-family: "Roboto Slab", serif;
-  padding: 3rem;
-  min-height: 70vh;
-
-  img {
-    width: 100%;
-    width: 300px;
-    height: auto;
-    margin: 1rem;
-  }
-
-  .images-2 {
-    margin-top: 6rem;
-  }
-
-  .content {
-    margin: auto 6rem;
-
-    .header {
-      display: flex;
-      margin: auto 0;
-      border-bottom: 12px solid $black;
-      gap: 3rem;
-
-      img {
-        width: 100%;
-        width: 400px;
-        height: auto;
-        padding: 0;
-        margin: 0;
-      }
-
-      .subtitle {
-        font-size: 1.25rem;
-        font-weight: 700;
-        color: $black;
-        line-height: 1.75rem;
-        color: $black;
-        text-align: left;
-        margin: auto 0;
-      }
-    }
-
-    p {
-      font-size: 18px;
-      font-weight: 400;
-      color: $lightgray;
-      margin: 2rem 0;
-      text-align: left;
-    }
-  }
-}
-
-.contact-us {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  color: $black;
-
-  .title {
-    font-size: 4rem;
-    font-weight: 700;
-    color: $black;
-    margin-bottom: 1rem;
-  }
-
-  .subtitle {
-    font-size: 18px;
-    font-weight: 400;
-    color: $lightgray;
-    margin-bottom: 5rem;
-
-    p {
-      margin: 0 15rem 1rem;
-    }
-  }
-
-  .content {
-    margin-bottom: 5rem;
   }
 }
 

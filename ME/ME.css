@@ -74,7 +74,7 @@
   flex-direction: column;
   color: rgb(60, 72, 88);
   font-family: "Roboto Slab", serif;
-  min-height: 55vh;
+  min-height: 67vh;
 }
 .main .title {
   font-size: 5rem;
@@ -137,8 +137,7 @@
   position: relative;
   color: white;
   font-family: "Roboto Slab", serif;
-  padding: 3rem;
-  min-height: 70vh;
+  padding: 3rem 3rem 0;
 }
 .summer-camps img {
   width: 100%;
@@ -151,6 +150,7 @@
 }
 .summer-camps .content {
   margin: auto 6rem;
+  border-bottom: 12px solid rgb(60, 72, 88);
 }
 .summer-camps .content .header {
   display: flex;
@@ -187,18 +187,17 @@
   display: flex;
   flex-direction: column;
   color: rgb(60, 72, 88);
+  margin: 2rem;
 }
 .contact-us .title {
   font-size: 4rem;
   font-weight: 700;
   color: rgb(60, 72, 88);
-  margin-bottom: 1rem;
 }
 .contact-us .subtitle {
   font-size: 18px;
   font-weight: 400;
   color: rgb(153, 153, 153);
-  margin-bottom: 5rem;
 }
 .contact-us .subtitle p {
   margin: 0 15rem 1rem;
