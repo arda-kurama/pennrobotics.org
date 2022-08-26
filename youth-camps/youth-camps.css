@@ -131,26 +131,33 @@ html {
 }
 .summer-camps .content {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   padding: 4rem;
 }
 .summer-camps .content img {
   width: 100%;
+  height: auto;
   width: 300px;
+  border: 5px solid rgb(60, 72, 88);
 }
 .summer-camps .content .section {
   color: rgb(60, 72, 88);
   text-align: left;
-  margin: auto 2rem auto 0;
+  margin: auto 4rem auto 0;
   font-size: 1.5rem;
-  list-style: none;
 }
 .summer-camps .content #off-center {
-  margin-top: 4rem;
+  margin-top: 6rem;
+}
+.summer-camps .content li {
+  margin: 0 2rem 2rem;
 }
 
-.junior-stem-header {
+.junior-stem {
+  font-family: "Roboto Slab", serif;
+  min-height: 100vh;
+}
+.junior-stem .header {
   background-image: url("/youth-camps/junior-stem-header.jpeg");
   background-position: top;
   background-attachment: fixed;
@@ -159,49 +166,49 @@ html {
   background-blend-mode: soft-light;
   padding: 6rem;
 }
-.junior-stem-header .title {
+.junior-stem .header .title {
   font-size: 5rem;
   font-weight: 700;
   margin: 0 auto;
   text-align: center;
   color: white;
 }
-
-.junior-stem {
-  display: flex;
-  position: relative;
-  color: white;
-  font-family: "Roboto Slab", serif;
-  padding: 3rem;
-  min-height: 70vh;
-}
 .junior-stem .content {
-  color: rgb(60, 72, 88);
-  margin: auto 6rem;
-  font-size: 1.5rem;
-  text-align: left;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4rem;
 }
-.junior-stem .content p {
-  margin-bottom: 1rem;
-}
-.junior-stem .content li {
-  margin: 0.75rem 4rem;
-  color: rgb(153, 153, 153);
-}
-.junior-stem img {
+.junior-stem .content img {
   width: 100%;
   width: 300px;
   height: auto;
-  margin: 1rem;
+  margin-top: 3rem;
+  border: 5px solid rgb(60, 72, 88);
 }
-.junior-stem .images-1 {
-  margin-top: 2rem;
+.junior-stem .content .subtitle {
+  font-weight: 600;
+  margin: 0 0 2rem -1.5rem;
 }
-.junior-stem .images-2 {
-  margin: 10rem 1rem 0;
+.junior-stem .content .section {
+  color: rgb(60, 72, 88);
+  text-align: left;
+  margin: auto 4rem auto 0;
+  font-size: 1.5rem;
+}
+.junior-stem .content #off-center {
+  margin-top: 1.5rem;
+}
+.junior-stem .content ol {
+  padding-left: 2rem;
+  margin-bottom: 2rem;
 }
 
-.workshops-header {
+.workshops {
+  font-family: "Roboto Slab", serif;
+  min-height: 100vh;
+}
+.workshops .header {
   background-image: url("/youth-camps/workshops-header.jpeg");
   background-position: top;
   background-attachment: fixed;
@@ -210,54 +217,46 @@ html {
   background-blend-mode: soft-light;
   padding: 6rem;
 }
-.workshops-header .title {
+.workshops .header .title {
   font-size: 5rem;
   font-weight: 700;
   margin: 0 auto;
   text-align: center;
   color: white;
 }
-
-.workshops {
+.workshops .content {
   display: flex;
-  position: relative;
-  color: white;
-  font-family: "Roboto Slab", serif;
-  padding: 3rem;
-  min-height: 70vh;
+  align-items: center;
+  padding: 4rem;
 }
-.workshops img {
+.workshops .content img {
   width: 100%;
   width: 450px;
   height: auto;
   margin: 1rem;
+  border: 5px solid rgb(60, 72, 88);
 }
-.workshops .images-1 {
-  margin: auto 0;
+.workshops .content .section {
+  margin: auto 4rem auto 0;
+  font-size: 1.5rem;
 }
-.workshops .content {
-  color: rgb(60, 72, 88);
-  text-align: left;
-  margin: 0 3rem;
-}
-.workshops .content .title {
+.workshops .content .section .title {
   font-size: 3rem;
   font-weight: 700;
   color: rgb(60, 72, 88);
-  margin-top: 1rem;
 }
-.workshops .content .subtitle {
+.workshops .content .section .subtitle {
   font-size: 18px;
   font-weight: 400;
   color: rgb(153, 153, 153);
 }
-.workshops .content .workshop {
+.workshops .content .section .workshop {
   font-size: 2rem;
   font-weight: 700;
   color: #ffba07;
   margin: 1rem 4rem 0;
 }
-.workshops .content .workshop li {
+.workshops .content .section .workshop li {
   font-size: 18px;
   font-weight: 400;
   color: #ffba07;
