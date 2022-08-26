@@ -16,33 +16,28 @@
   background-blend-mode: soft-light;
   min-height: 90vh;
 }
-
-.navbar {
+.landing .navbar {
   display: flex;
-  position: relative;
   justify-content: center;
   align-items: center;
   color: white;
   background-color: hsla(0deg, 0%, 0%, 0.8);
-  top: 0;
-  left: 0;
-  right: 0;
   gap: 5rem;
 }
-.navbar img {
+.landing .navbar img {
   padding: 25px;
   height: auto;
   width: 200px;
   filter: invert(1);
 }
-.navbar .links {
+.landing .navbar .links {
   text-decoration: none;
   position: relative;
   color: white;
   font-weight: 350;
   font-size: 20px;
 }
-.navbar .links::after {
+.landing .navbar .links::after {
   content: "";
   width: 0%;
   height: 1px;
@@ -52,33 +47,31 @@
   top: 29px;
   left: 0;
 }
-.navbar .links:hover::after {
+.landing .navbar .links:hover::after {
   width: 100%;
 }
-.navbar .donate {
+.landing .navbar .donate {
   background-color: #ffba07;
   padding: 0.5em 1em;
   border-radius: 4px;
   text-transform: uppercase;
 }
-.navbar .donate::after {
+.landing .navbar .donate::after {
   display: none;
 }
-.navbar .donate:hover {
+.landing .navbar .donate:hover {
   box-shadow: 0px 2px 10px 1px #ffba07;
 }
-
-.hero {
-  position: relative;
+.landing .hero {
   font-weight: bold;
   color: white;
 }
-.hero .title {
+.landing .hero .title {
   margin-top: 12rem;
   font-size: clamp(1rem, 10vw, 7.5rem);
   text-align: center;
 }
-.hero .typed-title {
+.landing .hero .typed-title {
   text-align: center;
   margin-top: 2rem;
   font-weight: 400;
@@ -117,7 +110,6 @@
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
-  font-family: "Roboto Slab", serif;
 }
 .main .content p {
   line-height: 1.5rem;
@@ -149,7 +141,6 @@
   width: 100%;
 }
 .sponsors .container .swiper {
-  --swiper-color: white;
   width: min(400px, 90%);
   border: 3px solid var(--swiper-color);
   aspect-ratio: 1;
