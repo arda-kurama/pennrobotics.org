@@ -176,46 +176,40 @@
 
 .contact-us {
   text-align: center;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  margin: 3rem;
   color: rgb(60, 72, 88);
 }
 .contact-us .title {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 700;
-  color: rgb(60, 72, 88);
+  margin-bottom: 0.5rem;
 }
-.contact-us .title-desc {
-  font-size: 18px;
+.contact-us .subtitle {
+  font-size: 20px;
   font-weight: 400;
   margin-bottom: 3rem;
   color: rgb(153, 153, 153);
 }
 .contact-us .content {
   display: flex;
-  justify-content: space-evenly;
-  line-height: 2rem;
+  justify-content: center;
+  gap: 10rem;
 }
 .contact-us .content img {
   height: auto;
-  width: 200px;
-  border-radius: 100px;
+  width: 250px;
+  border-radius: 125px;
+  margin-bottom: 1rem;
 }
 .contact-us .content h1 {
-  font-size: 1.5rem;
+  font-size: 30px;
   font-weight: 700;
-  font-family: "Roboto Slab", serif;
 }
 .contact-us .content h2 {
-  font-size: 1rem;
-  font-weight: 400;
-}
-.contact-us .content h3 {
-  font-size: 1rem;
-  font-weight: 400;
-  color: rgb(153, 153, 153);
+  font-size: 20px;
+  font-weight: 300;
 }
 
 @media (max-width: 770px) {
