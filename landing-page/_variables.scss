@@ -1,9 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-$text: white;
-$yellow: hsl(45, 100%, 50%);
-$lightgray: rgb(153, 153, 153);
-$black: rgb(60, 72, 88);
-
-$content: 1.5rem;
+$primary: white;
+$secondary: rgb(60, 72, 88);
+$tertiary: rgb(153, 153, 153);
+$decoration: hsl(45, 100%, 50%);

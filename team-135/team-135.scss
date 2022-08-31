@@ -21,7 +21,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $text;
+    color: $primary;
     background-color: hsla(0, 0%, 0%, 0.8);
     gap: 5rem;
 
@@ -35,7 +35,7 @@
     .links {
       text-decoration: none;
       position: relative;
-      color: $text;
+      color: $primary;
       font-weight: 350;
       font-size: 20px;
 
@@ -44,7 +44,7 @@
         width: 0%;
         height: 1px;
         transition: width 200ms ease-in;
-        background-color: $text;
+        background-color: $primary;
         position: absolute;
         top: 29px;
         left: 0;
@@ -56,7 +56,7 @@
     }
 
     .donate {
-      background-color: $yellow;
+      background-color: $decoration;
       padding: 0.5em 1em;
       border-radius: 4px;
       text-transform: uppercase;
@@ -66,14 +66,14 @@
       }
 
       &:hover {
-        box-shadow: 0px 2px 10px 1px $yellow;
+        box-shadow: 0px 2px 10px 1px $decoration;
       }
     }
   }
 
   .hero {
     font-weight: bold;
-    color: $text;
+    color: $primary;
     text-align: center;
 
     .title {
@@ -98,7 +98,7 @@
         background-color: hsl(43, 100%, 50%, 0.8);
         text-transform: uppercase;
         text-decoration: none;
-        color: $text;
+        color: $primary;
         padding: 2rem;
         position: relative;
 
@@ -107,7 +107,7 @@
         }
 
         &:hover {
-          box-shadow: 0px 2px 10px 1px $yellow;
+          box-shadow: 0px 2px 10px 1px $decoration;
         }
       }
     }
@@ -119,14 +119,14 @@
   margin: 5rem;
   display: flex;
   flex-direction: column;
-  color: $black;
+  color: $secondary;
   font-family: "Roboto Slab", serif;
 
   .title {
     font-size: 5rem;
     font-weight: 700;
     margin-bottom: 3rem;
-    color: $black;
+    color: $secondary;
   }
 
   .content {
@@ -135,7 +135,7 @@
 
     i {
       font-size: 100px;
-      color: $yellow;
+      color: $decoration;
       transition: transform 200ms ease-in, color 200ms ease-in;
 
       &:hover {
@@ -157,7 +157,7 @@
       max-width: 50ch;
       margin: 0 auto;
       font-weight: 300;
-      color: $lightgray;
+      color: $tertiary;
     }
   }
 }
@@ -175,7 +175,7 @@
     font-size: 2rem;
     text-align: center;
     font-weight: 700;
-    color: $text;
+    color: $primary;
     font-family: "Roboto Slab", serif;
     margin-bottom: 2rem;
   }
@@ -209,8 +209,8 @@
 }
 
 .chairmans-video {
-  color: $black;
-  background-color: $text;
+  color: $secondary;
+  background-color: $primary;
   text-align: center;
   padding-top: 4rem;
 
@@ -231,7 +231,7 @@
   margin: 2rem;
   display: flex;
   flex-direction: column;
-  color: $black;
+  color: $secondary;
 
   .title {
     font-size: 4rem;
@@ -243,7 +243,7 @@
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 3rem;
-    color: $lightgray;
+    color: $tertiary;
   }
 
   .content {

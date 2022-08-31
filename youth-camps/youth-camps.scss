@@ -20,7 +20,7 @@ html {
     position: relative;
     justify-content: center;
     align-items: center;
-    color: $text;
+    color: $primary;
     background-color: hsla(0, 0%, 0%, 0.8);
     gap: 5rem;
 
@@ -34,7 +34,7 @@ html {
     .links {
       text-decoration: none;
       position: relative;
-      color: $text;
+      color: $primary;
       font-weight: 350;
       font-size: 20px;
 
@@ -43,7 +43,7 @@ html {
         width: 0%;
         height: 1px;
         transition: width 200ms ease-in;
-        background-color: $text;
+        background-color: $primary;
         position: absolute;
         top: 29px;
         left: 0;
@@ -55,7 +55,7 @@ html {
     }
 
     .donate {
-      background-color: $yellow;
+      background-color: $decoration;
       padding: 0.5em 1em;
       border-radius: 4px;
       text-transform: uppercase;
@@ -65,7 +65,7 @@ html {
       }
 
       &:hover {
-        box-shadow: 0px 2px 10px 1px $yellow;
+        box-shadow: 0px 2px 10px 1px $decoration;
       }
     }
   }
@@ -75,17 +75,17 @@ html {
     flex-direction: column;
     text-align: center;
     margin: 4rem;
-    color: $black;
+    color: $secondary;
 
     .title {
       font-size: 5rem;
       font-weight: 700;
-      color: $black;
+      color: $secondary;
     }
 
     .subtitle {
       font-size: 18px;
-      color: $lightgray;
+      color: $tertiary;
       font-weight: 400;
       margin: 1rem 15rem 6rem;
     }
@@ -97,7 +97,7 @@ html {
 
       i {
         font-size: 100px;
-        color: $yellow;
+        color: $decoration;
         transition: transform 200ms ease-in, color 200ms ease-in;
 
         &:hover {
@@ -120,7 +120,7 @@ html {
         max-width: 50ch;
         margin: 0 auto;
         font-weight: 300;
-        color: $lightgray;
+        color: $tertiary;
       }
     }
   }
@@ -144,7 +144,7 @@ html {
       font-weight: 700;
       margin: 0 auto;
       text-align: center;
-      color: $text;
+      color: $primary;
     }
   }
 
@@ -157,11 +157,11 @@ html {
       width: 100%;
       height: auto;
       width: 300px;
-      border: 5px solid $black;
+      border: 5px solid $secondary;
     }
 
     .section {
-      color: $black;
+      color: $secondary;
       text-align: left;
       margin: auto 4rem auto 0;
       font-size: 1.5rem;
@@ -195,7 +195,7 @@ html {
       font-weight: 700;
       margin: 0 auto;
       text-align: center;
-      color: $text;
+      color: $primary;
     }
   }
 
@@ -210,7 +210,7 @@ html {
       width: 300px;
       height: auto;
       margin-top: 3rem;
-      border: 5px solid $black;
+      border: 5px solid $secondary;
     }
 
     .subtitle {
@@ -219,7 +219,7 @@ html {
     }
 
     .section {
-      color: $black;
+      color: $secondary;
       text-align: left;
       margin: auto 4rem auto 0;
       font-size: 1.5rem;
@@ -254,7 +254,7 @@ html {
       font-weight: 700;
       margin: 0 auto;
       text-align: center;
-      color: $text;
+      color: $primary;
     }
   }
 
@@ -268,7 +268,7 @@ html {
       width: 450px;
       height: auto;
       margin: 1rem;
-      border: 5px solid $black;
+      border: 5px solid $secondary;
     }
 
     .section {
@@ -278,25 +278,25 @@ html {
       .title {
         font-size: 3rem;
         font-weight: 700;
-        color: $black;
+        color: $secondary;
       }
 
       .subtitle {
         font-size: 18px;
         font-weight: 400;
-        color: $lightgray;
+        color: $tertiary;
       }
 
       .workshop {
         font-size: 2rem;
         font-weight: 700;
-        color: $yellow;
+        color: $decoration;
         margin: 1rem 4rem 0;
 
         li {
           font-size: 18px;
           font-weight: 400;
-          color: $yellow;
+          color: $decoration;
           margin: 0.5rem 3rem;
         }
       }

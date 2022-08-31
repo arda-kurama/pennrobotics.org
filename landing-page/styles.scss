@@ -34,7 +34,7 @@
     .links {
       text-decoration: none;
       position: relative;
-      color: $text;
+      color: $primary;
       font-weight: 350;
       font-size: 20px;
 
@@ -43,7 +43,7 @@
         width: 0%;
         height: 1px;
         transition: width 200ms ease-in;
-        background-color: $text;
+        background-color: $primary;
         position: absolute;
         top: 29px;
         left: 0;
@@ -55,7 +55,7 @@
     }
 
     .donate {
-      background-color: $yellow;
+      background-color: $decoration;
       padding: 0.5em 1em;
       border-radius: 4px;
       text-transform: uppercase;
@@ -65,14 +65,14 @@
       }
 
       &:hover {
-        box-shadow: 0px 2px 10px 1px $yellow;
+        box-shadow: 0px 2px 10px 1px $decoration;
       }
     }
   }
 
   .hero {
     font-weight: bold;
-    color: $text;
+    color: $primary;
 
     .title {
       margin-top: 12rem;
@@ -94,19 +94,19 @@
   margin: 5rem;
   display: flex;
   flex-direction: column;
-  color: $black;
+  color: $secondary;
 
   .title {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: $black;
+    color: $secondary;
   }
 
   .subtitle {
     font-size: 18px;
     margin: 0 18rem 5rem;
-    color: $lightgray;
+    color: $tertiary;
     font-weight: 400;
   }
 
@@ -116,7 +116,7 @@
 
     i {
       font-size: 100px;
-      color: $yellow;
+      color: $decoration;
       transition: transform 200ms ease-in, color 200ms ease-in;
 
       &:hover {
@@ -138,7 +138,7 @@
       max-width: 50ch;
       margin: 0 auto;
       font-weight: 300;
-      color: $lightgray;
+      color: $tertiary;
     }
   }
 }
@@ -154,9 +154,9 @@
   .title {
     font-size: clamp(28px, 4vw, 37px);
     font-weight: 700;
-    color: $text;
+    color: $primary;
     font-family: "Roboto Slab", serif;
-    border-left: 5px solid $text;
+    border-left: 5px solid $primary;
     width: min(1600px, 90%);
     margin: 0 auto;
     padding: 1em 2em;
@@ -168,7 +168,7 @@
   margin: 2rem;
   display: flex;
   flex-direction: column;
-  color: $black;
+  color: $secondary;
 
   .title {
     font-size: 4rem;
@@ -180,7 +180,7 @@
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 3rem;
-    color: $lightgray;
+    color: $tertiary;
   }
 
   .content {
@@ -208,7 +208,7 @@
     h3 {
       font-size: 18px;
       font-weight: 300;
-      color: $lightgray;
+      color: $tertiary;
     }
   }
 }
