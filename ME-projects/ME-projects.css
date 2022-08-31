@@ -75,7 +75,6 @@
   display: flex;
   flex-direction: column;
   color: rgb(60, 72, 88);
-  font-family: "Roboto Slab", serif;
 }
 .main .title {
   font-size: 5rem;
@@ -106,7 +105,6 @@
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
-  font-family: "Roboto Slab", serif;
 }
 .main .content p {
   line-height: 1.5rem;

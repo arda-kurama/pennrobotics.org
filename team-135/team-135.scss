@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  // border: 2px solid red;
+  // border: 1px solid red;
 }
 
 .landing {
@@ -120,7 +120,6 @@
   display: flex;
   flex-direction: column;
   color: $secondary;
-  font-family: "Roboto Slab", serif;
 
   .title {
     font-size: 5rem;
@@ -176,7 +175,6 @@
     text-align: center;
     font-weight: 700;
     color: $primary;
-    font-family: "Roboto Slab", serif;
     margin-bottom: 2rem;
   }
 

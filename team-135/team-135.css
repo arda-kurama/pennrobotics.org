@@ -104,7 +104,6 @@
   display: flex;
   flex-direction: column;
   color: rgb(60, 72, 88);
-  font-family: "Roboto Slab", serif;
 }
 .main .title {
   font-size: 5rem;
@@ -154,7 +153,6 @@
   text-align: center;
   font-weight: 700;
   color: white;
-  font-family: "Roboto Slab", serif;
   margin-bottom: 2rem;
 }
 .sponsors .container img {

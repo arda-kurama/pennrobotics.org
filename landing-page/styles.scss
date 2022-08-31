@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  // border: 2px solid red;
+  // border: 1px solid red;
 }
 
 .landing {
@@ -155,7 +155,6 @@
     font-size: clamp(28px, 4vw, 37px);
     font-weight: 700;
     color: $primary;
-    font-family: "Roboto Slab", serif;
     border-left: 5px solid $primary;
     width: min(1600px, 90%);
     margin: 0 auto;
