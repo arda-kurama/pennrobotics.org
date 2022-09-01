@@ -24,10 +24,10 @@
   gap: 5rem;
 }
 .landing .navbar img {
-  padding: 25px;
-  height: auto;
-  width: 200px;
-  filter: invert(1);
+  max-width: 100%;
+  padding-top: 10px;
+  height: 100px;
+  width: auto;
 }
 .landing .navbar .links {
   text-decoration: none;
@@ -166,6 +166,7 @@
   gap: 10rem;
 }
 .contact-us .content img {
+  max-width: 100%;
   height: auto;
   width: 250px;
   border-radius: 125px;
@@ -183,24 +184,4 @@
   font-size: 18px;
   font-weight: 300;
   color: rgb(153, 153, 153);
-}
-
-@media (max-width: 770px) {
-  .nav .links {
-    display: none;
-  }
-  .nav .bars {
-    display: block;
-  }
-  .content-sections {
-    flex-direction: column;
-    gap: 4rem;
-  }
-  .quote-section {
-    padding: 2.5em 1.5em;
-  }
-  .quote-section .title {
-    padding: 10px 20px;
-    margin: 0;
-  }
 }/*# sourceMappingURL=styles.css.map */

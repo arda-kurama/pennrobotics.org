@@ -25,10 +25,10 @@
     gap: 5rem;
 
     img {
-      padding: 25px;
-      height: auto;
-      width: 200px;
-      filter: invert(1);
+      max-width: 100%;
+      padding-top: 10px;
+      height: 100px;
+      width: auto;
     }
 
     .links {
@@ -188,6 +188,7 @@
     gap: 10rem;
 
     img {
+      max-width: 100%;
       height: auto;
       width: 250px;
       border-radius: 125px;
@@ -212,28 +213,5 @@
   }
 }
 
-@media (max-width: 770px) {
-  .nav {
-    .links {
-      display: none;
-    }
-
-    .bars {
-      display: block;
-    }
-  }
-
-  .content-sections {
-    flex-direction: column;
-    gap: 4rem;
-  }
-
-  .quote-section {
-    padding: 2.5em 1.5em;
-
-    .title {
-      padding: 10px 20px;
-      margin: 0;
-    }
-  }
+@media (max-width: 600px) {
 }

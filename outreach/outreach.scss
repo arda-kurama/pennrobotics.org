@@ -25,9 +25,10 @@
     gap: 5rem;
 
     img {
-      padding: 25px;
-      height: auto;
-      width: 200px;
+      max-width: 100%;
+      padding: 10px;
+      height: 100px;
+      width: auto;
       filter: invert(1);
     }
 
