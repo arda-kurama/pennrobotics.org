@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  border: 1px solid red;
 }
 
 .landing {
@@ -229,7 +228,7 @@
     flex-direction: column;
   }
   .main .content i {
-    margin-top: 1vh;
+    margin-top: 2rem;
   }
   .quote-section .title {
     border: 5px solid white;
@@ -237,5 +236,9 @@
   .contact-us .content {
     flex-direction: column;
     padding: none;
+  }
+  .contact-us .title {
+    font-size: 3rem;
+    margin: 0;
   }
 }/*# sourceMappingURL=styles.css.map */

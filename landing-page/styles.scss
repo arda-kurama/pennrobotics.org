@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 .landing {
@@ -273,7 +273,7 @@
       flex-direction: column;
 
       i {
-        margin-top: 1vh;
+        margin-top: 2rem;
       }
     }
   }
@@ -282,8 +282,15 @@
     border: 5px solid $primary;
   }
 
-  .contact-us .content {
-    flex-direction: column;
-    padding: none;
+  .contact-us {
+    .content {
+      flex-direction: column;
+      padding: none;
+    }
+
+    .title {
+      font-size: 3rem;
+      margin: 0;
+    }
   }
 }
