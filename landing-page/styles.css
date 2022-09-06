@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
+  border: 1px solid red;
 }
 
 .landing {
@@ -21,7 +22,7 @@
   justify-content: center;
   align-items: center;
   background-color: hsla(0deg, 0%, 0%, 0.8);
-  gap: 5rem;
+  gap: 2vw;
 }
 .landing .navbar img {
   max-width: 100%;
@@ -66,20 +67,20 @@
   color: white;
 }
 .landing .hero .title {
-  margin-top: 12rem;
+  margin-top: 25vh;
   font-size: clamp(1rem, 10vw, 7.5rem);
   text-align: center;
 }
 .landing .hero .typed-title {
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 1vh;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .main {
   text-align: center;
-  margin: 5rem;
+  margin: 4vw;
   display: flex;
   flex-direction: column;
   color: rgb(60, 72, 88);
@@ -87,12 +88,11 @@
 .main .title {
   font-size: 4rem;
   font-weight: 700;
-  margin-bottom: 1rem;
   color: rgb(60, 72, 88);
 }
 .main .subtitle {
   font-size: 18px;
-  margin: 0 18rem 5rem;
+  margin: 1vh 10vw 6vh;
   color: rgb(153, 153, 153);
   font-weight: 400;
 }
@@ -130,10 +130,10 @@
   background-attachment: fixed;
   background-color: hsla(0deg, 0%, 0%, 0.8);
   background-blend-mode: soft-light;
-  padding: 5rem 6rem;
+  padding: 8vh 4vw;
 }
 .quote-section .title {
-  font-size: clamp(28px, 4vw, 37px);
+  font-size: clamp(28px, 4vw, 40px);
   font-weight: 700;
   color: white;
   border-left: 5px solid white;
@@ -157,31 +157,85 @@
 .contact-us .subtitle {
   font-size: 20px;
   font-weight: 400;
-  margin-bottom: 3rem;
+  margin-bottom: 3vw;
   color: rgb(153, 153, 153);
 }
 .contact-us .content {
   display: flex;
   justify-content: center;
-  gap: 10rem;
+  gap: 10vw;
 }
 .contact-us .content img {
   max-width: 100%;
   height: auto;
   width: 250px;
   border-radius: 125px;
-  margin-bottom: 1rem;
+  margin-bottom: 1vw;
 }
 .contact-us .content h1 {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
 }
 .contact-us .content h2 {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
 }
 .contact-us .content h3 {
   font-size: 18px;
   font-weight: 300;
   color: rgb(153, 153, 153);
+}
+
+@media (max-width: 702px) {
+  .landing {
+    min-height: 80vh;
+  }
+  .landing .navbar .links {
+    font-size: 14px;
+  }
+  .landing .navbar .links::after {
+    text-decoration: none;
+    height: 0px;
+  }
+  .landing .navbar img {
+    height: 50px;
+    padding-top: 5px;
+  }
+  .main .title {
+    font-size: 3rem;
+  }
+  .main .subtitle {
+    font-size: 16px;
+  }
+  .contact-us .content {
+    gap: 4vw;
+  }
+  .contact-us .content img {
+    width: 200px;
+    border-radius: 100px;
+  }
+}
+@media (max-width: 512px) {
+  .landing .navbar img {
+    display: none;
+  }
+  .landing .hero .typed-title {
+    font-size: 14px;
+  }
+  .main .subtitle {
+    margin: auto 10vw;
+  }
+  .main .content {
+    flex-direction: column;
+  }
+  .main .content i {
+    margin-top: 1vh;
+  }
+  .quote-section .title {
+    border: 5px solid white;
+  }
+  .contact-us .content {
+    flex-direction: column;
+    padding: none;
+  }
 }/*# sourceMappingURL=styles.css.map */
