@@ -185,12 +185,12 @@
   color: rgb(153, 153, 153);
 }
 
-@media (max-width: 702px) {
+@media (max-width: 720px) {
   .landing {
     min-height: 80vh;
   }
   .landing .navbar {
-    padding: 1rem;
+    padding: 12px 6px;
   }
   .landing .navbar .links {
     font-size: 14px;
@@ -217,7 +217,13 @@
     border-radius: 100px;
   }
 }
-@media (max-width: 512px) {
+@media (max-width: 480px) {
+  .landing {
+    background-attachment: scroll;
+  }
+  .landing .navbar {
+    padding: 1rem;
+  }
   .landing .navbar img {
     display: none;
   }
@@ -232,6 +238,9 @@
   }
   .main .content i {
     margin-top: 2rem;
+  }
+  .quote-section {
+    background-attachment: scroll;
   }
   .quote-section .title {
     border: 5px solid white;

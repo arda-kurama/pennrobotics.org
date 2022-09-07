@@ -212,12 +212,12 @@
   }
 }
 
-@media (max-width: 702px) {
+@media (max-width: 720px) {
   .landing {
     min-height: 80vh;
 
     .navbar {
-      padding: 1rem;
+      padding: 12px 6px;
       .links {
         font-size: 14px;
 
@@ -254,9 +254,11 @@
   }
 }
 
-@media (max-width: 512px) {
+@media (max-width: 480px) {
   .landing {
+    background-attachment: scroll;
     .navbar {
+      padding: 1rem;
       img {
         display: none;
       }
@@ -281,8 +283,11 @@
     }
   }
 
-  .quote-section .title {
-    border: 5px solid $primary;
+  .quote-section {
+    background-attachment: scroll;
+    .title {
+      border: 5px solid $primary;
+    }
   }
 
   .contact-us {
