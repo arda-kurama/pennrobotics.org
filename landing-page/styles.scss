@@ -91,7 +91,7 @@
 
 .main {
   text-align: center;
-  margin: 4vw;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
   color: $secondary;
@@ -217,6 +217,7 @@
     min-height: 80vh;
 
     .navbar {
+      padding: 1rem;
       .links {
         font-size: 14px;
 
@@ -255,8 +256,10 @@
 
 @media (max-width: 512px) {
   .landing {
-    .navbar img {
-      display: none;
+    .navbar {
+      img {
+        display: none;
+      }
     }
 
     .hero .typed-title {

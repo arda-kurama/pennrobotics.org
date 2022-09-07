@@ -79,7 +79,7 @@
 
 .main {
   text-align: center;
-  margin: 4vw;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
   color: rgb(60, 72, 88);
@@ -188,6 +188,9 @@
 @media (max-width: 702px) {
   .landing {
     min-height: 80vh;
+  }
+  .landing .navbar {
+    padding: 1rem;
   }
   .landing .navbar .links {
     font-size: 14px;
