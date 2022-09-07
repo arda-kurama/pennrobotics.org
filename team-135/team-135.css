@@ -20,9 +20,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   background-color: hsla(0deg, 0%, 0%, 0.8);
-  gap: 5rem;
+  gap: 2vw;
 }
 .landing .navbar img {
   max-width: 100%;
@@ -69,31 +68,26 @@
   text-align: center;
 }
 .landing .hero .title {
-  margin-top: 12rem;
+  margin-top: 25vh;
   font-size: clamp(1rem, 10vw, 7.5rem);
 }
 .landing .hero .typed-title {
-  text-align: center;
-  margin-top: 2rem;
+  margin-top: 1vh;
   font-weight: 400;
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 .landing .hero .back {
-  border-radius: 1rem;
-  font-weight: 350;
+  border-radius: 1vw;
+  font-weight: 300;
   font-size: 20px;
-  margin-top: 12rem;
+  margin-top: 16vh;
 }
 .landing .hero .back a {
   background-color: hsla(43deg, 100%, 50%, 0.8);
   text-transform: uppercase;
   text-decoration: none;
   color: white;
-  padding: 2rem;
-  position: relative;
-}
-.landing .hero .back a::after {
-  display: none;
+  padding: 2vw;
 }
 .landing .hero .back a:hover {
   box-shadow: 0px 2px 10px 1px hsl(45deg, 100%, 50%);
@@ -101,15 +95,15 @@
 
 .main {
   text-align: center;
-  margin: 5rem;
+  margin: 4vw;
   display: flex;
   flex-direction: column;
   color: rgb(60, 72, 88);
 }
 .main .title {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 700;
-  margin-bottom: 3rem;
+  margin-bottom: 4vh;
   color: rgb(60, 72, 88);
 }
 .main .content {
@@ -147,14 +141,14 @@
   background-repeat: no-repeat;
   background-color: hsla(0deg, 0%, 0%, 0.8);
   background-blend-mode: soft-light;
-  padding: 5rem 0rem;
+  padding: 4vh 0vw;
 }
 .sponsors .title {
-  font-size: 2rem;
+  font-size: clamp(28px, 4vw, 40px);
   text-align: center;
   font-weight: 700;
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 2vh;
 }
 .sponsors .container img {
   width: 100%;
@@ -181,16 +175,21 @@
   color: rgb(60, 72, 88);
   background-color: white;
   text-align: center;
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 .chairmans-video .title {
   font-size: 4rem;
   font-weight: 700;
 }
 .chairmans-video .subtitle {
-  font-size: 2rem;
-  font-weight: 300;
-  margin-bottom: 2rem;
+  font-size: 18px;
+  margin: 0 10vw 4vh;
+  color: rgb(153, 153, 153);
+  font-weight: 400;
+}
+.chairmans-video iframe {
+  max-width: 64vw;
+  height: 36vw;
 }
 
 .contact-us {
@@ -208,46 +207,95 @@
 .contact-us .subtitle {
   font-size: 20px;
   font-weight: 400;
-  margin-bottom: 3rem;
+  margin-bottom: 3vw;
   color: rgb(153, 153, 153);
 }
 .contact-us .content {
   display: flex;
   justify-content: center;
-  gap: 10rem;
+  gap: 10vw;
 }
 .contact-us .content img {
   width: 100%;
   height: auto;
   width: 250px;
   border-radius: 125px;
-  margin-bottom: 1rem;
+  margin-bottom: 1vw;
 }
 .contact-us .content h1 {
-  font-size: 30px;
+  font-size: 28px;
   font-weight: 700;
 }
 .contact-us .content h2 {
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
 }
 
-@media (max-width: 770px) {
-  .nav .links {
+@media (max-width: 720px) {
+  .landing {
+    min-height: 80vh;
+  }
+  .landing .navbar {
+    padding: 12px 6px;
+  }
+  .landing .navbar .links {
+    font-size: 14px;
+  }
+  .landing .navbar .links::after {
     display: none;
   }
-  .nav .bars {
-    display: block;
+  .landing .navbar img {
+    height: 50px;
+    padding: 0;
   }
-  .content-sections {
+  .main .title {
+    font-size: 3rem;
+  }
+  .chairmans-video .title {
+    font-size: 3rem;
+  }
+  .contact-us .title {
+    font-size: 3rem;
+  }
+  .contact-us .content {
+    gap: 4vw;
+  }
+  .contact-us .content img {
+    width: 200px;
+    border-radius: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .landing {
+    background-attachment: scroll;
+  }
+  .landing .navbar {
+    padding: 1rem;
+  }
+  .landing .navbar img {
+    display: none;
+  }
+  .landing .hero .typed-title {
+    font-size: 14px;
+  }
+  .landing .hero .back {
+    font-size: 14px;
+  }
+  .main .title {
+    margin-bottom: -1rem;
+  }
+  .main .content {
     flex-direction: column;
-    gap: 4rem;
   }
-  .quote-section {
-    padding: 2.5em 1.5em;
+  .main .content i {
+    margin-top: 2rem;
   }
-  .quote-section .title {
-    padding: 10px 20px;
+  .contact-us .content {
+    flex-direction: column;
+    padding: none;
+  }
+  .contact-us .title {
+    font-size: 3rem;
     margin: 0;
   }
 }/*# sourceMappingURL=team-135.css.map */

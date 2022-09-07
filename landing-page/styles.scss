@@ -73,15 +73,14 @@
   .hero {
     font-weight: bold;
     color: $primary;
+    text-align: center;
 
     .title {
       margin-top: 25vh;
       font-size: clamp(1rem, 10vw, 7.5rem);
-      text-align: center;
     }
 
     .typed-title {
-      text-align: center;
       margin-top: 1vh;
       font-weight: 400;
       font-size: 20px;
@@ -91,7 +90,7 @@
 
 .main {
   text-align: center;
-  margin: 2rem;
+  margin: 4vw;
   display: flex;
   flex-direction: column;
   color: $secondary;
@@ -218,12 +217,12 @@
 
     .navbar {
       padding: 12px 6px;
+
       .links {
         font-size: 14px;
 
         &::after {
-          text-decoration: none;
-          height: 0px;
+          display: none;
         }
       }
 
@@ -244,12 +243,18 @@
     }
   }
 
-  .contact-us .content {
-    gap: 4vw;
+  .contact-us {
+    .title {
+      font-size: 3rem;
+    }
 
-    img {
-      width: 200px;
-      border-radius: 100px;
+    .content {
+      gap: 4vw;
+
+      img {
+        width: 200px;
+        border-radius: 100px;
+      }
     }
   }
 }

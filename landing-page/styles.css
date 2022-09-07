@@ -64,14 +64,13 @@
 .landing .hero {
   font-weight: bold;
   color: white;
+  text-align: center;
 }
 .landing .hero .title {
   margin-top: 25vh;
   font-size: clamp(1rem, 10vw, 7.5rem);
-  text-align: center;
 }
 .landing .hero .typed-title {
-  text-align: center;
   margin-top: 1vh;
   font-weight: 400;
   font-size: 20px;
@@ -79,7 +78,7 @@
 
 .main {
   text-align: center;
-  margin: 2rem;
+  margin: 4vw;
   display: flex;
   flex-direction: column;
   color: rgb(60, 72, 88);
@@ -196,8 +195,7 @@
     font-size: 14px;
   }
   .landing .navbar .links::after {
-    text-decoration: none;
-    height: 0px;
+    display: none;
   }
   .landing .navbar img {
     height: 50px;
@@ -208,6 +206,9 @@
   }
   .main .subtitle {
     font-size: 16px;
+  }
+  .contact-us .title {
+    font-size: 3rem;
   }
   .contact-us .content {
     gap: 4vw;
