@@ -78,7 +78,7 @@
 
     .title {
       margin-top: 25vh;
-      font-size: clamp(1rem, 10vw, 7.5rem);
+      font-size: $cover;
     }
 
     .typed-title {
@@ -111,12 +111,10 @@
 .main {
   text-align: center;
   margin: 4vw;
-  display: flex;
-  flex-direction: column;
   color: $secondary;
 
   .title {
-    font-size: 4rem;
+    font-size: $title;
     font-weight: 700;
     margin-bottom: 4vh;
     color: $secondary;
@@ -165,7 +163,7 @@
   padding: 4vh 0vw;
 
   .title {
-    font-size: clamp(28px, 4vw, 40px);
+    font-size: $header;
     text-align: center;
     font-weight: 700;
     color: $primary;
@@ -207,7 +205,7 @@
   padding-top: 2rem;
 
   .title {
-    font-size: 4rem;
+    font-size: $title;
     font-weight: 700;
   }
 
@@ -227,12 +225,10 @@
 .contact-us {
   text-align: center;
   margin: 2rem;
-  display: flex;
-  flex-direction: column;
   color: $secondary;
 
   .title {
-    font-size: 4rem;
+    font-size: $title;
     font-weight: 700;
     margin-bottom: 0.5rem;
   }
@@ -291,19 +287,7 @@
     }
   }
 
-  .main .title {
-    font-size: 3rem;
-  }
-
-  .chairmans-video .title {
-    font-size: 3rem;
-  }
-
   .contact-us {
-    .title {
-      font-size: 3rem;
-    }
-
     .content {
       gap: 4vw;
 
@@ -356,7 +340,6 @@
     }
 
     .title {
-      font-size: 3rem;
       margin: 0;
     }
   }

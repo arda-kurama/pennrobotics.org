@@ -79,12 +79,10 @@
 .main {
   text-align: center;
   margin: 4vw;
-  display: flex;
-  flex-direction: column;
   color: rgb(60, 72, 88);
 }
 .main .title {
-  font-size: 4rem;
+  font-size: clamp(1rem, 10vw, 4rem);
   font-weight: 700;
   color: rgb(60, 72, 88);
 }
@@ -143,12 +141,10 @@
 .contact-us {
   text-align: center;
   margin: 2rem;
-  display: flex;
-  flex-direction: column;
   color: rgb(60, 72, 88);
 }
 .contact-us .title {
-  font-size: 4rem;
+  font-size: clamp(1rem, 10vw, 4rem);
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -201,14 +197,8 @@
     height: 50px;
     padding-top: 5px;
   }
-  .main .title {
-    font-size: 3rem;
-  }
   .main .subtitle {
     font-size: 16px;
-  }
-  .contact-us .title {
-    font-size: 3rem;
   }
   .contact-us .content {
     gap: 4vw;
@@ -251,7 +241,6 @@
     padding: none;
   }
   .contact-us .title {
-    font-size: 3rem;
     margin: 0;
   }
 }/*# sourceMappingURL=styles.css.map */

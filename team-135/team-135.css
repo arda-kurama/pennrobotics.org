@@ -96,12 +96,10 @@
 .main {
   text-align: center;
   margin: 4vw;
-  display: flex;
-  flex-direction: column;
   color: rgb(60, 72, 88);
 }
 .main .title {
-  font-size: 4rem;
+  font-size: clamp(1rem, 10vw, 4rem);
   font-weight: 700;
   margin-bottom: 4vh;
   color: rgb(60, 72, 88);
@@ -178,7 +176,7 @@
   padding-top: 2rem;
 }
 .chairmans-video .title {
-  font-size: 4rem;
+  font-size: clamp(1rem, 10vw, 4rem);
   font-weight: 700;
 }
 .chairmans-video .subtitle {
@@ -195,12 +193,10 @@
 .contact-us {
   text-align: center;
   margin: 2rem;
-  display: flex;
-  flex-direction: column;
   color: rgb(60, 72, 88);
 }
 .contact-us .title {
-  font-size: 4rem;
+  font-size: clamp(1rem, 10vw, 4rem);
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
@@ -248,15 +244,6 @@
     height: 50px;
     padding: 0;
   }
-  .main .title {
-    font-size: 3rem;
-  }
-  .chairmans-video .title {
-    font-size: 3rem;
-  }
-  .contact-us .title {
-    font-size: 3rem;
-  }
   .contact-us .content {
     gap: 4vw;
   }
@@ -295,7 +282,6 @@
     padding: none;
   }
   .contact-us .title {
-    font-size: 3rem;
     margin: 0;
   }
 }/*# sourceMappingURL=team-135.css.map */

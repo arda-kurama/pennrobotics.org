@@ -6,9 +6,6 @@ $secondary: rgb(60, 72, 88);
 $tertiary: rgb(153, 153, 153);
 $decoration: hsl(45, 100%, 50%);
 
-$cover: 0;
-$header: 0;
-$title: 0;
-$subtitle: 0;
-$main: 0;
-$navbar: 2vw;
+$cover: clamp(1rem, 10vw, 7.5rem);
+$title: clamp(1rem, 10vw, 4rem);
+$header: clamp(28px, 4vw, 40px);

@@ -17,12 +17,10 @@ html {
 
   .navbar {
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
-    color: $primary;
     background-color: hsla(0, 0%, 0%, 0.8);
-    gap: 5rem;
+    gap: 2vw;
 
     img {
       max-width: 100%;
@@ -71,29 +69,27 @@ html {
   }
 
   .hero {
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    margin: 4rem;
+    margin: 4vw;
     color: $secondary;
 
     .title {
-      font-size: 5rem;
+      font-size: $title;
       font-weight: 700;
       color: $secondary;
     }
 
     .subtitle {
       font-size: 18px;
+      margin: 1vh 10vw 6vh;
       color: $tertiary;
       font-weight: 400;
-      margin: 1rem 15rem 6rem;
     }
 
     .content {
       display: flex;
       justify-content: space-evenly;
-      margin: auto 0;
+      margin: 12vh 0;
 
       i {
         font-size: 100px;
@@ -135,12 +131,11 @@ html {
     background-size: cover;
     background-color: hsla(0, 0%, 0%, 0.7);
     background-blend-mode: soft-light;
-    padding: 6rem;
+    padding: 10vh 4vw;
 
     .title {
-      font-size: 5rem;
+      font-size: $title;
       font-weight: 700;
-      margin: 0 auto;
       text-align: center;
       color: $primary;
     }
@@ -148,29 +143,39 @@ html {
 
   .content {
     display: flex;
-    align-items: center;
-    padding: 4rem;
+    justify-content: space-between;
+    padding: 4vw;
 
-    img {
-      width: 100%;
-      height: auto;
-      width: 300px;
-      border: 5px solid $secondary;
+    .pictures {
+      display: flex;
+      align-items: left;
+
+      .section {
+        img {
+          width: 100%;
+          height: auto;
+          width: 20vw;
+          border-left: 10px solid $secondary;
+          border-bottom: 10px solid $secondary;
+          margin: 1vw 1vw 0 1vw;
+        }
+      }
     }
 
-    .section {
+    .text {
+      display: flex;
+      flex-direction: column;
       color: $secondary;
       text-align: left;
-      margin: auto 4rem auto 0;
-      font-size: 1.5rem;
-    }
+      justify-content: center;
+      margin: auto 2vw;
+      font-size: 20px;
 
-    #off-center {
-      margin-top: 6rem;
-    }
-
-    li {
-      margin: 0 2rem 2rem;
+      p {
+        margin: 4vh 0;
+        border-left: 10px solid $secondary;
+        padding-left: 5px;
+      }
     }
   }
 }
@@ -185,12 +190,11 @@ html {
     background-size: cover;
     background-color: hsla(0, 0%, 0%, 0.7);
     background-blend-mode: soft-light;
-    padding: 6rem;
+    padding: 10vh 4vw;
 
     .title {
-      font-size: 5rem;
+      font-size: $title;
       font-weight: 700;
-      margin: 0 auto;
       text-align: center;
       color: $primary;
     }
@@ -198,37 +202,42 @@ html {
 
   .content {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 4rem;
+    justify-content: space-between;
+    padding: 4vw;
 
-    img {
-      width: 100%;
-      width: 300px;
-      height: auto;
-      margin-top: 3rem;
-      border: 5px solid $secondary;
-    }
-
-    .subtitle {
-      font-weight: 600;
-      margin: 0 0 2rem -1.5rem;
-    }
-
-    .section {
+    .text {
+      display: flex;
+      flex-direction: column;
       color: $secondary;
-      text-align: left;
-      margin: auto 4rem auto 0;
-      font-size: 1.5rem;
+      margin: auto 1vw;
+      font-size: 20px;
+
+      .subtitle {
+        font-weight: 700;
+        font-size: 24px;
+        margin: 0 0 1vh -1vw;
+      }
+
+      p {
+        margin: 1vh 0;
+        border-left: 10px solid $secondary;
+        padding-left: 5px;
+      }
     }
 
-    #off-center {
-      margin-top: 1.5rem;
-    }
+    .pictures {
+      display: flex;
 
-    ol {
-      padding-left: 2rem;
-      margin-bottom: 2rem;
+      .section {
+        img {
+          width: 100%;
+          height: auto;
+          width: 350px;
+          border-left: 10px solid $secondary;
+          border-bottom: 10px solid $secondary;
+          margin: 1vw 1vw 0 1vw;
+        }
+      }
     }
   }
 }
@@ -243,12 +252,11 @@ html {
     background-size: cover;
     background-color: hsla(0, 0%, 0%, 0.7);
     background-blend-mode: soft-light;
-    padding: 6rem;
+    padding: 10vh 4vw;
 
     .title {
-      font-size: 5rem;
+      font-size: $title;
       font-weight: 700;
-      margin: 0 auto;
       text-align: center;
       color: $primary;
     }
@@ -256,44 +264,59 @@ html {
 
   .content {
     display: flex;
-    align-items: center;
-    padding: 4rem;
+    justify-content: space-between;
+    padding: 4vw;
 
-    img {
-      width: 100%;
-      width: 450px;
-      height: auto;
-      margin: 1rem;
-      border: 5px solid $secondary;
+    .pictures {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      margin: auto 0;
+      gap: 1vh;
+
+      img {
+        width: 100%;
+        height: auto;
+        width: 20vw;
+        border-left: 10px solid $secondary;
+        border-bottom: 10px solid $secondary;
+        margin: 1vw 1vw 0 1vw;
+      }
     }
 
-    .section {
-      margin: auto 4rem auto 0;
-      font-size: 1.5rem;
+    .text {
+      margin: auto 0;
+
+      .subsection {
+        border-left: 10px solid $secondary;
+        border-bottom: 10px solid $secondary;
+        margin: 1vw;
+        padding: 1vw;
+      }
 
       .title {
-        font-size: 3rem;
+        font-size: $header;
         font-weight: 700;
         color: $secondary;
       }
 
       .subtitle {
-        font-size: 18px;
+        font-size: 20px;
         font-weight: 400;
         color: $tertiary;
       }
 
       .workshop {
-        font-size: 2rem;
+        font-size: 28px;
         font-weight: 700;
         color: $decoration;
-        margin: 1rem 4rem 0;
+        margin: 1vh 4vw 0;
 
         li {
           font-size: 18px;
           font-weight: 400;
           color: $decoration;
-          margin: 0.5rem 3rem;
+          margin: 0.5vh 3vw;
         }
       }
     }
