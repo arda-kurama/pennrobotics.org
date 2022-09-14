@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  // border: 1px solid red;
+  border: 1px solid red;
 }
 
 html {
@@ -245,55 +245,41 @@ html {
 
   .content {
     display: flex;
-    justify-content: space-between;
-    padding: 4vw;
+    flex-direction: column;
+    text-align: center;
+    width: clamp(40rem, 85vw, 50rem);
+    margin: 2vw auto;
 
-    .pictures {
-      display: flex;
-      flex-direction: column;
-      align-items: left;
-      margin: auto 0;
-      gap: 1vh;
-
-      img {
-        width: 100%;
-        height: auto;
-        width: 350px;
-        border-left: 10px solid $secondary;
-        padding-left: 10px;
-        margin: 1vw 1vw 0 1vw;
-      }
+    .subtitle {
+      color: $secondary;
+      font-weight: 500;
+      font-size: 24px;
     }
 
-    .text {
-      margin: auto 0;
+    .section {
+      display: flex;
+      flex-direction: column;
 
-      .title {
-        font-size: $header;
-        font-weight: 700;
-        color: $secondary;
-      }
-
-      .subtitle {
-        font-size: 20px;
-        font-weight: 400;
-        color: $tertiary;
+      .subheader {
+        background-color: $decoration;
+        display: flex;
+        flex-direction: row;
       }
 
       .workshop {
-        font-size: 28px;
-        font-weight: 700;
-        color: $decoration;
-        margin: 1vh 4vw 0;
+        display: flex;
+        flex-direction: column;
+      }
 
-        p {
-          font-size: 18px;
-          font-weight: 400;
-          color: $tertiary;
-          margin: 0.5vh 3vw;
-          border-left: 10px solid $secondary;
-          padding-left: 5px;
-        }
+      p {
+        font-size: $body;
+        color: $tertiary;
+      }
+
+      img {
+        width: 100%;
+        width: 350px;
+        height: auto;
       }
     }
   }
