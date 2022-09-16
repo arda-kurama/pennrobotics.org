@@ -416,3 +416,36 @@ html {
     }
   }
 }
+
+@media (max-width: 480px) {
+  .landing {
+    .navbar {
+      padding: 1rem;
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .hero {
+    .content {
+      flex-direction: column;
+      margin: 0;
+
+      i {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .contact-us {
+    .content {
+      flex-direction: column;
+      padding: none;
+    }
+
+    .title {
+      margin: 0;
+    }
+  }
+}
