@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 html {
@@ -150,18 +150,19 @@ html {
       color: $secondary;
       font-weight: 500;
       font-size: 24px;
+      margin-bottom: 1vw;
     }
 
     .section {
       display: flex;
       align-items: flex-start;
       justify-content: center;
-      gap: 1vw;
-      margin-top: 1vw;
+      gap: 0.5vw;
+      margin-bottom: 0.5vw;
 
       p {
         font-size: $body;
-        color: $tertiary;
+        color: $secondary;
       }
       img {
         width: 100%;
@@ -193,25 +194,29 @@ html {
   }
 
   .content {
-    text-align: center;
     width: clamp(40rem, 85vw, 50rem);
     margin: 2vw auto;
+    text-align: center;
 
     .subtitle {
       color: $secondary;
       font-weight: 500;
       font-size: 24px;
+      margin-bottom: 1vw;
     }
 
     .section {
       display: flex;
-      align-items: flex-start;
-      gap: 1vw;
-      margin-top: 1vw;
 
       p {
         font-size: $body;
-        color: $tertiary;
+        color: $secondary;
+        padding: 0 1vw;
+        text-align: left;
+      }
+
+      #right {
+        text-align: right;
       }
 
       img {
@@ -219,6 +224,10 @@ html {
         width: 350px;
         height: auto;
       }
+    }
+
+    #gap {
+      margin-top: 1vw;
     }
   }
 }
@@ -254,6 +263,7 @@ html {
       color: $secondary;
       font-weight: 500;
       font-size: 24px;
+      margin-bottom: 1vw;
     }
 
     .section {
@@ -263,23 +273,72 @@ html {
       .subheader {
         background-color: $decoration;
         display: flex;
-        flex-direction: row;
+
+        .text {
+          margin: auto auto;
+          padding: 2rem;
+          line-height: 3rem;
+
+          h1 {
+            color: $secondary;
+          }
+
+          h3 {
+            color: $tertiary;
+            font-weight: 300;
+          }
+        }
+      }
+
+      #gap {
+        margin-top: 2vw;
       }
 
       .workshop {
         display: flex;
         flex-direction: column;
-      }
 
-      p {
-        font-size: $body;
-        color: $tertiary;
+        h2 {
+          background-color: $tertiary;
+          color: $primary;
+          padding: 1.5vw;
+        }
+
+        p {
+          font-size: $body;
+          color: $secondary;
+          background-color: lightgrey;
+          padding: 1vw;
+        }
       }
 
       img {
         width: 100%;
-        width: 350px;
+        width: 300px;
         height: auto;
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .landing {
+    min-height: 80vh;
+
+    .navbar {
+      padding: 12px 6px;
+
+      .links {
+        font-size: 14px;
+
+        &::after {
+          display: none;
+        }
+      }
+
+      img {
+        height: 50px;
+        padding: 0;
       }
     }
   }

@@ -5,7 +5,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  border: 1px solid red;
 }
 
 html {
@@ -132,17 +131,18 @@ html {
   color: rgb(60, 72, 88);
   font-weight: 500;
   font-size: 24px;
+  margin-bottom: 1vw;
 }
 .summer-camps .content .section {
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  gap: 1vw;
-  margin-top: 1vw;
+  gap: 0.5vw;
+  margin-bottom: 0.5vw;
 }
 .summer-camps .content .section p {
   font-size: clamp(16px, 2vw, 20px);
-  color: rgb(153, 153, 153);
+  color: rgb(60, 72, 88);
 }
 .summer-camps .content .section img {
   width: 100%;
@@ -169,29 +169,35 @@ html {
   color: white;
 }
 .junior-stem .content {
-  text-align: center;
   width: clamp(40rem, 85vw, 50rem);
   margin: 2vw auto;
+  text-align: center;
 }
 .junior-stem .content .subtitle {
   color: rgb(60, 72, 88);
   font-weight: 500;
   font-size: 24px;
+  margin-bottom: 1vw;
 }
 .junior-stem .content .section {
   display: flex;
-  align-items: flex-start;
-  gap: 1vw;
-  margin-top: 1vw;
 }
 .junior-stem .content .section p {
   font-size: clamp(16px, 2vw, 20px);
-  color: rgb(153, 153, 153);
+  color: rgb(60, 72, 88);
+  padding: 0 1vw;
+  text-align: left;
+}
+.junior-stem .content .section #right {
+  text-align: right;
 }
 .junior-stem .content .section img {
   width: 100%;
   width: 350px;
   height: auto;
+}
+.junior-stem .content #gap {
+  margin-top: 1vw;
 }
 
 .workshops {
@@ -223,6 +229,7 @@ html {
   color: rgb(60, 72, 88);
   font-weight: 500;
   font-size: 24px;
+  margin-bottom: 1vw;
 }
 .workshops .content .section {
   display: flex;
@@ -231,18 +238,58 @@ html {
 .workshops .content .section .subheader {
   background-color: hsl(45deg, 100%, 50%);
   display: flex;
-  flex-direction: row;
+}
+.workshops .content .section .subheader .text {
+  margin: auto auto;
+  padding: 2rem;
+  line-height: 3rem;
+}
+.workshops .content .section .subheader .text h1 {
+  color: rgb(60, 72, 88);
+}
+.workshops .content .section .subheader .text h3 {
+  color: rgb(153, 153, 153);
+  font-weight: 300;
+}
+.workshops .content .section #gap {
+  margin-top: 2vw;
 }
 .workshops .content .section .workshop {
   display: flex;
   flex-direction: column;
 }
-.workshops .content .section p {
+.workshops .content .section .workshop h2 {
+  background-color: rgb(153, 153, 153);
+  color: white;
+  padding: 1.5vw;
+}
+.workshops .content .section .workshop p {
   font-size: clamp(16px, 2vw, 20px);
-  color: rgb(153, 153, 153);
+  color: rgb(60, 72, 88);
+  background-color: lightgrey;
+  padding: 1vw;
 }
 .workshops .content .section img {
   width: 100%;
-  width: 350px;
+  width: 300px;
   height: auto;
+}
+
+@media (max-width: 720px) {
+  .landing {
+    min-height: 80vh;
+  }
+  .landing .navbar {
+    padding: 12px 6px;
+  }
+  .landing .navbar .links {
+    font-size: 14px;
+  }
+  .landing .navbar .links::after {
+    display: none;
+  }
+  .landing .navbar img {
+    height: 50px;
+    padding: 0;
+  }
 }/*# sourceMappingURL=youth-camps.css.map */
