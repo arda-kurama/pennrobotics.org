@@ -9,16 +9,14 @@
 }
 
 .landing {
-  min-height: 100vh;
+  min-height: 90vh;
 
   .navbar {
     display: flex;
-    position: relative;
     justify-content: center;
     align-items: center;
-    color: $primary;
     background-color: hsla(0, 0%, 0%, 0.8);
-    gap: 5rem;
+    gap: 2vw;
 
     img {
       max-width: 100%;
@@ -67,29 +65,27 @@
   }
 
   .hero {
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    margin: 4rem;
+    margin: 4vw;
     color: $secondary;
 
     .title {
-      font-size: 5rem;
+      font-size: $title;
       font-weight: 700;
       color: $secondary;
     }
 
     .subtitle {
       font-size: 18px;
+      margin: 1vh 10vw 6vh;
       color: $tertiary;
       font-weight: 400;
-      margin: 1rem 15rem 6rem;
     }
 
     .content {
       display: flex;
       justify-content: space-evenly;
-      margin: auto 0;
+      margin: 12vh 0;
 
       i {
         font-size: 100px;
@@ -124,18 +120,17 @@
 .history {
   .header {
     background-image: url("ME-background.png");
-    background-position: bottom;
+    background-position: center;
     background-attachment: fixed;
     background-color: hsla(0, 0%, 0%, 0.4);
     background-blend-mode: soft-light;
-    padding: 6rem;
+    padding: clamp(4rem, 10vw, 6rem) 0;
 
     .title {
-      font-size: 5rem;
+      font-size: $title;
       font-weight: 700;
       text-align: center;
       color: $primary;
-      margin: 0 auto;
     }
   }
 
