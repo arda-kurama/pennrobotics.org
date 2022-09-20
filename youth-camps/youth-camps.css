@@ -104,17 +104,12 @@ html {
   color: rgb(153, 153, 153);
 }
 
-.summer-camps {
-  min-height: 90vh;
-}
 .summer-camps .header {
   background-image: url("/youth-camps/summer-camp-header.png");
   background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.7);
   background-blend-mode: soft-light;
-  padding: 10vh 4vw;
+  padding: clamp(4rem, 10vw, 6rem) 0;
 }
 .summer-camps .header .title {
   font-size: clamp(1rem, 10vw, 4rem);
@@ -150,17 +145,12 @@ html {
   width: clamp(200px, 25vw, 250px);
 }
 
-.junior-stem {
-  min-height: 90vh;
-}
 .junior-stem .header {
   background-image: url("/youth-camps/junior-stem-header.jpeg");
   background-position: top;
-  background-attachment: fixed;
-  background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.7);
   background-blend-mode: soft-light;
-  padding: 10vh 4vw;
+  padding: clamp(4rem, 10vw, 6rem) 0;
 }
 .junior-stem .header .title {
   font-size: clamp(1rem, 10vw, 4rem);
@@ -200,17 +190,12 @@ html {
   margin-top: 1vw;
 }
 
-.workshops {
-  min-height: 90vh;
-}
 .workshops .header {
   background-image: url("/youth-camps/workshops-header.jpeg");
   background-position: top;
-  background-attachment: fixed;
-  background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.7);
   background-blend-mode: soft-light;
-  padding: 10vh 4vw;
+  padding: clamp(4rem, 10vw, 6rem) 0;
 }
 .workshops .header .title {
   font-size: clamp(1rem, 10vw, 4rem);
@@ -293,20 +278,11 @@ html {
     height: 50px;
     padding: 0;
   }
-  .summer-camps {
-    min-height: 80vh;
-  }
   .summer-camps .content {
     width: 400px;
   }
   .summer-camps .content #extra {
     display: none;
-  }
-  .summer-camps .content .section img {
-    width: clamp(200px, 25vw, 250px);
-  }
-  .junior-stem {
-    min-height: 80vh;
   }
   .junior-stem .content {
     width: 400px;
@@ -328,21 +304,16 @@ html {
   .junior-stem .content #gap {
     flex-direction: column-reverse;
   }
-  .workshops {
-    min-height: 80vh;
-  }
   .workshops .content {
     width: 400px;
   }
   .workshops .content .section .subheader .text {
     padding: 2vw;
     font-size: 14px;
-    line-height: 6vw;
+    line-height: 2rem;
   }
   .workshops .content .section img {
-    width: 100%;
     width: 200px;
-    height: auto;
   }
 }
 @media (max-width: 480px) {
@@ -352,18 +323,27 @@ html {
   .landing .navbar img {
     display: none;
   }
-  .hero .content {
+  .landing .hero .content {
     flex-direction: column;
-    margin: 0;
+    margin: -4rem 0 0 0;
   }
-  .hero .content i {
+  .landing .hero .content i {
     margin-top: 2rem;
   }
-  .contact-us .content {
-    flex-direction: column;
-    padding: none;
+  .summer-camps .content {
+    width: 300px;
   }
-  .contact-us .title {
-    margin: 0;
+  .summer-camps .content .section img {
+    width: 150px;
+  }
+  .junior-stem .content {
+    width: 300px;
+  }
+  .workshops .content {
+    width: 300px;
+  }
+  .workshops .content .section img {
+    width: 100px;
+    height: auto;
   }
 }/*# sourceMappingURL=youth-camps.css.map */
