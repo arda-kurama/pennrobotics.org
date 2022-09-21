@@ -104,7 +104,7 @@
   background-image: url("ME-background.png");
   background-position: center;
   background-attachment: fixed;
-  background-color: hsla(0deg, 0%, 0%, 0.4);
+  background-color: hsla(0deg, 0%, 0%, 0.7);
   background-blend-mode: soft-light;
   padding: clamp(4rem, 10vw, 6rem) 0;
 }
@@ -116,62 +116,60 @@
 }
 .history .content {
   display: flex;
-  padding: 3rem 3rem 0;
+  justify-content: center;
+  gap: 2vw;
+  margin: 2vw auto;
 }
-.history .content img {
-  width: 100%;
-  width: 300px;
-  height: auto;
-  margin: 1rem;
-  border: 5px solid rgb(60, 72, 88);
-}
-.history .content #off-center {
-  margin-top: 6rem;
-}
-.history .content #text {
-  margin: auto 6rem;
-}
-.history .content #text img {
-  border: 0;
-}
-.history .content #text .section-header {
+.history .content .section {
   display: flex;
-  margin: auto 0;
+  flex-direction: column;
+  justify-content: center;
+}
+.history .content .section .row {
+  display: flex;
+  align-items: flex-start;
+  gap: 2vw;
+  margin-bottom: 2vw;
+}
+.history .content .section .row img {
+  width: 100%;
+  width: clamp(200px, 16vw, 300px);
+  height: auto;
+}
+.history .content .section .subheader {
+  display: flex;
   border-top: 10px solid rgb(60, 72, 88);
   border-bottom: 10px solid rgb(60, 72, 88);
-  gap: 3rem;
 }
-.history .content #text .section-header img {
+.history .content .section .subheader img {
   width: 100%;
-  width: 400px;
+  width: clamp(200px, 24vw, 400px);
   height: auto;
-  padding: 0;
-  margin: 0;
 }
-.history .content #text .section-header .subtitle {
-  font-size: 20px;
+.history .content .section .subheader .subtitle {
+  font-size: clamp(16px, 2vw, 20px);
   font-weight: 700;
   color: rgb(60, 72, 88);
-  line-height: 1.75rem;
+  line-height: 2vw;
   text-align: left;
-  margin: auto 0;
+  margin: auto 0 auto 2vw;
 }
-.history .content #text p {
-  font-size: 18px;
-  font-weight: 400;
+.history .content .section p {
+  font-size: clamp(16px, 2vw, 20px);
   color: rgb(153, 153, 153);
-  margin: 2rem 0;
+  margin-top: 2vw;
   text-align: left;
+}
+.history #text {
+  max-width: clamp(20rem, 60vw, 60rem);
 }
 
 .contact-us {
   text-align: center;
-  display: flex;
-  flex-direction: column;
   color: rgb(60, 72, 88);
 }
 .contact-us .title {
-  font-size: 4rem;
+  font-size: clamp(1rem, 10vw, 4rem);
   font-weight: 700;
   color: rgb(60, 72, 88);
 }
@@ -179,30 +177,20 @@
   font-size: 18px;
   font-weight: 400;
   color: rgb(153, 153, 153);
+  margin: 0 10vw;
 }
 .contact-us .subtitle p {
-  margin: 0 16rem 1rem;
+  margin-top: 1vw;
 }
 .contact-us .content {
-  margin-bottom: 1rem;
+  margin: 1rem;
 }
 
-@media (max-width: 770px) {
-  .nav .links {
-    display: none;
-  }
-  .nav .bars {
-    display: block;
-  }
-  .content-sections {
+@media (max-width: 1600px) {
+  .history .content .section .row {
     flex-direction: column;
-    gap: 4rem;
   }
-  .quote-section {
-    padding: 2.5em 1.5em;
-  }
-  .quote-section .title {
-    padding: 10px 20px;
-    margin: 0;
+  .history .content .subheader .subtitle {
+    line-height: normal;
   }
 }/*# sourceMappingURL=ME.css.map */
