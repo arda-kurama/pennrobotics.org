@@ -136,6 +136,9 @@
   width: clamp(200px, 16vw, 300px);
   height: auto;
 }
+.history .content .section .row #extra {
+  display: none;
+}
 .history .content .section .subheader {
   display: flex;
   border-top: 10px solid rgb(60, 72, 88);
@@ -185,6 +188,10 @@
 .contact-us .content {
   margin: 1rem;
 }
+.contact-us .content iframe {
+  width: 100%;
+  height: 850px;
+}
 
 @media (max-width: 1600px) {
   .history .content .section .row {
@@ -192,5 +199,85 @@
   }
   .history .content .subheader .subtitle {
     line-height: normal;
+  }
+}
+@media (max-width: 720px) {
+  .landing {
+    min-height: 80vh;
+  }
+  .landing .navbar {
+    padding: 12px 6px;
+  }
+  .landing .navbar .links {
+    font-size: 14px;
+  }
+  .landing .navbar .links::after {
+    display: none;
+  }
+  .landing .navbar img {
+    height: 50px;
+    padding: 0;
+  }
+  .history .content {
+    flex-direction: column-reverse;
+  }
+  .history .content .section {
+    justify-content: flex-start;
+  }
+  .history .content .section .row {
+    flex-direction: row;
+    margin: 0 auto;
+  }
+  .history .content .section .row #extra {
+    display: block;
+  }
+  .history .content .section .row #long {
+    display: none;
+  }
+  .history .content .section .subheader {
+    padding: 2vw;
+  }
+  .history .content .section .subheader img {
+    display: none;
+  }
+  .history .content .section .subheader .subtitle {
+    line-height: normal;
+  }
+  .history .content #text {
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .contact-us .content iframe {
+    width: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .landing .navbar {
+    padding: 1rem;
+  }
+  .landing .navbar img {
+    display: none;
+  }
+  .landing .hero .content {
+    flex-direction: column;
+    margin: -4rem 0 0 0;
+  }
+  .landing .hero .content i {
+    margin-top: 2rem;
+  }
+  .history .content .section .row img {
+    width: 150px;
+  }
+  .history .content .section .subheader .subtitle {
+    text-align: center;
+  }
+  .history .content .section p {
+    text-align: center;
+  }
+  .history .content #text {
+    max-width: 300px;
+  }
+  .contact-us .content iframe {
+    width: 320px;
   }
 }/*# sourceMappingURL=ME.css.map */
