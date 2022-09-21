@@ -20,9 +20,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $primary;
     background-color: hsla(0, 0%, 0%, 0.8);
-    gap: 5rem;
+    gap: 2vw;
 
     img {
       max-width: 100%;
@@ -74,89 +73,58 @@
   .hero {
     .title {
       color: $primary;
-      font-size: 3rem;
+      font-size: $title;
       font-weight: bold;
       text-align: center;
-      padding: 6rem;
+      padding: clamp(4rem, 10vw, 6rem) 0;
     }
   }
 }
 
 .main {
   text-align: center;
-  margin: 5rem;
-  display: flex;
-  flex-direction: column;
-  color: $secondary;
+  padding: 3rem;
+}
 
-  .title {
-    font-size: 5rem;
-    font-weight: 700;
-    color: $secondary;
-  }
+@media (max-width: 720px) {
+  .landing {
+    .navbar {
+      padding: 12px 6px;
 
-  .subtitle {
-    font-size: 18px;
-    margin: 1rem 15rem 7rem;
-    color: $tertiary;
-    font-weight: 400;
-  }
+      .links {
+        font-size: 14px;
 
-  .content {
-    display: flex;
-    justify-content: space-evenly;
-
-    i {
-      font-size: 100px;
-      color: $decoration;
-      transition: transform 200ms ease-in, color 200ms ease-in;
-
-      &:hover {
-        transform: translateY(-7px) scale(1.1);
-        color: hsl(43, 100%, 75%);
+        &::after {
+          display: none;
+        }
       }
-    }
 
-    h3 {
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-      font-weight: 700;
-    }
-
-    p {
-      line-height: 1.5rem;
-      font-size: 1rem;
-      max-width: 50ch;
-      margin: 0 auto;
-      font-weight: 300;
-      color: $tertiary;
+      img {
+        height: 50px;
+        padding: 0;
+      }
     }
   }
 }
 
-@media (max-width: 770px) {
-  .nav {
-    .links {
-      display: none;
+@media (max-width: 480px) {
+  .landing {
+    .navbar {
+      padding: 1rem;
+      img {
+        display: none;
+      }
     }
 
-    .bars {
-      display: block;
-    }
-  }
+    .hero {
+      .content {
+        flex-direction: column;
+        margin: -4rem 0 0 0;
 
-  .content-sections {
-    flex-direction: column;
-    gap: 4rem;
-  }
-
-  .quote-section {
-    padding: 2.5em 1.5em;
-
-    .title {
-      padding: 10px 20px;
-      margin: 0;
+        i {
+          margin-top: 2rem;
+        }
+      }
     }
   }
 }

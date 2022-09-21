@@ -122,6 +122,7 @@
     background-image: url("ME-background.png");
     background-position: center;
     background-attachment: fixed;
+    background-size: cover;
     background-color: hsla(0, 0%, 0%, 0.7);
     background-blend-mode: soft-light;
     padding: clamp(4rem, 10vw, 6rem) 0;
@@ -333,6 +334,9 @@
   }
 
   .history {
+    .header {
+      background-attachment: scroll;
+    }
     .content {
       .section {
         .row {

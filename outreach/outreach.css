@@ -19,9 +19,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
   background-color: hsla(0deg, 0%, 0%, 0.8);
-  gap: 5rem;
+  gap: 2vw;
 }
 .landing .navbar img {
   max-width: 100%;
@@ -64,74 +63,44 @@
 }
 .landing .hero .title {
   color: white;
-  font-size: 3rem;
+  font-size: clamp(1rem, 10vw, 4rem);
   font-weight: bold;
   text-align: center;
-  padding: 6rem;
+  padding: clamp(4rem, 10vw, 6rem) 0;
 }
 
 .main {
   text-align: center;
-  margin: 5rem;
-  display: flex;
-  flex-direction: column;
-  color: rgb(60, 72, 88);
-}
-.main .title {
-  font-size: 5rem;
-  font-weight: 700;
-  color: rgb(60, 72, 88);
-}
-.main .subtitle {
-  font-size: 18px;
-  margin: 1rem 15rem 7rem;
-  color: rgb(153, 153, 153);
-  font-weight: 400;
-}
-.main .content {
-  display: flex;
-  justify-content: space-evenly;
-}
-.main .content i {
-  font-size: 100px;
-  color: hsl(45deg, 100%, 50%);
-  transition: transform 200ms ease-in, color 200ms ease-in;
-}
-.main .content i:hover {
-  transform: translateY(-7px) scale(1.1);
-  color: hsl(43deg, 100%, 75%);
-}
-.main .content h3 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-}
-.main .content p {
-  line-height: 1.5rem;
-  font-size: 1rem;
-  max-width: 50ch;
-  margin: 0 auto;
-  font-weight: 300;
-  color: rgb(153, 153, 153);
+  padding: 3rem;
 }
 
-@media (max-width: 770px) {
-  .nav .links {
+@media (max-width: 720px) {
+  .landing .navbar {
+    padding: 12px 6px;
+  }
+  .landing .navbar .links {
+    font-size: 14px;
+  }
+  .landing .navbar .links::after {
     display: none;
   }
-  .nav .bars {
-    display: block;
+  .landing .navbar img {
+    height: 50px;
+    padding: 0;
   }
-  .content-sections {
+}
+@media (max-width: 480px) {
+  .landing .navbar {
+    padding: 1rem;
+  }
+  .landing .navbar img {
+    display: none;
+  }
+  .landing .hero .content {
     flex-direction: column;
-    gap: 4rem;
+    margin: -4rem 0 0 0;
   }
-  .quote-section {
-    padding: 2.5em 1.5em;
-  }
-  .quote-section .title {
-    padding: 10px 20px;
-    margin: 0;
+  .landing .hero .content i {
+    margin-top: 2rem;
   }
 }/*# sourceMappingURL=outreach.css.map */

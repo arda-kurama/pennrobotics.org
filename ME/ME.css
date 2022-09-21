@@ -104,6 +104,7 @@
   background-image: url("ME-background.png");
   background-position: center;
   background-attachment: fixed;
+  background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.7);
   background-blend-mode: soft-light;
   padding: clamp(4rem, 10vw, 6rem) 0;
@@ -264,6 +265,9 @@
   }
   .landing .hero .content i {
     margin-top: 2rem;
+  }
+  .history .header {
+    background-attachment: scroll;
   }
   .history .content .section .row img {
     width: 150px;

@@ -125,6 +125,7 @@ html {
   .header {
     background-image: url("/youth-camps/summer-camp-header.png");
     background-position: center;
+    background-size: cover;
     background-color: hsla(0, 0%, 0%, 0.7);
     background-blend-mode: soft-light;
     padding: clamp(4rem, 10vw, 6rem) 0;
@@ -174,6 +175,7 @@ html {
   .header {
     background-image: url("/youth-camps/junior-stem-header.jpeg");
     background-position: top;
+    background-size: cover;
     background-color: hsla(0, 0%, 0%, 0.7);
     background-blend-mode: soft-light;
     padding: clamp(4rem, 10vw, 6rem) 0;
@@ -228,7 +230,8 @@ html {
 .workshops {
   .header {
     background-image: url("/youth-camps/workshops-header.jpeg");
-    background-position: top;
+    background-position: center;
+    background-size: cover;
     background-color: hsla(0, 0%, 0%, 0.7);
     background-blend-mode: soft-light;
     padding: clamp(4rem, 10vw, 6rem) 0;
