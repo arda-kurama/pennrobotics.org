@@ -65,14 +65,14 @@ html {
   color: rgb(60, 72, 88);
 }
 .landing .hero .title {
-  font-size: clamp(1rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 700;
   color: rgb(60, 72, 88);
 }
 .landing .hero .subtitle {
   font-size: 18px;
   margin: 1vh 10vw 6vh;
-  color: rgb(153, 153, 153);
+  color: rgb(150, 150, 150);
   font-weight: 400;
 }
 .landing .hero .content {
@@ -101,7 +101,7 @@ html {
   max-width: 50ch;
   margin: 0 auto;
   font-weight: 300;
-  color: rgb(153, 153, 153);
+  color: rgb(150, 150, 150);
 }
 
 .summer-camps .header {
@@ -113,7 +113,7 @@ html {
   padding: clamp(4rem, 10vw, 6rem) 0;
 }
 .summer-camps .header .title {
-  font-size: clamp(1rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 700;
   text-align: center;
   color: white;
@@ -137,7 +137,7 @@ html {
   margin-bottom: 0.5vw;
 }
 .summer-camps .content .section p {
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(15px, 3vw, 16px);
   color: rgb(60, 72, 88);
 }
 .summer-camps .content .section img {
@@ -155,7 +155,7 @@ html {
   padding: clamp(4rem, 10vw, 6rem) 0;
 }
 .junior-stem .header .title {
-  font-size: clamp(1rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 700;
   text-align: center;
   color: white;
@@ -175,7 +175,7 @@ html {
   display: flex;
 }
 .junior-stem .content .section p {
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(15px, 3vw, 16px);
   color: rgb(60, 72, 88);
   padding: 0 1vw;
   text-align: left;
@@ -201,7 +201,7 @@ html {
   padding: clamp(4rem, 10vw, 6rem) 0;
 }
 .workshops .header .title {
-  font-size: clamp(1rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 700;
   text-align: center;
   color: white;
@@ -231,13 +231,13 @@ html {
   margin: auto auto;
   padding: 2rem;
   line-height: 3rem;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(15px, 3vw, 16px);
 }
 .workshops .content .section .subheader .text h1 {
   color: rgb(60, 72, 88);
 }
 .workshops .content .section .subheader .text h3 {
-  color: rgb(153, 153, 153);
+  color: rgb(150, 150, 150);
   font-weight: 300;
 }
 .workshops .content .section #gap {
@@ -248,12 +248,12 @@ html {
   flex-direction: column;
 }
 .workshops .content .section .workshop h2 {
-  background-color: rgb(153, 153, 153);
+  background-color: rgb(150, 150, 150);
   color: white;
   padding: 1.5vw;
 }
 .workshops .content .section .workshop p {
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(15px, 3vw, 16px);
   color: rgb(60, 72, 88);
   background-color: lightgrey;
   padding: 1vw;

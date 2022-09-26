@@ -61,14 +61,14 @@
   color: rgb(60, 72, 88);
 }
 .landing .hero .title {
-  font-size: clamp(1rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 700;
   color: rgb(60, 72, 88);
 }
 .landing .hero .subtitle {
   font-size: 18px;
   margin: 1vh 10vw 6vh;
-  color: rgb(153, 153, 153);
+  color: rgb(150, 150, 150);
   font-weight: 400;
 }
 .landing .hero .content {
@@ -97,7 +97,7 @@
   max-width: 50ch;
   margin: 0 auto;
   font-weight: 300;
-  color: rgb(153, 153, 153);
+  color: rgb(150, 150, 150);
 }
 
 .history .header {
@@ -110,7 +110,7 @@
   padding: clamp(4rem, 10vw, 6rem) 0;
 }
 .history .header .title {
-  font-size: clamp(1rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 700;
   text-align: center;
   color: white;
@@ -151,7 +151,7 @@
   height: auto;
 }
 .history .content .section .subheader .subtitle {
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: clamp(15px, 3vw, 16px);
   font-weight: 700;
   color: rgb(60, 72, 88);
   line-height: 2vw;
@@ -159,8 +159,8 @@
   margin: auto 0 auto 2vw;
 }
 .history .content .section p {
-  font-size: clamp(16px, 2vw, 20px);
-  color: rgb(153, 153, 153);
+  font-size: clamp(15px, 3vw, 16px);
+  color: rgb(150, 150, 150);
   margin-top: 2vw;
   text-align: left;
 }
@@ -173,14 +173,14 @@
   color: rgb(60, 72, 88);
 }
 .contact-us .title {
-  font-size: clamp(1rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 700;
   color: rgb(60, 72, 88);
 }
 .contact-us .subtitle {
   font-size: 18px;
   font-weight: 400;
-  color: rgb(153, 153, 153);
+  color: rgb(150, 150, 150);
   margin: 0 10vw;
 }
 .contact-us .subtitle p {

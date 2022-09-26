@@ -3,10 +3,11 @@
 
 $primary: white;
 $secondary: rgb(60, 72, 88);
-$tertiary: rgb(153, 153, 153);
+$tertiary: rgb(150, 150, 150);
 $decoration: hsl(45, 100%, 50%);
 
-$cover: clamp(1rem, 10vw, 7.5rem);
-$title: clamp(1rem, 10vw, 4rem);
+$cover: clamp(3rem, 10vw, 7.5rem);
+$title: clamp(2.5rem, 10vw, 4rem);
 $header: clamp(28px, 4vw, 40px);
-$body: clamp(16px, 2vw, 20px);
+$subtitle: clamp(16px, 3vw, 18px);
+$body: clamp(15px, 3vw, 16px);

@@ -68,28 +68,28 @@
 }
 .landing .hero .title {
   margin-top: 25vh;
-  font-size: clamp(1rem, 10vw, 7.5rem);
+  font-size: clamp(3rem, 10vw, 7.5rem);
 }
 .landing .hero .typed-title {
   margin-top: 1vh;
   font-weight: 400;
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 18px);
 }
 
 .main {
   text-align: center;
-  margin: 4vw;
-  color: rgb(60, 72, 88);
+  padding: 4vw;
+  background-color: white;
 }
 .main .title {
-  font-size: clamp(1rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 700;
   color: rgb(60, 72, 88);
 }
 .main .subtitle {
-  font-size: 18px;
+  font-size: clamp(16px, 3vw, 18px);
   margin: 1vh 10vw 6vh;
-  color: rgb(153, 153, 153);
+  color: rgb(150, 150, 150);
   font-weight: 400;
 }
 .main .content {
@@ -108,16 +108,16 @@
 .main .content h3 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 700;
 }
 .main .content p {
   line-height: 1.5rem;
-  font-size: 1rem;
+  font-size: clamp(15px, 3vw, 16px);
   max-width: 50ch;
   margin: 0 auto;
   font-weight: 300;
-  color: rgb(153, 153, 153);
+  color: rgb(150, 150, 150);
 }
 
 .quote-section {
@@ -144,15 +144,15 @@
   color: rgb(60, 72, 88);
 }
 .contact-us .title {
-  font-size: clamp(1rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
 .contact-us .subtitle {
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 18px);
   font-weight: 400;
   margin-bottom: 3vw;
-  color: rgb(153, 153, 153);
+  color: rgb(150, 150, 150);
 }
 .contact-us .content {
   display: flex;
@@ -169,15 +169,17 @@
 .contact-us .content h1 {
   font-size: 28px;
   font-weight: 700;
+  color: rgb(60, 72, 88);
 }
 .contact-us .content h2 {
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 18px);
   font-weight: 400;
+  color: rgb(60, 72, 88);
 }
 .contact-us .content h3 {
-  font-size: 18px;
+  font-size: clamp(15px, 3vw, 16px);
   font-weight: 300;
-  color: rgb(153, 153, 153);
+  color: rgb(150, 150, 150);
 }
 
 @media (max-width: 720px) {
@@ -196,9 +198,6 @@
   .landing .navbar img {
     height: 50px;
     padding-top: 5px;
-  }
-  .main .subtitle {
-    font-size: 16px;
   }
   .contact-us .content {
     gap: 4vw;

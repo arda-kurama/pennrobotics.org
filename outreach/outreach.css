@@ -63,7 +63,7 @@
 }
 .landing .hero .title {
   color: white;
-  font-size: clamp(1rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: bold;
   text-align: center;
   padding: clamp(4rem, 10vw, 6rem) 0;
