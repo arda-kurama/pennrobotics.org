@@ -31,7 +31,7 @@ html {
   text-decoration: none;
   position: relative;
   color: white;
-  font-weight: 350;
+  font-weight: 300;
   font-size: 20px;
 }
 .landing .navbar .links::after {
@@ -70,7 +70,7 @@ html {
   color: rgb(60, 72, 88);
 }
 .landing .hero .subtitle {
-  font-size: 18px;
+  font-size: clamp(16px, 3vw, 18px);
   margin: 1vh 10vw 6vh;
   color: rgb(150, 150, 150);
   font-weight: 400;
@@ -92,12 +92,11 @@ html {
 .landing .hero .content h3 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 24px;
 }
 .landing .hero .content p {
   line-height: 1.5rem;
-  font-size: 1rem;
+  font-size: 16px;
   max-width: 50ch;
   margin: 0 auto;
   font-weight: 300;
@@ -125,8 +124,8 @@ html {
 }
 .summer-camps .content .subtitle {
   color: rgb(60, 72, 88);
-  font-weight: 500;
-  font-size: 24px;
+  font-size: clamp(18px, 3vw, 24px);
+  font-weight: 400;
   margin-bottom: 1vw;
 }
 .summer-camps .content .section {
@@ -137,8 +136,10 @@ html {
   margin-bottom: 0.5vw;
 }
 .summer-camps .content .section p {
-  font-size: clamp(15px, 3vw, 16px);
-  color: rgb(60, 72, 88);
+  font-size: 16px;
+  color: rgb(150, 150, 150);
+  line-height: 1.5rem;
+  font-weight: 300;
 }
 .summer-camps .content .section img {
   width: 100%;
@@ -167,16 +168,18 @@ html {
 }
 .junior-stem .content .subtitle {
   color: rgb(60, 72, 88);
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: clamp(18px, 3vw, 24px);
   margin-bottom: 1vw;
 }
 .junior-stem .content .section {
   display: flex;
 }
 .junior-stem .content .section p {
-  font-size: clamp(15px, 3vw, 16px);
-  color: rgb(60, 72, 88);
+  font-size: 16px;
+  color: rgb(150, 150, 150);
+  line-height: 1.5rem;
+  font-weight: 300;
   padding: 0 1vw;
   text-align: left;
 }
@@ -215,8 +218,8 @@ html {
 }
 .workshops .content .subtitle {
   color: rgb(60, 72, 88);
-  font-weight: 500;
-  font-size: 24px;
+  font-weight: 400;
+  font-size: clamp(18px, 3vw, 24px);
   margin-bottom: 1vw;
 }
 .workshops .content .section {
@@ -230,15 +233,17 @@ html {
 .workshops .content .section .subheader .text {
   margin: auto auto;
   padding: 2rem;
-  line-height: 3rem;
-  font-size: clamp(15px, 3vw, 16px);
+  font-size: 16px;
 }
 .workshops .content .section .subheader .text h1 {
   color: rgb(60, 72, 88);
+  font-size: clamp(24px, 3vw, 40px);
 }
 .workshops .content .section .subheader .text h3 {
   color: rgb(150, 150, 150);
+  font-size: clamp(16px, 3vw, 18px);
   font-weight: 300;
+  line-height: 3vw;
 }
 .workshops .content .section #gap {
   margin-top: 2vw;
@@ -250,11 +255,15 @@ html {
 .workshops .content .section .workshop h2 {
   background-color: rgb(150, 150, 150);
   color: white;
+  font-size: 24px;
+  font-weight: 400;
   padding: 1.5vw;
 }
 .workshops .content .section .workshop p {
-  font-size: clamp(15px, 3vw, 16px);
+  font-size: 16px;
   color: rgb(60, 72, 88);
+  line-height: 1.5rem;
+  font-weight: 300;
   background-color: lightgrey;
   padding: 1vw;
 }
@@ -312,8 +321,6 @@ html {
   }
   .workshops .content .section .subheader .text {
     padding: 2vw;
-    font-size: 14px;
-    line-height: 2rem;
   }
   .workshops .content .section img {
     width: 200px;
@@ -344,6 +351,12 @@ html {
   }
   .workshops .content {
     width: 300px;
+  }
+  .workshops .content .section .subheader .text h3 {
+    line-height: 2rem;
+  }
+  .workshops .content .section .workshop h2 {
+    padding: 1.5vw 2rem;
   }
   .workshops .content .section img {
     width: 100px;

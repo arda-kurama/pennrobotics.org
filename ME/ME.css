@@ -27,7 +27,7 @@
   text-decoration: none;
   position: relative;
   color: white;
-  font-weight: 350;
+  font-weight: 300;
   font-size: 20px;
 }
 .landing .navbar .links::after {
@@ -66,7 +66,7 @@
   color: rgb(60, 72, 88);
 }
 .landing .hero .subtitle {
-  font-size: 18px;
+  font-size: clamp(16px, 3vw, 18px);
   margin: 1vh 10vw 6vh;
   color: rgb(150, 150, 150);
   font-weight: 400;
@@ -88,12 +88,11 @@
 .landing .hero .content h3 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 700;
+  font-size: 24px;
 }
 .landing .hero .content p {
   line-height: 1.5rem;
-  font-size: 1rem;
+  font-size: 16px;
   max-width: 50ch;
   margin: 0 auto;
   font-weight: 300;
@@ -151,7 +150,7 @@
   height: auto;
 }
 .history .content .section .subheader .subtitle {
-  font-size: clamp(15px, 3vw, 16px);
+  font-size: clamp(16px, 3vw, 18px);
   font-weight: 700;
   color: rgb(60, 72, 88);
   line-height: 2vw;
@@ -159,8 +158,10 @@
   margin: auto 0 auto 2vw;
 }
 .history .content .section p {
-  font-size: clamp(15px, 3vw, 16px);
+  font-size: 16px;
   color: rgb(150, 150, 150);
+  line-height: 1.5rem;
+  font-weight: 400;
   margin-top: 2vw;
   text-align: left;
 }
@@ -178,7 +179,7 @@
   color: rgb(60, 72, 88);
 }
 .contact-us .subtitle {
-  font-size: 18px;
+  font-size: clamp(16px, 3vw, 18px);
   font-weight: 400;
   color: rgb(150, 150, 150);
   margin: 0 10vw;

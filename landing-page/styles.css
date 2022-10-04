@@ -33,7 +33,7 @@
   text-decoration: none;
   position: relative;
   color: white;
-  font-weight: 350;
+  font-weight: 300;
   font-size: 20px;
 }
 .landing .navbar .links::after {
@@ -62,7 +62,7 @@
   box-shadow: 0px 2px 10px 1px hsl(45deg, 100%, 50%);
 }
 .landing .hero {
-  font-weight: bold;
+  font-weight: 700;
   color: white;
   text-align: center;
 }
@@ -90,7 +90,6 @@
   font-size: clamp(16px, 3vw, 18px);
   margin: 1vh 10vw 6vh;
   color: rgb(150, 150, 150);
-  font-weight: 400;
 }
 .main .content {
   display: flex;
@@ -109,11 +108,10 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-size: 24px;
-  font-weight: 700;
 }
 .main .content p {
   line-height: 1.5rem;
-  font-size: clamp(15px, 3vw, 16px);
+  font-size: 16px;
   max-width: 50ch;
   margin: 0 auto;
   font-weight: 300;
@@ -129,7 +127,7 @@
   padding: 8vh 4vw;
 }
 .quote-section .title {
-  font-size: clamp(28px, 4vw, 40px);
+  font-size: clamp(24px, 3vw, 40px);
   font-weight: 700;
   color: white;
   border-left: 5px solid white;
@@ -150,7 +148,6 @@
 }
 .contact-us .subtitle {
   font-size: clamp(16px, 3vw, 18px);
-  font-weight: 400;
   margin-bottom: 3vw;
   color: rgb(150, 150, 150);
 }
@@ -167,7 +164,7 @@
   margin-bottom: 1vw;
 }
 .contact-us .content h1 {
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 700;
   color: rgb(60, 72, 88);
 }
@@ -177,7 +174,7 @@
   color: rgb(60, 72, 88);
 }
 .contact-us .content h3 {
-  font-size: clamp(15px, 3vw, 16px);
+  font-size: 16px;
   font-weight: 300;
   color: rgb(150, 150, 150);
 }
@@ -216,9 +213,6 @@
   }
   .landing .navbar img {
     display: none;
-  }
-  .landing .hero .typed-title {
-    font-size: 14px;
   }
   .main .subtitle {
     margin: auto 10vw;

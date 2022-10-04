@@ -33,7 +33,7 @@ html {
       text-decoration: none;
       position: relative;
       color: $primary;
-      font-weight: 350;
+      font-weight: 300;
       font-size: 20px;
 
       &::after {
@@ -80,7 +80,7 @@ html {
     }
 
     .subtitle {
-      font-size: 18px;
+      font-size: $subtitle;
       margin: 1vh 10vw 6vh;
       color: $tertiary;
       font-weight: 400;
@@ -105,13 +105,12 @@ html {
       h3 {
         margin-top: 1rem;
         margin-bottom: 1rem;
-        font-size: 1.5rem;
-        font-weight: 700;
+        font-size: $subheader;
       }
 
       p {
         line-height: 1.5rem;
-        font-size: 1rem;
+        font-size: $body;
         max-width: 50ch;
         margin: 0 auto;
         font-weight: 300;
@@ -145,8 +144,8 @@ html {
 
     .subtitle {
       color: $secondary;
-      font-weight: 500;
-      font-size: 24px;
+      font-size: clamp(18px, 3vw, $subheader);
+      font-weight: 400;
       margin-bottom: 1vw;
     }
 
@@ -159,7 +158,9 @@ html {
 
       p {
         font-size: $body;
-        color: $secondary;
+        color: $tertiary;
+        line-height: 1.5rem;
+        font-weight: 300;
       }
 
       img {
@@ -195,8 +196,8 @@ html {
 
     .subtitle {
       color: $secondary;
-      font-weight: 500;
-      font-size: 24px;
+      font-weight: 400;
+      font-size: clamp(18px, 3vw, $subheader);
       margin-bottom: 1vw;
     }
 
@@ -205,7 +206,9 @@ html {
 
       p {
         font-size: $body;
-        color: $secondary;
+        color: $tertiary;
+        line-height: 1.5rem;
+        font-weight: 300;
         padding: 0 1vw;
         text-align: left;
       }
@@ -253,8 +256,8 @@ html {
 
     .subtitle {
       color: $secondary;
-      font-weight: 500;
-      font-size: 24px;
+      font-weight: 400;
+      font-size: clamp(18px, 3vw, $subheader);
       margin-bottom: 1vw;
     }
 
@@ -269,16 +272,18 @@ html {
         .text {
           margin: auto auto;
           padding: 2rem;
-          line-height: 3rem;
           font-size: $body;
 
           h1 {
             color: $secondary;
+            font-size: $header;
           }
 
           h3 {
             color: $tertiary;
+            font-size: $subtitle;
             font-weight: 300;
+            line-height: 3vw;
           }
         }
       }
@@ -294,12 +299,16 @@ html {
         h2 {
           background-color: $tertiary;
           color: $primary;
+          font-size: $subheader;
+          font-weight: 400;
           padding: 1.5vw;
         }
 
         p {
           font-size: $body;
           color: $secondary;
+          line-height: 1.5rem;
+          font-weight: 300;
           background-color: lightgrey;
           padding: 1vw;
         }
@@ -382,8 +391,6 @@ html {
         .subheader {
           .text {
             padding: 2vw;
-            font-size: 14px;
-            line-height: 2rem;
           }
         }
         img {
@@ -438,6 +445,19 @@ html {
       width: 300px;
 
       .section {
+        .subheader {
+          .text {
+            h3 {
+              line-height: 2rem;
+            }
+          }
+        }
+
+        .workshop {
+          h2 {
+            padding: 1.5vw 2rem;
+          }
+        }
         img {
           width: 100px;
           height: auto;

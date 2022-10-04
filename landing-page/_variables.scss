@@ -8,6 +8,7 @@ $decoration: hsl(45, 100%, 50%);
 
 $cover: clamp(3rem, 10vw, 7.5rem);
 $title: clamp(2.5rem, 10vw, 4rem);
-$header: clamp(28px, 4vw, 40px);
 $subtitle: clamp(16px, 3vw, 18px);
-$body: clamp(15px, 3vw, 16px);
+$header: clamp(24px, 3vw, 40px);
+$subheader: 24px;
+$body: 16px;

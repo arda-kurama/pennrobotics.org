@@ -35,7 +35,7 @@
       text-decoration: none;
       position: relative;
       color: $primary;
-      font-weight: 350;
+      font-weight: 300;
       font-size: 20px;
 
       &::after {
@@ -74,7 +74,7 @@
     .title {
       color: $primary;
       font-size: $title;
-      font-weight: bold;
+      font-weight: 700;
       text-align: center;
       padding: clamp(4rem, 10vw, 6rem) 0;
     }
@@ -84,6 +84,9 @@
 .main {
   text-align: center;
   padding: 3rem;
+  font-size: $subheader;
+  color: $secondary;
+  font-weight: 400;
 }
 
 @media (max-width: 720px) {

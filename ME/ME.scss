@@ -29,7 +29,7 @@
       text-decoration: none;
       position: relative;
       color: $primary;
-      font-weight: 350;
+      font-weight: 300;
       font-size: 20px;
 
       &::after {
@@ -76,7 +76,7 @@
     }
 
     .subtitle {
-      font-size: 18px;
+      font-size: $subtitle;
       margin: 1vh 10vw 6vh;
       color: $tertiary;
       font-weight: 400;
@@ -101,13 +101,12 @@
       h3 {
         margin-top: 1rem;
         margin-bottom: 1rem;
-        font-size: 1.5rem;
-        font-weight: 700;
+        font-size: $subheader;
       }
 
       p {
         line-height: 1.5rem;
-        font-size: 1rem;
+        font-size: $body;
         max-width: 50ch;
         margin: 0 auto;
         font-weight: 300;
@@ -175,7 +174,7 @@
         }
 
         .subtitle {
-          font-size: $body;
+          font-size: $subtitle;
           font-weight: 700;
           color: $secondary;
           line-height: 2vw;
@@ -187,6 +186,8 @@
       p {
         font-size: $body;
         color: $tertiary;
+        line-height: 1.5rem;
+        font-weight: 400;
         margin-top: 2vw;
         text-align: left;
       }
@@ -209,7 +210,7 @@
   }
 
   .subtitle {
-    font-size: 18px;
+    font-size: $subtitle;
     font-weight: 400;
     color: $tertiary;
     margin: 0 10vw;

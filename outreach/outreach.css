@@ -33,7 +33,7 @@
   text-decoration: none;
   position: relative;
   color: white;
-  font-weight: 350;
+  font-weight: 300;
   font-size: 20px;
 }
 .landing .navbar .links::after {
@@ -64,7 +64,7 @@
 .landing .hero .title {
   color: white;
   font-size: clamp(2.5rem, 10vw, 4rem);
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   padding: clamp(4rem, 10vw, 6rem) 0;
 }
@@ -72,6 +72,9 @@
 .main {
   text-align: center;
   padding: 3rem;
+  font-size: 24px;
+  color: rgb(60, 72, 88);
+  font-weight: 400;
 }
 
 @media (max-width: 720px) {
