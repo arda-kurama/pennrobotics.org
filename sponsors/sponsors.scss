@@ -72,21 +72,35 @@
 
   .hero {
     .title {
+      background-image: url("/sponsors/main-background.jpg");
+      background-position: bottom;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: hsla(0, 0%, 0%, 0.5);
+      background-blend-mode: soft-light;
+      padding: clamp(4rem, 10vw, 6rem) 0;
       color: $primary;
       font-size: $title;
       font-weight: 700;
       text-align: center;
-      padding: clamp(4rem, 10vw, 6rem) 0;
     }
   }
 }
 
 .main {
-  text-align: center;
-  padding: 3rem;
-  font-size: $subheader;
+  width: clamp(40rem, 85vw, 50rem);
+  margin: 4rem auto;
+  font-size: $subtitle;
   color: $secondary;
-  font-weight: 400;
+  font-weight: 300;
+  line-height: 2rem;
+
+  .section {
+    margin: 2rem;
+    li {
+      margin-left: 2rem;
+    }
+  }
 }
 
 @media (max-width: 720px) {
@@ -107,6 +121,10 @@
         padding: 0;
       }
     }
+  }
+
+  .main {
+    width: 400px;
   }
 }
 
@@ -129,5 +147,9 @@
         }
       }
     }
+  }
+
+  .main {
+    width: 300px;
   }
 }
