@@ -253,8 +253,6 @@
     min-height: 80vh;
 
     .navbar {
-      padding: 12px 6px;
-
       .links {
         font-size: 14px;
 
@@ -264,8 +262,8 @@
       }
 
       img {
-        height: 50px;
-        padding: 0;
+        height: 75px;
+        padding-top: 7.5px;
       }
     }
   }

@@ -207,9 +207,6 @@
   .landing {
     min-height: 80vh;
   }
-  .landing .navbar {
-    padding: 12px 6px;
-  }
   .landing .navbar .links {
     font-size: 14px;
   }
@@ -217,8 +214,8 @@
     display: none;
   }
   .landing .navbar img {
-    height: 50px;
-    padding: 0;
+    height: 75px;
+    padding-top: 7.5px;
   }
   .history .content {
     flex-direction: column-reverse;
