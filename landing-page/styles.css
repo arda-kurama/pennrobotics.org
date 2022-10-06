@@ -136,27 +136,6 @@
   padding: 1em 2em;
 }
 
-.current-events {
-  color: rgb(60, 72, 88);
-  background-color: white;
-  text-align: center;
-  padding-top: 2rem;
-}
-.current-events .title {
-  font-size: clamp(2.5rem, 10vw, 4rem);
-  font-weight: 700;
-}
-.current-events .subtitle {
-  font-size: clamp(16px, 3vw, 18px);
-  margin: 0 10vw 4vh;
-  color: rgb(150, 150, 150);
-  font-weight: 400;
-}
-.current-events iframe {
-  max-width: 64vw;
-  height: 36vw;
-}
-
 .contact-us {
   text-align: center;
   margin: 2rem;
