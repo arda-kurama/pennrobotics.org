@@ -151,23 +151,23 @@
   background-color: var(--swiper-color);
 }
 
-.chairmans-video {
+.current-events {
   color: rgb(60, 72, 88);
   background-color: white;
   text-align: center;
   padding-top: 2rem;
 }
-.chairmans-video .title {
+.current-events .title {
   font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 700;
 }
-.chairmans-video .subtitle {
+.current-events .subtitle {
   font-size: clamp(16px, 3vw, 18px);
   margin: 0 10vw 4vh;
   color: rgb(150, 150, 150);
   font-weight: 400;
 }
-.chairmans-video iframe {
+.current-events iframe {
   max-width: 64vw;
   height: 36vw;
 }

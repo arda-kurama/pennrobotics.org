@@ -156,6 +156,30 @@
   }
 }
 
+.current-events {
+  color: $secondary;
+  background-color: $primary;
+  text-align: center;
+  padding-top: 2rem;
+
+  .title {
+    font-size: $title;
+    font-weight: 700;
+  }
+
+  .subtitle {
+    font-size: $subtitle;
+    margin: 0 10vw 4vh;
+    color: $tertiary;
+    font-weight: 400;
+  }
+
+  iframe {
+    max-width: 64vw;
+    height: 36vw;
+  }
+}
+
 .contact-us {
   text-align: center;
   margin: 2rem;
