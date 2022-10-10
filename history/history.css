@@ -76,6 +76,35 @@
   color: rgb(60, 72, 88);
   font-weight: 400;
 }
+.main .overview {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+}
+.main .overview .title {
+  width: 250px;
+  height: 250px;
+  background-image: url("1998.jpg");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: soft-light;
+}
+.main .overview .subtitle {
+  display: none;
+  margin-top: -44px;
+  height: 44px;
+  width: 250px;
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+}
+.main .overview:hover .title {
+  background-color: hsla(0deg, 0%, 0%, 0.1);
+}
+.main .overview:hover .subtitle {
+  display: block;
+}
 
 @media (max-width: 720px) {
   .landing .navbar {

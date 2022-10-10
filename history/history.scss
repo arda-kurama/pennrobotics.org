@@ -87,6 +87,41 @@
   font-size: $subheader;
   color: $secondary;
   font-weight: 400;
+
+  .overview {
+    color: $primary;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    .title {
+      width: 250px;
+      height: 250px;
+      background-image: url("1998.jpg");
+      background-position: center;
+      background-size: cover;
+      background-blend-mode: soft-light;
+    }
+
+    .subtitle {
+      display: none;
+      margin-top: -$subheader - 20px;
+      height: $subheader + 20px;
+      width: 250px;
+      background-color: hsla(0, 0%, 0%, 0.5);
+    }
+
+    &:hover {
+      .title {
+        background-color: hsla(0, 0%, 0%, 0.1);
+      }
+
+      .subtitle {
+        display: block;
+      }
+    }
+  }
 }
 
 @media (max-width: 720px) {
