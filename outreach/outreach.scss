@@ -87,6 +87,11 @@
   font-size: $subheader;
   color: $secondary;
   font-weight: 400;
+
+  iframe {
+    width: 64vw;
+    height: 36vw;
+  }
 }
 
 @media (max-width: 720px) {

@@ -76,6 +76,10 @@
   color: rgb(60, 72, 88);
   font-weight: 400;
 }
+.main iframe {
+  width: 64vw;
+  height: 36vw;
+}
 
 @media (max-width: 720px) {
   .landing .navbar {
