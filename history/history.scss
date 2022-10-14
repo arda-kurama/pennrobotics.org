@@ -88,6 +88,27 @@
   color: $secondary;
   width: clamp(650px, 82vw, 800px);
 
+  .section {
+    display: inline-block;
+
+    p {
+      display: none;
+      font-size: $subheader;
+      font-weight: 700;
+      color: $secondary;
+      margin-top: -8px;
+    }
+  }
+
+  .section:hover {
+    p {
+      display: block;
+    }
+    img {
+      box-shadow: 0px 2px 10px 1px $secondary;
+    }
+  }
+
   img {
     width: clamp(200px, 25vw, 250px);
     height: clamp(200px, 25vw, 250px);

@@ -76,6 +76,22 @@
   color: rgb(60, 72, 88);
   width: clamp(650px, 82vw, 800px);
 }
+.main .section {
+  display: inline-block;
+}
+.main .section p {
+  display: none;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(60, 72, 88);
+  margin-top: -8px;
+}
+.main .section:hover p {
+  display: block;
+}
+.main .section:hover img {
+  box-shadow: 0px 2px 10px 1px rgb(60, 72, 88);
+}
 .main img {
   width: clamp(200px, 25vw, 250px);
   height: clamp(200px, 25vw, 250px);
