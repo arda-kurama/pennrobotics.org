@@ -83,14 +83,15 @@
 
 .main {
   text-align: center;
-  padding: 3rem;
+  margin: 3vw auto;
+
   font-size: $subheader;
   color: $secondary;
   font-weight: 400;
 
   iframe {
-    width: 64vw;
-    height: 38vw;
+    width: 80vw;
+    height: 47vw;
   }
 }
 
