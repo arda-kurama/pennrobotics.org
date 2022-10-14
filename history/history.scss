@@ -85,12 +85,12 @@
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 3rem;
+  margin: 3vw auto;
   color: $secondary;
 
   img {
-    width: 250px;
-    height: 250px;
+    width: clamp(200px, 15vw, 250px);
+    height: clamp(200px, 15vw, 250px);
     margin: 5px;
   }
 }
