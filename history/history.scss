@@ -83,14 +83,14 @@
 
 .main {
   display: flex;
-  flex-direction: column;
   text-align: center;
   margin: 3vw auto;
   color: $secondary;
+  width: clamp(650px, 82vw, 800px);
 
   img {
-    width: clamp(200px, 15vw, 250px);
-    height: clamp(200px, 15vw, 250px);
+    width: clamp(200px, 25vw, 250px);
+    height: clamp(200px, 25vw, 250px);
     margin: 5px;
   }
 }
@@ -114,6 +114,10 @@
       }
     }
   }
+
+  .main {
+    width: clamp(250px, 89vw, 600px);
+  }
 }
 
 @media (max-width: 480px) {
@@ -135,5 +139,9 @@
         }
       }
     }
+  }
+
+  .main {
+    width: 250px;
   }
 }

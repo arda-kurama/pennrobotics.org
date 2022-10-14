@@ -71,14 +71,14 @@
 
 .main {
   display: flex;
-  flex-direction: column;
   text-align: center;
   margin: 3vw auto;
   color: rgb(60, 72, 88);
+  width: clamp(650px, 82vw, 800px);
 }
 .main img {
-  width: clamp(200px, 15vw, 250px);
-  height: clamp(200px, 15vw, 250px);
+  width: clamp(200px, 25vw, 250px);
+  height: clamp(200px, 25vw, 250px);
   margin: 5px;
 }
 
@@ -96,6 +96,9 @@
     height: 50px;
     padding: 0;
   }
+  .main {
+    width: clamp(250px, 89vw, 600px);
+  }
 }
 @media (max-width: 480px) {
   .landing .navbar {
@@ -110,5 +113,8 @@
   }
   .landing .hero .content i {
     margin-top: 2rem;
+  }
+  .main {
+    width: 250px;
   }
 }/*# sourceMappingURL=history.css.map */
