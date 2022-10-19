@@ -116,13 +116,56 @@
   }
 }
 
-.history {
+.contact-us {
+  min-height: 90vh;
   .header {
-    background-image: url("ME-background.png");
+    background-image: url("/ME/contact-header.png");
     background-position: center;
-    background-attachment: fixed;
     background-size: cover;
     background-color: hsla(0, 0%, 0%, 0.7);
+    background-blend-mode: soft-light;
+    padding: clamp(4rem, 10vw, 6rem) 0;
+
+    .title {
+      font-size: $title;
+      font-weight: 700;
+      text-align: center;
+      color: $primary;
+    }
+  }
+
+  .content {
+    margin: 2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+
+    iframe {
+      width: 100%;
+      width: 700px;
+      height: 850px;
+    }
+
+    .subtitle {
+      width: 500px;
+      font-size: $subtitle;
+      font-weight: 400;
+      color: $tertiary;
+
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.history {
+  .header {
+    background-image: url("/ME/history-header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: hsla(0, 0%, 0%, 0.5);
     background-blend-mode: soft-light;
     padding: clamp(4rem, 10vw, 6rem) 0;
 
@@ -199,37 +242,6 @@
   }
 }
 
-.contact-us {
-  text-align: center;
-  color: $secondary;
-
-  .title {
-    font-size: $title;
-    font-weight: 700;
-    color: $secondary;
-  }
-
-  .subtitle {
-    font-size: $subtitle;
-    font-weight: 400;
-    color: $tertiary;
-    margin: 0 10vw;
-
-    p {
-      margin-top: 1vw;
-    }
-  }
-
-  .content {
-    margin: 1rem;
-
-    iframe {
-      width: 100%;
-      height: 850px;
-    }
-  }
-}
-
 @media (max-width: 1600px) {
   .history {
     .content {
@@ -268,6 +280,25 @@
     }
   }
 
+  .contact-us {
+    .content {
+      flex-direction: column-reverse;
+      text-align: center;
+
+      .subtitle {
+        max-width: 400px;
+      }
+
+      iframe {
+        width: 400px;
+      }
+
+      li {
+        list-style: none;
+      }
+    }
+  }
+
   .history {
     .content {
       flex-direction: column-reverse;
@@ -301,14 +332,6 @@
       }
     }
   }
-
-  .contact-us {
-    .content {
-      iframe {
-        width: 400px;
-      }
-    }
-  }
 }
 
 @media (max-width: 480px) {
@@ -328,6 +351,18 @@
         i {
           margin-top: 2rem;
         }
+      }
+    }
+  }
+
+  .contact-us {
+    .content {
+      .subtitle {
+        max-width: 320px;
+      }
+
+      iframe {
+        width: 320px;
       }
     }
   }
@@ -354,14 +389,6 @@
       }
       #text {
         max-width: 300px;
-      }
-    }
-  }
-
-  .contact-us {
-    .content {
-      iframe {
-        width: 320px;
       }
     }
   }
