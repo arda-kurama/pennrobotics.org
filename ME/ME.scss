@@ -8,6 +8,10 @@
   // border: 1px solid red;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .landing {
   min-height: 90vh;
 
@@ -117,7 +121,7 @@
 }
 
 .contact-us {
-  min-height: 90vh;
+  min-height: 100vh;
   .header {
     background-image: url("/ME/contact-header.png");
     background-position: center;
@@ -161,6 +165,7 @@
 }
 
 .history {
+  min-height: 100vh;
   .header {
     background-image: url("/ME/history-header.jpg");
     background-position: center;
@@ -239,6 +244,34 @@
 
   #text {
     max-width: clamp(20rem, 60vw, 60rem);
+  }
+}
+
+.projects {
+  min-height: 100vh;
+  .header {
+    background-image: url("/ME/projects-header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    background-blend-mode: soft-light;
+    padding: clamp(4rem, 10vw, 6rem) 0;
+
+    .title {
+      font-size: $title;
+      font-weight: 700;
+      text-align: center;
+      color: $primary;
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    margin: 2vw auto;
+    font-size: $subheader;
+    color: $secondary;
   }
 }
 

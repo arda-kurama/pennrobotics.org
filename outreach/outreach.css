@@ -97,9 +97,6 @@
   }
 }
 @media (max-width: 480px) {
-  .landing {
-    background-attachment: scroll;
-  }
   .landing .navbar {
     padding: 1rem;
   }

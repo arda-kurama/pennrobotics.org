@@ -103,6 +103,9 @@ html {
   color: rgb(150, 150, 150);
 }
 
+.summer-camps {
+  min-height: 100vh;
+}
 .summer-camps .header {
   background-image: url("/youth-camps/summer-camp-header.png");
   background-position: center;
@@ -147,6 +150,9 @@ html {
   width: clamp(200px, 25vw, 250px);
 }
 
+.junior-stem {
+  min-height: 100vh;
+}
 .junior-stem .header {
   background-image: url("/youth-camps/junior-stem-header.jpeg");
   background-position: top;
@@ -195,6 +201,9 @@ html {
   margin-top: 1vw;
 }
 
+.workshops {
+  min-height: 100vh;
+}
 .workshops .header {
   background-image: url("/youth-camps/workshops-header.jpeg");
   background-position: center;

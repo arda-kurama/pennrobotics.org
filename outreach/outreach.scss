@@ -84,7 +84,6 @@
 .main {
   text-align: center;
   margin: 3vw auto;
-
   font-size: $subheader;
   color: $secondary;
   font-weight: 400;
@@ -118,7 +117,6 @@
 
 @media (max-width: 480px) {
   .landing {
-    background-attachment: scroll;
     .navbar {
       padding: 1rem;
       img {

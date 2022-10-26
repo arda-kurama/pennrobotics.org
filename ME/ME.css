@@ -7,6 +7,10 @@
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .landing {
   min-height: 90vh;
 }
@@ -100,7 +104,7 @@
 }
 
 .contact-us {
-  min-height: 90vh;
+  min-height: 100vh;
 }
 .contact-us .header {
   background-image: url("/ME/contact-header.png");
@@ -138,6 +142,9 @@
   margin-bottom: 1rem;
 }
 
+.history {
+  min-height: 100vh;
+}
 .history .header {
   background-image: url("/ME/history-header.jpg");
   background-position: center;
@@ -205,6 +212,32 @@
 }
 .history #text {
   max-width: clamp(20rem, 60vw, 60rem);
+}
+
+.projects {
+  min-height: 100vh;
+}
+.projects .header {
+  background-image: url("/ME/projects-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+  background-blend-mode: soft-light;
+  padding: clamp(4rem, 10vw, 6rem) 0;
+}
+.projects .header .title {
+  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+.projects .content {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  margin: 2vw auto;
+  font-size: 24px;
+  color: rgb(60, 72, 88);
 }
 
 @media (max-width: 1600px) {
