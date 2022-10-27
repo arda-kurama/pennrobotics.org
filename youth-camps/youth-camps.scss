@@ -161,7 +161,7 @@ html {
         font-size: $body;
         color: $tertiary;
         line-height: 1.5rem;
-        font-weight: 300;
+        font-weight: 400;
       }
 
       img {
@@ -210,13 +210,13 @@ html {
         font-size: $body;
         color: $tertiary;
         line-height: 1.5rem;
-        font-weight: 300;
+        font-weight: 400;
         padding: 0 1vw;
         text-align: left;
       }
 
       #right {
-        text-align: right;
+        padding-left: 0;
       }
 
       img {

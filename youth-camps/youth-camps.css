@@ -142,7 +142,7 @@ html {
   font-size: 16px;
   color: rgb(150, 150, 150);
   line-height: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
 }
 .summer-camps .content .section img {
   width: 100%;
@@ -185,12 +185,12 @@ html {
   font-size: 16px;
   color: rgb(150, 150, 150);
   line-height: 1.5rem;
-  font-weight: 300;
+  font-weight: 400;
   padding: 0 1vw;
   text-align: left;
 }
 .junior-stem .content .section #right {
-  text-align: right;
+  padding-left: 0;
 }
 .junior-stem .content .section img {
   width: 100%;

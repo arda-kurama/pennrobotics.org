@@ -155,7 +155,7 @@ html {
       width: 500px;
       font-size: $subtitle;
       font-weight: 400;
-      color: $tertiary;
+      color: $secondary;
 
       li {
         margin-bottom: 1rem;
@@ -266,12 +266,61 @@ html {
   }
 
   .content {
-    display: flex;
-    justify-content: center;
-    gap: 2vw;
     margin: 2vw auto;
-    font-size: $subheader;
-    color: $secondary;
+    width: clamp(40rem, 85vw, 50rem);
+    text-align: center;
+
+    .accordion {
+      background-color: $primary;
+      color: $secondary;
+      font-size: $header;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+    }
+
+    .active,
+    .accordion:hover {
+      background-color: lightgrey;
+    }
+
+    .accordion:after {
+      content: "\002B";
+      font-size: $header;
+      color: $secondary;
+      float: right;
+      margin-left: 5px;
+    }
+
+    .active:after {
+      content: "\2212";
+    }
+
+    .panel {
+      background-color: white;
+      display: none;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+
+      img {
+        width: clamp(40rem, 85vw, 50rem);
+        height: auto;
+      }
+
+      p {
+        font-size: $body;
+        color: $tertiary;
+        line-height: 1.5rem;
+        font-weight: 400;
+        margin: 1vh 2vw 2vh;
+      }
+    }
   }
 }
 
@@ -365,6 +414,18 @@ html {
       }
     }
   }
+
+  .projects {
+    .content {
+      width: 400px;
+
+      .panel {
+        img {
+          width: 400px;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 480px) {
@@ -422,6 +483,22 @@ html {
       }
       #text {
         max-width: 300px;
+      }
+    }
+  }
+
+  .projects {
+    .content {
+      width: 320px;
+
+      .accordion {
+        font-size: 20px;
+      }
+
+      .panel {
+        img {
+          width: 320px;
+        }
       }
     }
   }
