@@ -104,45 +104,6 @@ html {
   color: rgb(150, 150, 150);
 }
 
-.contact-us {
-  min-height: 100vh;
-}
-.contact-us .header {
-  background-image: url("/ME/contact-header.png");
-  background-position: center;
-  background-size: cover;
-  background-color: hsla(0deg, 0%, 0%, 0.7);
-  background-blend-mode: soft-light;
-  padding: clamp(4rem, 10vw, 6rem) 0;
-}
-.contact-us .header .title {
-  font-size: clamp(2.5rem, 10vw, 4rem);
-  font-weight: 700;
-  text-align: center;
-  color: white;
-}
-.contact-us .content {
-  margin: 2vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2vw;
-}
-.contact-us .content iframe {
-  width: 100%;
-  width: 700px;
-  height: 850px;
-}
-.contact-us .content .subtitle {
-  width: 500px;
-  font-size: clamp(16px, 3vw, 18px);
-  font-weight: 400;
-  color: rgb(60, 72, 88);
-}
-.contact-us .content .subtitle li {
-  margin-bottom: 1rem;
-}
-
 .history {
   min-height: 100vh;
 }
@@ -283,6 +244,135 @@ html {
   margin: 1vh 2vw 2vh;
 }
 
+.ATIA {
+  min-height: 100vh;
+}
+.ATIA .header {
+  background-image: url("/ME/ATIA-header.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+  background-blend-mode: soft-light;
+  padding: clamp(4rem, 10vw, 6rem) 0;
+}
+.ATIA .header .title {
+  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+.ATIA .content {
+  margin: 2vw auto;
+  width: clamp(40rem, 85vw, 50rem);
+  text-align: center;
+}
+.ATIA .content .subheader {
+  font-size: clamp(16px, 3vw, 18px);
+  font-weight: 700;
+  color: rgb(60, 72, 88);
+  line-height: 1.5rem;
+  margin-bottom: 1vw;
+}
+.ATIA .content .subheader span {
+  color: hsl(45deg, 100%, 50%);
+}
+.ATIA .content .accordion {
+  background-color: white;
+  color: rgb(60, 72, 88);
+  font-size: clamp(24px, 3vw, 40px);
+  font-weight: 500;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.ATIA .content .active,
+.ATIA .content .accordion:hover {
+  background-color: lightgrey;
+}
+.ATIA .content .accordion:after {
+  content: "+";
+  font-size: clamp(24px, 3vw, 40px);
+  color: rgb(60, 72, 88);
+  float: right;
+  margin-left: 5px;
+}
+.ATIA .content .active:after {
+  content: "−";
+}
+.ATIA .content .panel {
+  background-color: white;
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.ATIA .content .panel .images-2 {
+  display: flex;
+  gap: 0.5vw;
+}
+.ATIA .content .panel .images-2 img {
+  width: clamp(20rem, 42.5vw, 25rem);
+  height: auto;
+}
+.ATIA .content .panel .images-3 {
+  display: flex;
+  gap: 0.5vw;
+}
+.ATIA .content .panel .images-3 img {
+  width: clamp(13.3333333333rem, 28.3333333333vw, 16.6666666667rem);
+  height: auto;
+}
+.ATIA .content .panel p {
+  font-size: 16px;
+  color: rgb(150, 150, 150);
+  line-height: 1.5rem;
+  font-weight: 400;
+  margin: 1vh 2vw 2vh;
+}
+
+.contact-us {
+  min-height: 100vh;
+}
+.contact-us .header {
+  background-image: url("/ME/contact-header.png");
+  background-position: center;
+  background-size: cover;
+  background-color: hsla(0deg, 0%, 0%, 0.7);
+  background-blend-mode: soft-light;
+  padding: clamp(4rem, 10vw, 6rem) 0;
+}
+.contact-us .header .title {
+  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+.contact-us .content {
+  margin: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.contact-us .content iframe {
+  width: 100%;
+  width: 700px;
+  height: 850px;
+}
+.contact-us .content .subtitle {
+  width: 500px;
+  font-size: clamp(16px, 3vw, 18px);
+  font-weight: 400;
+  color: rgb(60, 72, 88);
+}
+.contact-us .content .subtitle li {
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 1600px) {
   .history .content .section .row {
     flex-direction: column;
@@ -304,19 +394,6 @@ html {
   .landing .navbar img {
     height: 75px;
     padding-top: 7.5px;
-  }
-  .contact-us .content {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-  .contact-us .content .subtitle {
-    max-width: 400px;
-  }
-  .contact-us .content iframe {
-    width: 400px;
-  }
-  .contact-us .content li {
-    list-style: none;
   }
   .history .content {
     flex-direction: column-reverse;
@@ -353,6 +430,26 @@ html {
   .projects .content .panel img {
     width: 400px;
   }
+  .ATIA .content {
+    width: 400px;
+  }
+  .ATIA .content .panel .images-2 img {
+    width: 200px;
+    height: auto;
+  }
+  .contact-us .content {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .contact-us .content .subtitle {
+    max-width: 400px;
+  }
+  .contact-us .content iframe {
+    width: 400px;
+  }
+  .contact-us .content li {
+    list-style: none;
+  }
 }
 @media (max-width: 480px) {
   .landing .navbar {
@@ -367,12 +464,6 @@ html {
   }
   .landing .hero .content i {
     margin-top: 2rem;
-  }
-  .contact-us .content .subtitle {
-    max-width: 320px;
-  }
-  .contact-us .content iframe {
-    width: 320px;
   }
   .history .header {
     background-attachment: scroll;
@@ -396,6 +487,23 @@ html {
     font-size: 20px;
   }
   .projects .content .panel img {
+    width: 320px;
+  }
+  .ATIA .content {
+    width: 320px;
+  }
+  .ATIA .content .accordion {
+    font-size: 20px;
+  }
+  .ATIA .content .panel .images-2 img,
+.ATIA .content .panel .images-3 img {
+    width: 160px;
+    height: auto;
+  }
+  .contact-us .content .subtitle {
+    max-width: 320px;
+  }
+  .contact-us .content iframe {
     width: 320px;
   }
 }/*# sourceMappingURL=ME.css.map */
