@@ -150,24 +150,25 @@ html {
       margin-bottom: 1vw;
     }
 
-    .section {
+    .images {
       display: flex;
-      align-items: flex-start;
       justify-content: center;
       gap: 0.5vw;
       margin-bottom: 0.5vw;
 
+      img {
+        height: auto;
+        width: clamp(200px, 25vw, 250px);
+      }
+    }
+
+    .text {
       p {
         font-size: $body;
         color: $tertiary;
         line-height: 1.5rem;
         font-weight: 400;
-      }
-
-      img {
-        width: 100%;
-        height: auto;
-        width: clamp(200px, 25vw, 250px);
+        margin: 2vh;
       }
     }
   }
@@ -427,7 +428,7 @@ html {
     .content {
       width: 300px;
 
-      .section {
+      .images {
         img {
           width: 150px;
         }

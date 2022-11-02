@@ -131,23 +131,22 @@ html {
   font-weight: 400;
   margin-bottom: 1vw;
 }
-.summer-camps .content .section {
+.summer-camps .content .images {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
   gap: 0.5vw;
   margin-bottom: 0.5vw;
 }
-.summer-camps .content .section p {
+.summer-camps .content .images img {
+  height: auto;
+  width: clamp(200px, 25vw, 250px);
+}
+.summer-camps .content .text p {
   font-size: 16px;
   color: rgb(150, 150, 150);
   line-height: 1.5rem;
   font-weight: 400;
-}
-.summer-camps .content .section img {
-  width: 100%;
-  height: auto;
-  width: clamp(200px, 25vw, 250px);
+  margin: 2vh;
 }
 
 .junior-stem {
@@ -349,7 +348,7 @@ html {
   .summer-camps .content {
     width: 300px;
   }
-  .summer-camps .content .section img {
+  .summer-camps .content .images img {
     width: 150px;
   }
   .junior-stem .content {
