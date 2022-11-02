@@ -334,6 +334,53 @@ html {
   margin: 1vh 2vw 2vh;
 }
 
+.adapt-a-thon {
+  min-height: 100vh;
+}
+.adapt-a-thon .header {
+  background-image: url("/ME/adapt-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+  background-blend-mode: soft-light;
+  padding: clamp(4rem, 10vw, 6rem) 0;
+}
+.adapt-a-thon .header .title {
+  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-weight: 700;
+  text-align: center;
+  color: white;
+}
+.adapt-a-thon .content {
+  margin: 2vw auto;
+  width: clamp(40rem, 85vw, 50rem);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.adapt-a-thon .content .subheader {
+  font-size: clamp(16px, 3vw, 18px);
+  font-weight: 700;
+  color: rgb(60, 72, 88);
+  line-height: 1.5rem;
+  margin-bottom: 1vw;
+}
+.adapt-a-thon .content .images {
+  display: flex;
+  gap: 0.5vw;
+}
+.adapt-a-thon .content .images img {
+  width: clamp(20rem, 42.5vw, 25rem);
+  height: auto;
+}
+.adapt-a-thon .content .section {
+  font-size: clamp(16px, 3vw, 18px);
+  color: rgb(150, 150, 150);
+  line-height: 1.5rem;
+  font-weight: 400;
+  margin: 2vh;
+}
+
 .contact-us {
   min-height: 100vh;
 }
@@ -437,6 +484,13 @@ html {
     width: 200px;
     height: auto;
   }
+  .adapt-a-thon .content {
+    width: 400px;
+  }
+  .adapt-a-thon .content .images img {
+    width: 200px;
+    height: auto;
+  }
   .contact-us .content {
     flex-direction: column-reverse;
     text-align: center;
@@ -497,6 +551,13 @@ html {
   }
   .ATIA .content .panel .images-2 img,
 .ATIA .content .panel .images-3 img {
+    width: 160px;
+    height: auto;
+  }
+  .adapt-a-thon .content {
+    width: 320px;
+  }
+  .adapt-a-thon .content .images img {
     width: 160px;
     height: auto;
   }
