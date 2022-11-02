@@ -8,10 +8,14 @@
   // border: 1px solid red;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .landing {
-  background-image: url("main-background.jpg");
-  background-position: bottom;
-  background-attachment: fixed;
+  background-image: url("subteams-background.jpg");
+  background-position: center;
+  background-position-y: -300px;
   background-size: cover;
   background-color: hsla(0, 0%, 0%, 0.5);
   background-blend-mode: soft-light;
@@ -83,12 +87,70 @@
 
 .main {
   text-align: center;
-  padding: 3rem;
   font-size: $subheader;
   color: $secondary;
   font-weight: 400;
+  padding-bottom: 2rem;
+
+  .content {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 3vh 0;
+    .section {
+      max-width: 15vw;
+    }
+    i {
+      font-size: 100px;
+      color: $decoration;
+      transition: transform 200ms ease-in, color 200ms ease-in;
+
+      &:hover {
+        transform: translateY(-7px) scale(1.1);
+        color: hsl(43, 100%, 75%);
+      }
+    }
+
+    h3 {
+      margin-top: 1rem;
+      margin-bottom: 2.5rem;
+      font-size: $subheader;
+    }
+
+    p {
+      line-height: 1.5rem;
+      font-size: $body;
+      max-width: 50ch;
+      margin: 0 auto;
+      font-weight: 300;
+      color: $tertiary;
+    }
+  }
+ 
 }
 
+.business {
+  border-top: 5px solid $tertiary;
+  border-bottom: 5px solid $tertiary;
+  .title {
+    font-size: $title;
+    font-weight: 700;
+    text-align: center;
+    color: $secondary;
+  }
+  .subtitle {
+    font-size: 12px;
+    margin: 1vh 10vw 6vh;
+    color: $tertiary;
+  }
+  .content {
+    /* grants, budgets, maybe description of sponsor levels?*/
+  }
+}
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
 @media (max-width: 720px) {
   .landing {
     .navbar {

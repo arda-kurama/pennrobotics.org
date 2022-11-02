@@ -7,10 +7,14 @@
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .landing {
-  background-image: url("main-background.jpg");
-  background-position: bottom;
-  background-attachment: fixed;
+  background-image: url("subteams-background.jpg");
+  background-position: center;
+  background-position-y: -300px;
   background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.5);
   background-blend-mode: soft-light;
@@ -71,10 +75,65 @@
 
 .main {
   text-align: center;
-  padding: 3rem;
   font-size: 24px;
   color: rgb(60, 72, 88);
   font-weight: 400;
+  padding-bottom: 2rem;
+}
+.main .content {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3vh 0;
+}
+.main .content .section {
+  max-width: 15vw;
+}
+.main .content i {
+  font-size: 100px;
+  color: hsl(45deg, 100%, 50%);
+  transition: transform 200ms ease-in, color 200ms ease-in;
+}
+.main .content i:hover {
+  transform: translateY(-7px) scale(1.1);
+  color: hsl(43deg, 100%, 75%);
+}
+.main .content h3 {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  font-size: 24px;
+}
+.main .content p {
+  line-height: 1.5rem;
+  font-size: 16px;
+  max-width: 50ch;
+  margin: 0 auto;
+  font-weight: 300;
+  color: rgb(150, 150, 150);
+}
+
+.business {
+  border-top: 5px solid rgb(150, 150, 150);
+  border-bottom: 5px solid rgb(150, 150, 150);
+}
+.business .title {
+  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-weight: 700;
+  text-align: center;
+  color: rgb(60, 72, 88);
+}
+.business .subtitle {
+  font-size: 12px;
+  margin: 1vh 10vw 6vh;
+  color: rgb(150, 150, 150);
+}
+.business .content {
+  /* grants, budgets, maybe description of sponsor levels?*/
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
 }
 
 @media (max-width: 720px) {
