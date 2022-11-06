@@ -15,7 +15,6 @@ html {
 .landing {
   background-image: url("subteams-background.jpg");
   background-position: center;
-  background-position-y: -300px;
   background-size: cover;
   background-color: hsla(0, 0%, 0%, 0.5);
   background-blend-mode: soft-light;
@@ -84,14 +83,18 @@ html {
     }
   }
 }
-
+body {
+  display: flex;
+  flex-direction: column;
+}
 .main {
+  max-width: 35%;
   text-align: center;
-  font-size: $subheader;
+  align-self: center;
+  font-size: 18px;
   color: $secondary;
-  font-weight: 400;
-  padding-bottom: 2rem;
-
+  font-weight: 500;
+  margin-bottom: -1rem;
   .content {
     display: flex;
     justify-content: space-evenly;
@@ -125,31 +128,84 @@ html {
       color: $tertiary;
     }
   }
- 
 }
-
-.business {
-  border-top: 5px solid $tertiary;
-  border-bottom: 5px solid $tertiary;
-  .title {
-    font-size: $title;
-    font-weight: 700;
-    text-align: center;
-    color: $secondary;
-  }
-  .subtitle {
-    font-size: 12px;
-    margin: 1vh 10vw 6vh;
-    color: $tertiary;
-  }
+.projects {
   .content {
-    /* grants, budgets, maybe description of sponsor levels?*/
+    margin: 2vw auto;
+    width: clamp(55rem, 85vw, 50rem);
+    text-align: center;
+
+    .accordion {
+      background-color: $primary;
+      color: $secondary;
+      font-size: $header;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 18px;
+      width: 100%;
+      text-align: left;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+    }
+
+    .active,
+    .accordion:hover {
+      background-color: lightgrey;
+    }
+
+    .accordion:after {
+      content: "\002B";
+      font-size: $header;
+      color: $secondary;
+      float: right;
+      margin-left: 5px;
+    }
+
+    .active:after {
+      content: "\2212";
+    }
+
+    .panel {
+      background-color: grey;
+      display: none;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+
+      img {
+        width: clamp(55rem, 85vw, 50rem);
+        height: auto;
+      }
+
+      p {
+        font-size: $body;
+        color: $primary;
+        line-height: 1.5rem;
+        font-weight: 400;
+        margin: 1vh 2vw 2vh;
+      }
+    }
+    .list {
+      margin: 1vh 2vw 2vh;
+      font-size: $body;
+      font-weight: 400;
+      color: $primary;
+      margin-top: -15px;
+      margin-left: 10px;
+    }
   }
 }
-.content {
-  display: flex;
-  justify-content: center;
-  gap: 2vw;
+@media (max-width: 880px) {
+  .main {
+    max-width: 60%;
+    margin-bottom: 0;
+  }
+  .projects {
+    .content {
+      width: clamp(3rem, 85vw, 50rem);
+    }
+  }
 }
 @media (max-width: 720px) {
   .landing {
@@ -181,7 +237,9 @@ html {
         display: none;
       }
     }
-
+    .main {
+      max-width: 100%;
+    }
     .hero {
       .content {
         flex-direction: column;
@@ -192,5 +250,8 @@ html {
         }
       }
     }
+  }
+  .main {
+    max-width: 100%;
   }
 }
