@@ -262,7 +262,14 @@ body {
     }
   }
 }
-
+@media (max-width: 550px) {
+  .projects {
+    .business {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
 @media (max-width: 480px) {
   .landing {
     background-attachment: scroll;
