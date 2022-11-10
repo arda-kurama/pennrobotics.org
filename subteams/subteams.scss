@@ -85,6 +85,7 @@ html {
 }
 body {
   display: flex;
+  flex: 1;
   flex-direction: column;
 }
 .main {
@@ -104,16 +105,21 @@ body {
 
   .content {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin: 3vh 0;
     .section {
-      max-width: 15vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 160px;
     }
     i {
       font-size: 100px;
       color: $decoration;
       transition: transform 200ms ease-in, color 200ms ease-in;
-
       &:hover {
         transform: translateY(-7px) scale(1.1);
         color: hsl(43, 100%, 75%);
@@ -124,6 +130,7 @@ body {
       margin-top: 1rem;
       margin-bottom: 2.5rem;
       font-size: $subheader;
+      text-align: center;
     }
 
     p {
@@ -147,7 +154,7 @@ body {
 .projects {
   .content {
     margin: 2vw auto;
-    width: clamp(55rem, 85vw, 50rem);
+    width: clamp(80rem, 85vw, 50rem);
     text-align: center;
   }
   img {
@@ -185,10 +192,22 @@ body {
     }
   }
 }
+@media (max-width: 1300px) {
+  .projects {
+    .content {
+      img {
+        width: 25rem;
+      }
+      width: clamp(3rem, 85vw, 50rem);
+    }
+  }
+}
 @media (max-width: 880px) {
   .main {
-    max-width: 60%;
-    margin-bottom: 0;
+    .header {
+      max-width: 60%;
+      margin-bottom: 0;
+    }
   }
   .projects {
     .content {
@@ -225,6 +244,13 @@ body {
       }
       font-size: 14px;
     }
+    .media {
+      .section {
+        .list {
+          width: 15rem;
+        }
+      }
+    }
   }
 }
 @media (max-width: 680px) {
@@ -248,6 +274,9 @@ body {
     }
     .main {
       max-width: 100%;
+      .header {
+        max-width: 100%;
+      }
     }
     .hero {
       .content {
@@ -260,7 +289,21 @@ body {
       }
     }
   }
-  .main {
-    max-width: 100%;
+  .projects {
+    img {
+      object-fit: scale-down;
+      width: 250px;
+      height: 250px;
+    }
+  }
+  .projects {
+    .business {
+      img {
+        object-fit: cover;
+        width: 15rem;
+        height: 35rem;
+      }
+      font-size: 14px;
+    }
   }
 }

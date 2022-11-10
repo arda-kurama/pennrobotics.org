@@ -74,6 +74,7 @@ html {
 
 body {
   display: flex;
+  flex: 1;
   flex-direction: column;
 }
 
@@ -93,11 +94,17 @@ body {
 }
 .main .content {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin: 3vh 0;
 }
 .main .content .section {
-  max-width: 15vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 160px;
 }
 .main .content i {
   font-size: 100px;
@@ -112,6 +119,7 @@ body {
   margin-top: 1rem;
   margin-bottom: 2.5rem;
   font-size: 24px;
+  text-align: center;
 }
 .main .content p {
   line-height: 1.5rem;
@@ -133,7 +141,7 @@ body {
 
 .projects .content {
   margin: 2vw auto;
-  width: clamp(55rem, 85vw, 50rem);
+  width: clamp(80rem, 85vw, 50rem);
   text-align: center;
 }
 .projects img {
@@ -171,8 +179,16 @@ body {
   text-align: left;
 }
 
+@media (max-width: 1300px) {
+  .projects .content {
+    width: clamp(3rem, 85vw, 50rem);
+  }
+  .projects .content img {
+    width: 25rem;
+  }
+}
 @media (max-width: 880px) {
-  .main {
+  .main .header {
     max-width: 60%;
     margin-bottom: 0;
   }
@@ -203,6 +219,9 @@ body {
   .projects .business img {
     width: 15rem;
   }
+  .projects .media .section .list {
+    width: 15rem;
+  }
 }
 @media (max-width: 680px) {
   .projects .media .section {
@@ -222,6 +241,9 @@ body {
   .landing .main {
     max-width: 100%;
   }
+  .landing .main .header {
+    max-width: 100%;
+  }
   .landing .hero .content {
     flex-direction: column;
     margin: -4rem 0 0 0;
@@ -229,7 +251,19 @@ body {
   .landing .hero .content i {
     margin-top: 2rem;
   }
-  .main {
-    max-width: 100%;
+  .projects img {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    width: 250px;
+    height: 250px;
+  }
+  .projects .business {
+    font-size: 14px;
+  }
+  .projects .business img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 15rem;
+    height: 35rem;
   }
 }/*# sourceMappingURL=subteams.css.map */
