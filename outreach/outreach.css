@@ -6,7 +6,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  border: 1px solid red;
 }
 
 .landing {
@@ -71,41 +70,40 @@
   padding: clamp(4rem, 10vw, 6rem) 0;
 }
 
-.events-22 {
+.events {
   margin: 2vw auto;
   width: clamp(40rem, 85vw, 50rem);
-  text-align: center;
 }
-.events-22 .title {
+.events .title {
+  text-align: center;
   font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 700;
   color: rgb(60, 72, 88);
+  margin-bottom: 1vw;
 }
-.events-22 .content button {
+.events .content button {
   display: flex;
 }
-.events-22 .content button img {
-  width: 200px;
+.events .content button img {
+  width: clamp(175px, 16vw, 250px);
   height: auto;
 }
-.events-22 .content button .text {
-  display: flex;
-  flex-direction: column;
+.events .content button .text {
+  margin: auto 0;
   text-align: left;
-  padding: 18px;
+  padding: 1vw 1vw 1vw 18px;
 }
-.events-22 .content button .text h1 {
+.events .content button .text h1 {
   font-size: 24px;
   font-weight: 500;
+  margin-bottom: 0.5vw;
 }
-.events-22 .content button .text p {
+.events .content button .text p {
   font-size: 16px;
   color: rgb(150, 150, 150);
-  line-height: 1.5rem;
   font-weight: 400;
-  margin: 0.5vw;
 }
-.events-22 .content .accordion {
+.events .content .accordion {
   background-color: white;
   color: rgb(60, 72, 88);
   cursor: pointer;
@@ -114,49 +112,55 @@
   outline: none;
   transition: 0.4s;
 }
-.events-22 .content .active,
-.events-22 .content .accordion:hover {
+.events .content .active,
+.events .content .accordion:hover {
   background-color: lightgrey;
 }
-.events-22 .content .accordion:after {
+.events .content .accordion:after {
   content: "+";
-  font-size: clamp(24px, 3vw, 40px);
+  font-size: clamp(2.5rem, 10vw, 4rem);
+  margin: auto 1vw auto 0;
   color: rgb(60, 72, 88);
   float: right;
-  margin-left: 5px;
 }
-.events-22 .content .active:after {
+.events .content .active:after {
   content: "−";
 }
-.events-22 .content .panel {
+.events .content .panel {
   background-color: white;
   display: none;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-.events-22 .content .panel .images-2 {
+.events .content .panel .content {
   display: flex;
-  gap: 0.5vw;
+  gap: 1vw;
+  text-align: center;
+  margin: 1vw 0;
+  justify-content: center;
 }
-.events-22 .content .panel .images-2 img {
-  width: clamp(20rem, 42.5vw, 25rem);
-  height: auto;
+.events .content .panel .content .main {
+  width: clamp(22.8571428571rem, 48.5714285714vw, 28.5714285714rem);
 }
-.events-22 .content .panel .images-3 {
-  display: flex;
-  gap: 0.5vw;
-}
-.events-22 .content .panel .images-3 img {
-  width: clamp(13.3333333333rem, 28.3333333333vw, 16.6666666667rem);
-  height: auto;
-}
-.events-22 .content .panel p {
+.events .content .panel .content .main .text {
   font-size: 16px;
   color: rgb(150, 150, 150);
   line-height: 1.5rem;
   font-weight: 400;
-  margin: 1vh 2vw 2vh;
+}
+.events .content .panel .content .main img {
+  width: clamp(22.8571428571rem, 48.5714285714vw, 28.5714285714rem);
+  height: auto;
+}
+.events .content .panel .content .images {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+.events .content .panel .content .images img {
+  width: clamp(11.4285714286rem, 24.2857142857vw, 14.2857142857rem);
+  height: auto;
 }
 
 @media (max-width: 720px) {

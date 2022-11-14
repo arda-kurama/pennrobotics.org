@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", Arial, Helvetica, sans-serif;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 .landing {
@@ -81,15 +81,16 @@
   }
 }
 
-.events-22 {
+.events {
   margin: 2vw auto;
   width: clamp(40rem, 85vw, 50rem);
-  text-align: center;
 
   .title {
+    text-align: center;
     font-size: $title;
     font-weight: 700;
     color: $secondary;
+    margin-bottom: 1vw;
   }
 
   .content {
@@ -97,27 +98,25 @@
       display: flex;
 
       img {
-        width: 200px;
+        width: clamp(175px, 16vw, 250px);
         height: auto;
       }
 
       .text {
-        display: flex;
-        flex-direction: column;
+        margin: auto 0;
         text-align: left;
-        padding: 18px;
+        padding: 1vw 1vw 1vw 18px;
 
         h1 {
           font-size: $subheader;
           font-weight: 500;
+          margin-bottom: 0.5vw;
         }
 
         p {
           font-size: $body;
           color: $tertiary;
-          line-height: 1.5rem;
           font-weight: 400;
-          margin: 0.5vw;
         }
       }
     }
@@ -139,10 +138,10 @@
 
     .accordion:after {
       content: "\002B";
-      font-size: $header;
+      font-size: $title;
+      margin: auto 1vw auto 0;
       color: $secondary;
       float: right;
-      margin-left: 5px;
     }
 
     .active:after {
@@ -156,32 +155,37 @@
       overflow: hidden;
       transition: max-height 0.2s ease-out;
 
-      .images-2 {
+      .content {
         display: flex;
-        gap: 0.5vw;
+        gap: 1vw;
+        text-align: center;
+        margin: 1vw 0;
+        justify-content: center;
 
-        img {
-          width: clamp(40rem / 2, 85vw / 2, 50rem / 2);
-          height: auto;
+        .main {
+          width: clamp(40rem / 1.75, 85vw / 1.75, 50rem / 1.75);
+          .text {
+            font-size: $body;
+            color: $tertiary;
+            line-height: 1.5rem;
+            font-weight: 400;
+          }
+          img {
+            width: clamp(40rem / 1.75, 85vw / 1.75, 50rem / 1.75);
+            height: auto;
+          }
         }
-      }
 
-      .images-3 {
-        display: flex;
-        gap: 0.5vw;
+        .images {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5vw;
 
-        img {
-          width: clamp(40rem / 3, 85vw / 3, 50rem / 3);
-          height: auto;
+          img {
+            width: clamp(40rem / 3.5, 85vw / 3.5, 50rem / 3.5);
+            height: auto;
+          }
         }
-      }
-
-      p {
-        font-size: $body;
-        color: $tertiary;
-        line-height: 1.5rem;
-        font-weight: 400;
-        margin: 1vh 2vw 2vh;
       }
     }
   }
