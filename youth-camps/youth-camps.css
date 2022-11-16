@@ -107,7 +107,7 @@ html {
   min-height: 100vh;
 }
 .short-circuits .header {
-  background-image: url("/youth-camps/short-circuits-header.JPG");
+  background-image: url("short-circuits-header.JPG");
   background-position: center;
   background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.7);
@@ -152,7 +152,7 @@ html {
   min-height: 100vh;
 }
 .summer-camps .header {
-  background-image: url("/youth-camps/summer-camp-header.png");
+  background-image: url("summer-camp-header.png");
   background-position: center;
   background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.7);
@@ -198,7 +198,7 @@ html {
   min-height: 100vh;
 }
 .junior-stem .header {
-  background-image: url("/youth-camps/junior-stem-header.jpeg");
+  background-image: url("junior-stem-header.jpeg");
   background-position: top;
   background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.7);
@@ -249,7 +249,7 @@ html {
   min-height: 100vh;
 }
 .workshops .header {
-  background-image: url("/youth-camps/workshops-header.jpeg");
+  background-image: url("workshops-header.jpeg");
   background-position: center;
   background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.7);
