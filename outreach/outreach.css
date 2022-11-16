@@ -71,6 +71,7 @@
 }
 
 .events {
+  min-height: 100vh;
   margin: 2vw auto;
   width: clamp(40rem, 85vw, 50rem);
 }
@@ -177,6 +178,40 @@
     height: 50px;
     padding: 0;
   }
+  .events {
+    width: 400px;
+  }
+  .events .content button img {
+    width: 150px;
+  }
+  .events .content button .text {
+    padding: 0 0 0 1.5vw;
+  }
+  .events .content button .text h1 {
+    margin: 0;
+  }
+  .events .content button .text p {
+    display: none;
+  }
+  .events .content .panel .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .events .content .panel .content .main {
+    width: 400px;
+  }
+  .events .content .panel .content .main img {
+    width: 400px;
+  }
+  .events .content .panel .content .images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vw;
+  }
+  .events .content .panel .content .images img {
+    width: 175px;
+  }
 }
 @media (max-width: 480px) {
   .landing .navbar {
@@ -191,5 +226,20 @@
   }
   .landing .hero .content i {
     margin-top: 2rem;
+  }
+  .events {
+    width: 320px;
+  }
+  .events .content button .text h1 {
+    font-size: 20px;
+  }
+  .events .content .panel .content .main {
+    width: 320px;
+  }
+  .events .content .panel .content .main img {
+    width: 320px;
+  }
+  .events .content .panel .content .images img {
+    width: 150px;
   }
 }/*# sourceMappingURL=outreach.css.map */
