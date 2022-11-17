@@ -70,41 +70,49 @@
   padding: clamp(4rem, 10vw, 6rem) 0;
 }
 
-.events {
+.outreach {
   min-height: 100vh;
   margin: 2vw auto;
   width: clamp(40rem, 85vw, 50rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
 }
-.events .title {
+.outreach .title {
   text-align: center;
   font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 700;
   color: rgb(60, 72, 88);
   margin-bottom: 1vw;
 }
-.events .content button {
+.outreach .event button {
   display: flex;
 }
-.events .content button img {
+.outreach .event button img {
   width: clamp(175px, 16vw, 250px);
   height: auto;
 }
-.events .content button .text {
+.outreach .event button .text {
   margin: auto 0;
   text-align: left;
   padding: 1vw 1vw 1vw 18px;
 }
-.events .content button .text h1 {
+.outreach .event button .text h1 {
   font-size: 24px;
+  font-weight: 500;
+}
+.outreach .event button .text h3 {
+  color: rgb(150, 150, 150);
+  font-size: 16px;
   font-weight: 500;
   margin-bottom: 0.5vw;
 }
-.events .content button .text p {
+.outreach .event button .text p {
   font-size: 16px;
   color: rgb(150, 150, 150);
   font-weight: 400;
 }
-.events .content .accordion {
+.outreach .event .accordion {
   background-color: white;
   color: rgb(60, 72, 88);
   cursor: pointer;
@@ -113,53 +121,54 @@
   outline: none;
   transition: 0.4s;
 }
-.events .content .active,
-.events .content .accordion:hover {
+.outreach .event .active,
+.outreach .event .accordion:hover {
   background-color: lightgrey;
 }
-.events .content .accordion:after {
+.outreach .event .accordion:after {
   content: "+";
-  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-size: 4rem;
   margin: auto 1vw auto 0;
   color: rgb(60, 72, 88);
   float: right;
 }
-.events .content .active:after {
+.outreach .event .active:after {
   content: "−";
+  justify-content: flex-end;
 }
-.events .content .panel {
+.outreach .event .panel {
   background-color: white;
   display: none;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
 }
-.events .content .panel .content {
+.outreach .event .panel .content {
   display: flex;
   gap: 1vw;
   text-align: center;
   margin: 1vw 0;
   justify-content: center;
 }
-.events .content .panel .content .main {
+.outreach .event .panel .content .main {
   width: clamp(22.8571428571rem, 48.5714285714vw, 28.5714285714rem);
 }
-.events .content .panel .content .main .text {
+.outreach .event .panel .content .main .text {
   font-size: 16px;
   color: rgb(150, 150, 150);
   line-height: 1.5rem;
   font-weight: 400;
 }
-.events .content .panel .content .main img {
+.outreach .event .panel .content .main img {
   width: clamp(22.8571428571rem, 48.5714285714vw, 28.5714285714rem);
   height: auto;
 }
-.events .content .panel .content .images {
+.outreach .event .panel .content .images {
   display: flex;
   flex-direction: column;
   gap: 0.5vw;
 }
-.events .content .panel .content .images img {
+.outreach .event .panel .content .images img {
   width: clamp(11.4285714286rem, 24.2857142857vw, 14.2857142857rem);
   height: auto;
 }
@@ -178,38 +187,42 @@
     height: 50px;
     padding: 0;
   }
-  .events {
+  .outreach {
     width: 400px;
   }
-  .events .content button img {
+  .outreach .event button img {
     width: 150px;
   }
-  .events .content button .text {
+  .outreach .event button .text {
     padding: 0 0 0 1.5vw;
+    min-width: 210px;
   }
-  .events .content button .text h1 {
+  .outreach .event button .text h1 {
     margin: 0;
   }
-  .events .content button .text p {
+  .outreach .event button .text h3 {
     display: none;
   }
-  .events .content .panel .content {
+  .outreach .event button .text p {
+    display: none;
+  }
+  .outreach .event .panel .content {
     flex-direction: column;
     align-items: center;
   }
-  .events .content .panel .content .main {
+  .outreach .event .panel .content .main {
     width: 400px;
   }
-  .events .content .panel .content .main img {
+  .outreach .event .panel .content .main img {
     width: 400px;
   }
-  .events .content .panel .content .images {
+  .outreach .event .panel .content .images {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1vw;
   }
-  .events .content .panel .content .images img {
+  .outreach .event .panel .content .images img {
     width: 175px;
   }
 }
@@ -227,19 +240,25 @@
   .landing .hero .content i {
     margin-top: 2rem;
   }
-  .events {
+  .outreach {
     width: 320px;
   }
-  .events .content button .text h1 {
+  .outreach .event button .text {
+    min-width: 140px;
+  }
+  .outreach .event button .text h1 {
     font-size: 20px;
   }
-  .events .content .panel .content .main {
+  .outreach .event .panel .content .main {
     width: 320px;
   }
-  .events .content .panel .content .main img {
+  .outreach .event .panel .content .main img {
     width: 320px;
   }
-  .events .content .panel .content .images img {
+  .outreach .event .panel .content .images img {
     width: 150px;
+  }
+  .outreach .event .accordion:after {
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=outreach.css.map */

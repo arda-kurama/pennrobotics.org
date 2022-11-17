@@ -81,10 +81,13 @@
   }
 }
 
-.events {
+.outreach {
   min-height: 100vh;
   margin: 2vw auto;
   width: clamp(40rem, 85vw, 50rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
 
   .title {
     text-align: center;
@@ -94,10 +97,9 @@
     margin-bottom: 1vw;
   }
 
-  .content {
+  .event {
     button {
       display: flex;
-
       img {
         width: clamp(175px, 16vw, 250px);
         height: auto;
@@ -110,6 +112,12 @@
 
         h1 {
           font-size: $subheader;
+          font-weight: 500;
+        }
+
+        h3 {
+          color: $tertiary;
+          font-size: $body;
           font-weight: 500;
           margin-bottom: 0.5vw;
         }
@@ -139,7 +147,7 @@
 
     .accordion:after {
       content: "\002B";
-      font-size: $title;
+      font-size: 4rem;
       margin: auto 1vw auto 0;
       color: $secondary;
       float: right;
@@ -147,6 +155,7 @@
 
     .active:after {
       content: "\2212";
+      justify-content: flex-end;
     }
 
     .panel {
@@ -212,9 +221,9 @@
     }
   }
 
-  .events {
+  .outreach {
     width: 400px;
-    .content {
+    .event {
       button {
         img {
           width: 150px;
@@ -222,10 +231,16 @@
 
         .text {
           padding: 0 0 0 1.5vw;
+          min-width: 210px;
 
           h1 {
             margin: 0;
           }
+
+          h3 {
+            display: none;
+          }
+
           p {
             display: none;
           }
@@ -278,12 +293,13 @@
     }
   }
 
-  .events {
+  .outreach {
     width: 320px;
 
-    .content {
+    .event {
       button {
         .text {
+          min-width: 140px;
           h1 {
             font-size: 20px;
           }
@@ -304,6 +320,10 @@
             }
           }
         }
+      }
+
+      .accordion:after {
+        font-size: 3rem;
       }
     }
   }
