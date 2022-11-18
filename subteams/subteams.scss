@@ -94,6 +94,8 @@ body {
   flex-direction: column;
 
   .header {
+    max-width: 60%;
+    margin-bottom: 0;
     padding: 1rem;
     width: 36%;
     text-align: center;
@@ -102,75 +104,42 @@ body {
     color: $secondary;
     font-weight: 500;
   }
-
-  .content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 3vh 0;
-    .section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 160px;
-    }
-    i {
-      font-size: 100px;
-      color: $decoration;
-      transition: transform 200ms ease-in, color 200ms ease-in;
-      &:hover {
-        transform: translateY(-7px) scale(1.1);
-        color: hsl(43, 100%, 75%);
-      }
-    }
-
-    h3 {
-      margin-top: 1rem;
-      margin-bottom: 2.5rem;
-      font-size: $subheader;
-      text-align: center;
-    }
-
-    p {
-      line-height: 1.5rem;
-      font-size: $body;
-      max-width: 50ch;
-      font-weight: 300;
-      color: $tertiary;
-    }
-  }
 }
 .projects {
   margin-top: 2rem;
   .header {
-    border: 3px solid grey;
-    font-size: $header;
+    color: $secondary;
+    font-size: $title;
     font-weight: 500;
     text-align: center;
   }
-}
-.projects {
   .content {
     margin: 2vw auto;
-    width: clamp(80rem, 85vw, 50rem);
     text-align: center;
+    width: clamp(3rem, 85vw, 50rem);
+    img {
+      width: 25rem;
+    }
   }
   img {
     object-fit: cover;
-    width: 35rem;
-    height: 25rem;
+    width: 25rem;
+    height: 15rem;
+  }
+  p {
+    font-weight: 400;
+    font-size: $body;
+    color: $tertiary;
   }
   .business {
     display: flex;
+    gap: 2rem;
     p {
-      font-weight: 400;
-      font-size: $body;
+      text-align: center;
     }
   }
-
-  .media {
+  .media,
+  .wiring {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -182,39 +151,17 @@ body {
       justify-content: space-between;
       gap: 2rem;
       align-items: center;
-      p {
-        text-align: center;
+      .row {
+        flex-direction: column;
       }
       .list {
         width: 45rem;
         text-align: left;
+        p {
+          margin-top: -1.2rem;
+          margin-left: 1.25rem;
+        }
       }
-    }
-  }
-}
-@media (max-width: 1300px) {
-  .projects {
-    .content {
-      img {
-        width: 25rem;
-      }
-      width: clamp(3rem, 85vw, 50rem);
-    }
-  }
-}
-@media (max-width: 880px) {
-  .main {
-    .header {
-      max-width: 60%;
-      margin-bottom: 0;
-    }
-  }
-  .projects {
-    .content {
-      img {
-        width: 25rem;
-      }
-      width: clamp(3rem, 85vw, 50rem);
     }
   }
 }
@@ -239,8 +186,10 @@ body {
   }
   .projects {
     .business {
+      flex-direction: column;
       img {
-        width: 15rem;
+        width: 30rem;
+        align-self: center;
       }
       font-size: 14px;
     }
@@ -249,15 +198,6 @@ body {
         .list {
           width: 15rem;
         }
-      }
-    }
-  }
-}
-@media (max-width: 680px) {
-  .projects {
-    .media {
-      .section {
-        flex-direction: column;
       }
     }
   }
@@ -302,8 +242,6 @@ body {
       width: 250px;
       height: 250px;
     }
-  }
-  .projects {
     .business {
       img {
         object-fit: cover;
@@ -311,6 +249,11 @@ body {
         height: 35rem;
       }
       font-size: 14px;
+    }
+    .media {
+      .section {
+        flex-direction: column;
+      }
     }
   }
 }
