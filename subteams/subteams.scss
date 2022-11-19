@@ -97,7 +97,7 @@ body {
     max-width: 60%;
     margin-bottom: 0;
     padding: 1rem;
-    width: 36%;
+    width: 60%;
     text-align: center;
     align-self: center;
     font-size: 18px;
@@ -152,7 +152,13 @@ body {
       gap: 2rem;
       align-items: center;
       .row {
-        flex-direction: column;
+        align-self: center;
+        p {
+          display: none;
+        }
+        img {
+          flex-direction: column;
+        }
       }
       .list {
         width: 45rem;
@@ -186,6 +192,7 @@ body {
   }
   .projects {
     .business {
+      align-items: center;
       flex-direction: column;
       img {
         width: 30rem;
@@ -195,18 +202,26 @@ body {
     }
     .media {
       .section {
+        flex-direction: column;
+        img {
+          width: 60vw;
+        }
         .list {
           width: 15rem;
         }
       }
     }
-  }
-}
-@media (max-width: 550px) {
-  .projects {
-    .business {
-      align-items: center;
-      flex-direction: column;
+    .wiring {
+      .section {
+        p {
+          display: none;
+        }
+        .row {
+          p {
+            display: block;
+          }
+        }
+      }
     }
   }
 }
@@ -220,9 +235,10 @@ body {
       }
     }
     .main {
-      max-width: 100%;
+      width: 100%;
       .header {
         max-width: 100%;
+        width: 100%;
       }
     }
     .hero {
@@ -238,21 +254,22 @@ body {
   }
   .projects {
     img {
-      object-fit: scale-down;
+      object-fit: cover;
       width: 250px;
       height: 250px;
     }
     .business {
-      img {
-        object-fit: cover;
-        width: 15rem;
-        height: 35rem;
-      }
       font-size: 14px;
     }
-    .media {
-      .section {
-        flex-direction: column;
+    .programming,
+    .wiring,
+    .business,
+    .outreach,
+    .manufacturing,
+    .design {
+      img {
+        width: 60vw;
+        height: 60vw;
       }
     }
   }
