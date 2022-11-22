@@ -108,7 +108,7 @@ html {
   min-height: 100vh;
 }
 .history .header {
-  background-image: url("/ME/history-header.jpg");
+  background-image: url("history-header.jpg");
   background-position: center;
   background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.5);
@@ -180,7 +180,7 @@ html {
   min-height: 100vh;
 }
 .projects .header {
-  background-image: url("/ME/projects-header.jpg");
+  background-image: url("projects-header.jpg");
   background-position: center;
   background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.5);
@@ -248,7 +248,7 @@ html {
   min-height: 100vh;
 }
 .ATIA .header {
-  background-image: url("/ME/ATIA-header.jpg");
+  background-image: url("ATIA-header.jpg");
   background-position: center;
   background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.5);
@@ -338,7 +338,7 @@ html {
   min-height: 100vh;
 }
 .adapt-a-thon .header {
-  background-image: url("/ME/adapt-1.jpg");
+  background-image: url("adapt-1.jpg");
   background-position: center;
   background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.5);
@@ -385,7 +385,7 @@ html {
   min-height: 100vh;
 }
 .contact-us .header {
-  background-image: url("/ME/contact-header.png");
+  background-image: url("contact-header.png");
   background-position: center;
   background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.7);

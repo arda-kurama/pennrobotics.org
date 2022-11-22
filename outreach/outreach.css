@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
@@ -69,16 +70,106 @@
   padding: clamp(4rem, 10vw, 6rem) 0;
 }
 
-.main {
+.outreach {
+  margin: 2vw auto;
+  width: clamp(40rem, 85vw, 50rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+.outreach .title {
   text-align: center;
-  margin: 3vw auto;
-  font-size: 24px;
+  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-weight: 700;
   color: rgb(60, 72, 88);
+  margin-bottom: 1vw;
+}
+.outreach .event button {
+  display: flex;
+}
+.outreach .event button img {
+  width: clamp(175px, 16vw, 250px);
+  height: auto;
+}
+.outreach .event button .text {
+  margin: auto 0;
+  text-align: left;
+  padding: 1vw 1vw 1vw 18px;
+}
+.outreach .event button .text h1 {
+  font-size: 24px;
+  font-weight: 500;
+}
+.outreach .event button .text h3 {
+  color: rgb(150, 150, 150);
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 0.5vw;
+}
+.outreach .event button .text p {
+  font-size: 16px;
+  color: rgb(150, 150, 150);
   font-weight: 400;
 }
-.main iframe {
-  width: 80vw;
-  height: 47vw;
+.outreach .event .accordion {
+  background-color: white;
+  color: rgb(60, 72, 88);
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+.outreach .event .active,
+.outreach .event .accordion:hover {
+  background-color: lightgrey;
+}
+.outreach .event .accordion:after {
+  content: "+";
+  font-size: 4rem;
+  margin: auto 1vw auto 0;
+  color: rgb(60, 72, 88);
+  float: right;
+}
+.outreach .event .active:after {
+  content: "−";
+  justify-content: flex-end;
+}
+.outreach .event .panel {
+  background-color: white;
+  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+.outreach .event .panel .content {
+  display: flex;
+  gap: 1vw;
+  text-align: center;
+  margin: 1vw 0;
+  justify-content: center;
+}
+.outreach .event .panel .content .main {
+  width: clamp(22.8571428571rem, 48.5714285714vw, 28.5714285714rem);
+}
+.outreach .event .panel .content .main .text {
+  font-size: 16px;
+  color: rgb(150, 150, 150);
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+.outreach .event .panel .content .main img {
+  width: clamp(22.8571428571rem, 48.5714285714vw, 28.5714285714rem);
+  height: auto;
+}
+.outreach .event .panel .content .images {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+.outreach .event .panel .content .images img {
+  width: clamp(11.4285714286rem, 24.2857142857vw, 14.2857142857rem);
+  height: auto;
 }
 
 @media (max-width: 720px) {
@@ -95,6 +186,44 @@
     height: 50px;
     padding: 0;
   }
+  .outreach {
+    width: 400px;
+  }
+  .outreach .event button img {
+    width: 150px;
+  }
+  .outreach .event button .text {
+    padding: 0 0 0 1.5vw;
+    min-width: 210px;
+  }
+  .outreach .event button .text h1 {
+    margin: 0;
+  }
+  .outreach .event button .text h3 {
+    display: none;
+  }
+  .outreach .event button .text p {
+    display: none;
+  }
+  .outreach .event .panel .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .outreach .event .panel .content .main {
+    width: 400px;
+  }
+  .outreach .event .panel .content .main img {
+    width: 400px;
+  }
+  .outreach .event .panel .content .images {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1vw;
+  }
+  .outreach .event .panel .content .images img {
+    width: 175px;
+  }
 }
 @media (max-width: 480px) {
   .landing .navbar {
@@ -109,5 +238,26 @@
   }
   .landing .hero .content i {
     margin-top: 2rem;
+  }
+  .outreach {
+    width: 320px;
+  }
+  .outreach .event button .text {
+    min-width: 140px;
+  }
+  .outreach .event button .text h1 {
+    font-size: 20px;
+  }
+  .outreach .event .panel .content .main {
+    width: 320px;
+  }
+  .outreach .event .panel .content .main img {
+    width: 320px;
+  }
+  .outreach .event .panel .content .images img {
+    width: 150px;
+  }
+  .outreach .event .accordion:after {
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=outreach.css.map */
