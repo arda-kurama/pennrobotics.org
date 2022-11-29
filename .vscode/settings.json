@@ -2,5 +2,7 @@
   "liveServer.settings.port": 5501,
   "githubPullRequests.ignoredPullRequestBranches": [
     "main"
-  ]
+  ],
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

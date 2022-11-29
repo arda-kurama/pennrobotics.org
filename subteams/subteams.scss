@@ -9,9 +9,8 @@
 }
 
 .landing {
-  background-image: url("");
-  background-position: bottom;
-  background-attachment: fixed;
+  background-image: url("subteams-background.jpg");
+  background-position: center;
   background-size: cover;
   background-color: hsla(0, 0%, 0%, 0.5);
   background-blend-mode: soft-light;
@@ -82,11 +81,53 @@
 }
 
 .main {
-  text-align: center;
-  padding: 3rem;
-  font-size: $subheader;
+  margin: 2vw auto;
+  width: clamp(40rem, 85vw, 50rem);
+  font-size: $subtitle;
   color: $secondary;
-  font-weight: 400;
+  font-weight: 500;
+  text-align: center;
+
+  .section {
+    margin: 2vw auto;
+
+    .header {
+      font-size: $title;
+      font-weight: 400;
+      background-color: $tertiary;
+      color: $primary;
+      padding: 0.25vw;
+    }
+
+    .content {
+      display: flex;
+      background-color: lightgray;
+
+      img {
+        width: 400px;
+        height: auto;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: $body;
+        color: black;
+        margin: auto auto;
+        padding: 2vw;
+      }
+
+      ul {
+        margin: auto auto;
+        text-align: left;
+      }
+
+      li {
+        font-weight: 400;
+        font-size: $body;
+        color: $tertiary;
+      }
+    }
+  }
 }
 
 @media (max-width: 720px) {
@@ -108,8 +149,41 @@
       }
     }
   }
+  .projects {
+    .business {
+      align-items: center;
+      flex-direction: column;
+      img {
+        width: 30rem;
+        align-self: center;
+      }
+      font-size: 14px;
+    }
+    .media {
+      .section {
+        flex-direction: column;
+        img {
+          width: 60vw;
+        }
+        .list {
+          width: 15rem;
+        }
+      }
+    }
+    .wiring {
+      .section {
+        p {
+          display: none;
+        }
+        .row {
+          p {
+            display: block;
+          }
+        }
+      }
+    }
+  }
 }
-
 @media (max-width: 480px) {
   .landing {
     background-attachment: scroll;
@@ -119,7 +193,13 @@
         display: none;
       }
     }
-
+    .main {
+      width: 100%;
+      .header {
+        max-width: 100%;
+        width: 100%;
+      }
+    }
     .hero {
       .content {
         flex-direction: column;
@@ -128,6 +208,27 @@
         i {
           margin-top: 2rem;
         }
+      }
+    }
+  }
+  .projects {
+    img {
+      object-fit: cover;
+      width: 250px;
+      height: 250px;
+    }
+    .business {
+      font-size: 14px;
+    }
+    .programming,
+    .wiring,
+    .business,
+    .outreach,
+    .manufacturing,
+    .design {
+      img {
+        width: 60vw;
+        height: 60vw;
       }
     }
   }

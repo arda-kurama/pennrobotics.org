@@ -8,9 +8,8 @@
 }
 
 .landing {
-  background-image: url("");
-  background-position: bottom;
-  background-attachment: fixed;
+  background-image: url("subteams-background.jpg");
+  background-position: center;
   background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.5);
   background-blend-mode: soft-light;
@@ -70,11 +69,46 @@
 }
 
 .main {
-  text-align: center;
-  padding: 3rem;
-  font-size: 24px;
+  margin: 2vw auto;
+  width: clamp(40rem, 85vw, 50rem);
+  font-size: clamp(16px, 3vw, 18px);
   color: rgb(60, 72, 88);
+  font-weight: 500;
+  text-align: center;
+}
+.main .section {
+  margin: 2vw auto;
+}
+.main .section .header {
+  font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 400;
+  background-color: rgb(150, 150, 150);
+  color: white;
+  padding: 0.25vw;
+}
+.main .section .content {
+  display: flex;
+  background-color: lightgray;
+}
+.main .section .content img {
+  width: 400px;
+  height: auto;
+}
+.main .section .content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  margin: auto auto;
+  padding: 2vw;
+}
+.main .section .content ul {
+  margin: auto auto;
+  text-align: left;
+}
+.main .section .content li {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgb(150, 150, 150);
 }
 
 @media (max-width: 720px) {
@@ -91,6 +125,30 @@
     height: 50px;
     padding: 0;
   }
+  .projects .business {
+    align-items: center;
+    flex-direction: column;
+    font-size: 14px;
+  }
+  .projects .business img {
+    width: 30rem;
+    align-self: center;
+  }
+  .projects .media .section {
+    flex-direction: column;
+  }
+  .projects .media .section img {
+    width: 60vw;
+  }
+  .projects .media .section .list {
+    width: 15rem;
+  }
+  .projects .wiring .section p {
+    display: none;
+  }
+  .projects .wiring .section .row p {
+    display: block;
+  }
 }
 @media (max-width: 480px) {
   .landing {
@@ -102,11 +160,36 @@
   .landing .navbar img {
     display: none;
   }
+  .landing .main {
+    width: 100%;
+  }
+  .landing .main .header {
+    max-width: 100%;
+    width: 100%;
+  }
   .landing .hero .content {
     flex-direction: column;
     margin: -4rem 0 0 0;
   }
   .landing .hero .content i {
     margin-top: 2rem;
+  }
+  .projects img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 250px;
+    height: 250px;
+  }
+  .projects .business {
+    font-size: 14px;
+  }
+  .projects .programming img,
+.projects .wiring img,
+.projects .business img,
+.projects .outreach img,
+.projects .manufacturing img,
+.projects .design img {
+    width: 60vw;
+    height: 60vw;
   }
 }/*# sourceMappingURL=subteams.css.map */
