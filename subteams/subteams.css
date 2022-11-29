@@ -81,7 +81,7 @@
 }
 .main .section .header {
   font-size: clamp(2.5rem, 10vw, 4rem);
-  font-weight: 500;
+  font-weight: 400;
   background-color: rgb(150, 150, 150);
   color: white;
   padding: 0.25vw;
