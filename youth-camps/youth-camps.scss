@@ -120,10 +120,61 @@ html {
   }
 }
 
+.short-circuits {
+  min-height: 100vh;
+  .header {
+    background-image: url("short-circuits-header.JPG");
+    background-position: center;
+    background-size: cover;
+    background-color: hsla(0, 0%, 0%, 0.7);
+    background-blend-mode: soft-light;
+    padding: clamp(4rem, 10vw, 6rem) 0;
+
+    .title {
+      font-size: $title;
+      font-weight: 700;
+      text-align: center;
+      color: $primary;
+    }
+  }
+
+  .content {
+    display: flex;
+    gap: 2vw;
+    text-align: center;
+    width: clamp(40rem, 85vw, 50rem);
+    margin: 2vw auto;
+
+    .text {
+      font-size: $body;
+      color: $tertiary;
+      line-height: 1.5rem;
+      font-weight: 400;
+      margin: 1vw 2vw;
+    }
+
+    .images {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5vw;
+
+      img {
+        width: clamp(40rem / 3.5, 85vw / 3.5, 50rem / 3.5);
+        height: auto;
+      }
+    }
+
+    img {
+      width: clamp(40rem / 1.5, 85vw / 1.5, 50rem / 1.5);
+      height: auto;
+    }
+  }
+}
+
 .summer-camps {
   min-height: 100vh;
   .header {
-    background-image: url("/youth-camps/summer-camp-header.png");
+    background-image: url("summer-camp-header.png");
     background-position: center;
     background-size: cover;
     background-color: hsla(0, 0%, 0%, 0.7);
@@ -150,24 +201,25 @@ html {
       margin-bottom: 1vw;
     }
 
-    .section {
+    .images {
       display: flex;
-      align-items: flex-start;
       justify-content: center;
       gap: 0.5vw;
       margin-bottom: 0.5vw;
 
+      img {
+        height: auto;
+        width: clamp(200px, 25vw, 250px);
+      }
+    }
+
+    .text {
       p {
         font-size: $body;
         color: $tertiary;
         line-height: 1.5rem;
         font-weight: 400;
-      }
-
-      img {
-        width: 100%;
-        height: auto;
-        width: clamp(200px, 25vw, 250px);
+        margin: 2vh;
       }
     }
   }
@@ -176,7 +228,7 @@ html {
 .junior-stem {
   min-height: 100vh;
   .header {
-    background-image: url("/youth-camps/junior-stem-header.jpeg");
+    background-image: url("junior-stem-header.jpeg");
     background-position: top;
     background-size: cover;
     background-color: hsla(0, 0%, 0%, 0.7);
@@ -235,7 +287,7 @@ html {
 .workshops {
   min-height: 100vh;
   .header {
-    background-image: url("/youth-camps/workshops-header.jpeg");
+    background-image: url("workshops-header.jpeg");
     background-position: center;
     background-size: cover;
     background-color: hsla(0, 0%, 0%, 0.7);
@@ -346,6 +398,23 @@ html {
     }
   }
 
+  .short-circuits {
+    .content {
+      width: 400px;
+      flex-direction: column-reverse;
+
+      .images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      img {
+        width: 400px;
+      }
+    }
+  }
+
   .summer-camps {
     .content {
       width: 400px;
@@ -423,11 +492,27 @@ html {
     }
   }
 
+  .short-circuits {
+    .content {
+      width: 300px;
+
+      .images {
+        img {
+          width: 140px;
+        }
+      }
+
+      img {
+        width: 300px;
+      }
+    }
+  }
+
   .summer-camps {
     .content {
       width: 300px;
 
-      .section {
+      .images {
         img {
           width: 150px;
         }
