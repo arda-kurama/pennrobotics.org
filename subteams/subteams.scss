@@ -8,10 +8,6 @@
   // border: 1px solid red;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .landing {
   background-image: url("subteams-background.jpg");
   background-position: center;
@@ -83,94 +79,57 @@ html {
     }
   }
 }
-body {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-}
-.main {
-  display: flex;
-  margin: 0;
-  flex-direction: column;
 
-  .header {
-    max-width: 60%;
-    margin-bottom: 0;
-    padding: 1rem;
-    width: 60%;
-    text-align: center;
-    align-self: center;
-    font-size: 18px;
-    color: $secondary;
-    font-weight: 500;
-  }
-}
-.projects {
-  margin-top: 2rem;
-  .header {
-    color: $secondary;
-    font-size: $title;
-    font-weight: 500;
-    text-align: center;
-  }
-  .content {
+.main {
+  margin: 2vw auto;
+  width: clamp(40rem, 85vw, 50rem);
+  font-size: $subtitle;
+  color: $secondary;
+  font-weight: 500;
+  text-align: center;
+
+  .section {
     margin: 2vw auto;
-    text-align: center;
-    width: clamp(3rem, 85vw, 50rem);
-    img {
-      width: 25rem;
+
+    .header {
+      font-size: $title;
+      font-weight: 500;
+      background-color: $tertiary;
+      color: $primary;
+      padding: 0.25vw;
     }
-  }
-  img {
-    object-fit: cover;
-    width: 25rem;
-    height: 15rem;
-  }
-  p {
-    font-weight: 400;
-    font-size: $body;
-    color: $tertiary;
-  }
-  .business {
-    display: flex;
-    gap: 2rem;
-    p {
-      text-align: center;
-    }
-  }
-  .media,
-  .wiring {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: space-evenly;
-    align-items: center;
-    .section {
+
+    .content {
       display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 2rem;
-      align-items: center;
-      .row {
-        align-self: center;
-        p {
-          display: none;
-        }
-        img {
-          flex-direction: column;
-        }
+      background-color: lightgray;
+
+      img {
+        width: 400px;
+        height: auto;
       }
-      .list {
-        width: 45rem;
+
+      p {
+        font-weight: 400;
+        font-size: $body;
+        color: black;
+        margin: auto auto;
+        padding: 2vw;
+      }
+
+      ul {
+        margin: auto auto;
         text-align: left;
-        p {
-          margin-top: -1.2rem;
-          margin-left: 1.25rem;
-        }
+      }
+
+      li {
+        font-weight: 400;
+        font-size: $body;
+        color: $tertiary;
       }
     }
   }
 }
+
 @media (max-width: 720px) {
   .landing {
     .navbar {

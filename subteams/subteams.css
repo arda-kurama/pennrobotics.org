@@ -7,10 +7,6 @@
   font-family: "Roboto", Arial, Helvetica, sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 .landing {
   background-image: url("subteams-background.jpg");
   background-position: center;
@@ -72,101 +68,47 @@ html {
   padding: clamp(4rem, 10vw, 6rem) 0;
 }
 
-body {
-  display: flex;
-  flex: 1;
-  flex-direction: column;
-}
-
 .main {
-  display: flex;
-  margin: 0;
-  flex-direction: column;
-}
-.main .header {
-  max-width: 60%;
-  margin-bottom: 0;
-  padding: 1rem;
-  width: 60%;
-  text-align: center;
-  align-self: center;
-  font-size: 18px;
+  margin: 2vw auto;
+  width: clamp(40rem, 85vw, 50rem);
+  font-size: clamp(16px, 3vw, 18px);
   color: rgb(60, 72, 88);
   font-weight: 500;
+  text-align: center;
 }
-
-.projects {
-  margin-top: 2rem;
+.main .section {
+  margin: 2vw auto;
 }
-.projects .header {
-  color: rgb(60, 72, 88);
+.main .section .header {
   font-size: clamp(2.5rem, 10vw, 4rem);
   font-weight: 500;
-  text-align: center;
+  background-color: rgb(150, 150, 150);
+  color: white;
+  padding: 0.25vw;
 }
-.projects .content {
-  margin: 2vw auto;
-  text-align: center;
-  width: clamp(3rem, 85vw, 50rem);
+.main .section .content {
+  display: flex;
+  background-color: lightgray;
 }
-.projects .content img {
-  width: 25rem;
+.main .section .content img {
+  width: 400px;
+  height: auto;
 }
-.projects img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 25rem;
-  height: 15rem;
+.main .section .content p {
+  font-weight: 400;
+  font-size: 16px;
+  color: black;
+  margin: auto auto;
+  padding: 2vw;
 }
-.projects p {
+.main .section .content ul {
+  margin: auto auto;
+  text-align: left;
+}
+.main .section .content li {
   font-weight: 400;
   font-size: 16px;
   color: rgb(150, 150, 150);
-}
-.projects .business {
-  display: flex;
-  gap: 2rem;
-}
-.projects .business p {
-  text-align: center;
-}
-.projects .media,
-.projects .wiring {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  justify-content: space-evenly;
-  align-items: center;
-}
-.projects .media .section,
-.projects .wiring .section {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 2rem;
-  align-items: center;
-}
-.projects .media .section .row,
-.projects .wiring .section .row {
-  align-self: center;
-}
-.projects .media .section .row p,
-.projects .wiring .section .row p {
-  display: none;
-}
-.projects .media .section .row img,
-.projects .wiring .section .row img {
-  flex-direction: column;
-}
-.projects .media .section .list,
-.projects .wiring .section .list {
-  width: 45rem;
-  text-align: left;
-}
-.projects .media .section .list p,
-.projects .wiring .section .list p {
-  margin-top: -1.2rem;
-  margin-left: 1.25rem;
 }
 
 @media (max-width: 720px) {
