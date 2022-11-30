@@ -140,6 +140,8 @@
 @media (max-width: 720px) {
   .landing {
     .navbar {
+      padding: 12px 6px;
+
       .links {
         font-size: 14px;
 
@@ -149,8 +151,8 @@
       }
 
       img {
-        height: 75px;
-        padding-top: 7.5px;
+        height: 50px;
+        padding: 0;
       }
     }
   }

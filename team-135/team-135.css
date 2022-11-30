@@ -233,6 +233,9 @@
   .landing {
     min-height: 80vh;
   }
+  .landing .navbar {
+    padding: 12px 6px;
+  }
   .landing .navbar .links {
     font-size: 14px;
   }
@@ -240,8 +243,8 @@
     display: none;
   }
   .landing .navbar img {
-    height: 75px;
-    padding-top: 7.5px;
+    height: 50px;
+    padding: 0;
   }
   .contact-us .content {
     gap: 4vw;
@@ -269,6 +272,9 @@
   }
   .main .content i {
     margin-top: 2rem;
+  }
+  .sponsors {
+    background-attachment: scroll;
   }
   .contact-us .content {
     flex-direction: column;
