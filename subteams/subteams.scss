@@ -9,8 +9,9 @@
 }
 
 .landing {
-  background-image: url("subteams-background.jpg");
-  background-position: center;
+  background-image: url("outreach-1.JPG");
+  background-position: bottom;
+  background-attachment: fixed;
   background-size: cover;
   background-color: hsla(0, 0%, 0%, 0.5);
   background-blend-mode: soft-light;
@@ -104,7 +105,7 @@
       background-color: lightgray;
 
       img {
-        width: 400px;
+        width: clamp(40rem / 2, 85vw / 2, 50rem / 2);
         height: auto;
       }
 
@@ -113,7 +114,7 @@
         font-size: $body;
         color: black;
         margin: auto auto;
-        padding: 2vw;
+        padding: 1vh 2vw;
       }
 
       ul {
@@ -133,8 +134,6 @@
 @media (max-width: 720px) {
   .landing {
     .navbar {
-      padding: 12px 6px;
-
       .links {
         font-size: 14px;
 
@@ -144,46 +143,35 @@
       }
 
       img {
-        height: 50px;
-        padding: 0;
+        height: 75px;
+        padding-top: 7.5px;
       }
     }
   }
-  .projects {
-    .business {
-      align-items: center;
-      flex-direction: column;
-      img {
-        width: 30rem;
-        align-self: center;
-      }
-      font-size: 14px;
-    }
-    .media {
-      .section {
+
+  .main {
+    width: 400px;
+
+    .section {
+      .content {
         flex-direction: column;
+
         img {
-          width: 60vw;
+          width: 400px;
         }
-        .list {
-          width: 15rem;
+
+        p {
+          padding: 2vw;
         }
       }
-    }
-    .wiring {
-      .section {
-        p {
-          display: none;
-        }
-        .row {
-          p {
-            display: block;
-          }
-        }
+
+      #even {
+        flex-direction: column-reverse;
       }
     }
   }
 }
+
 @media (max-width: 480px) {
   .landing {
     background-attachment: scroll;
@@ -193,42 +181,16 @@
         display: none;
       }
     }
-    .main {
-      width: 100%;
-      .header {
-        max-width: 100%;
-        width: 100%;
-      }
-    }
-    .hero {
-      .content {
-        flex-direction: column;
-        margin: -4rem 0 0 0;
-
-        i {
-          margin-top: 2rem;
-        }
-      }
-    }
   }
-  .projects {
-    img {
-      object-fit: cover;
-      width: 250px;
-      height: 250px;
-    }
-    .business {
-      font-size: 14px;
-    }
-    .programming,
-    .wiring,
-    .business,
-    .outreach,
-    .manufacturing,
-    .design {
-      img {
-        width: 60vw;
-        height: 60vw;
+
+  .main {
+    width: 300px;
+
+    .section {
+      .content {
+        img {
+          width: 300px;
+        }
       }
     }
   }

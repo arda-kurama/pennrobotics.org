@@ -8,8 +8,9 @@
 }
 
 .landing {
-  background-image: url("subteams-background.jpg");
-  background-position: center;
+  background-image: url("outreach-1.JPG");
+  background-position: bottom;
+  background-attachment: fixed;
   background-size: cover;
   background-color: hsla(0deg, 0%, 0%, 0.5);
   background-blend-mode: soft-light;
@@ -62,7 +63,7 @@
 }
 .landing .hero .title {
   color: white;
-  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
   text-align: center;
   padding: clamp(4rem, 10vw, 6rem) 0;
@@ -80,7 +81,7 @@
   margin: 2vw auto;
 }
 .main .section .header {
-  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 400;
   background-color: rgb(150, 150, 150);
   color: white;
@@ -91,7 +92,7 @@
   background-color: lightgray;
 }
 .main .section .content img {
-  width: 400px;
+  width: clamp(20rem, 42.5vw, 25rem);
   height: auto;
 }
 .main .section .content p {
@@ -99,7 +100,7 @@
   font-size: 16px;
   color: black;
   margin: auto auto;
-  padding: 2vw;
+  padding: 1vh 2vw;
 }
 .main .section .content ul {
   margin: auto auto;
@@ -112,9 +113,6 @@
 }
 
 @media (max-width: 720px) {
-  .landing .navbar {
-    padding: 12px 6px;
-  }
   .landing .navbar .links {
     font-size: 14px;
   }
@@ -122,32 +120,23 @@
     display: none;
   }
   .landing .navbar img {
-    height: 50px;
-    padding: 0;
+    height: 75px;
+    padding-top: 7.5px;
   }
-  .projects .business {
-    align-items: center;
-    flex-direction: column;
-    font-size: 14px;
+  .main {
+    width: 400px;
   }
-  .projects .business img {
-    width: 30rem;
-    align-self: center;
-  }
-  .projects .media .section {
+  .main .section .content {
     flex-direction: column;
   }
-  .projects .media .section img {
-    width: 60vw;
+  .main .section .content img {
+    width: 400px;
   }
-  .projects .media .section .list {
-    width: 15rem;
+  .main .section .content p {
+    padding: 2vw;
   }
-  .projects .wiring .section p {
-    display: none;
-  }
-  .projects .wiring .section .row p {
-    display: block;
+  .main .section #even {
+    flex-direction: column-reverse;
   }
 }
 @media (max-width: 480px) {
@@ -160,36 +149,10 @@
   .landing .navbar img {
     display: none;
   }
-  .landing .main {
-    width: 100%;
+  .main {
+    width: 300px;
   }
-  .landing .main .header {
-    max-width: 100%;
-    width: 100%;
-  }
-  .landing .hero .content {
-    flex-direction: column;
-    margin: -4rem 0 0 0;
-  }
-  .landing .hero .content i {
-    margin-top: 2rem;
-  }
-  .projects img {
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 250px;
-    height: 250px;
-  }
-  .projects .business {
-    font-size: 14px;
-  }
-  .projects .programming img,
-.projects .wiring img,
-.projects .business img,
-.projects .outreach img,
-.projects .manufacturing img,
-.projects .design img {
-    width: 60vw;
-    height: 60vw;
+  .main .section .content img {
+    width: 300px;
   }
 }/*# sourceMappingURL=subteams.css.map */

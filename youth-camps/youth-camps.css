@@ -65,7 +65,7 @@ html {
   color: rgb(60, 72, 88);
 }
 .landing .hero .title {
-  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
   color: rgb(60, 72, 88);
 }
@@ -115,7 +115,7 @@ html {
   padding: clamp(4rem, 10vw, 6rem) 0;
 }
 .short-circuits .header .title {
-  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
   text-align: center;
   color: white;
@@ -160,7 +160,7 @@ html {
   padding: clamp(4rem, 10vw, 6rem) 0;
 }
 .summer-camps .header .title {
-  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
   text-align: center;
   color: white;
@@ -206,7 +206,7 @@ html {
   padding: clamp(4rem, 10vw, 6rem) 0;
 }
 .junior-stem .header .title {
-  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
   text-align: center;
   color: white;
@@ -257,7 +257,7 @@ html {
   padding: clamp(4rem, 10vw, 6rem) 0;
 }
 .workshops .header .title {
-  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
   text-align: center;
   color: white;

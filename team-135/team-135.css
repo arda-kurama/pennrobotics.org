@@ -82,7 +82,7 @@
   color: rgb(60, 72, 88);
 }
 .main .title {
-  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
   margin-bottom: 4vh;
   color: rgb(60, 72, 88);
@@ -158,7 +158,7 @@
   padding-top: 2rem;
 }
 .current-events .title {
-  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
 }
 .current-events .subtitle {
@@ -178,7 +178,7 @@
   color: rgb(60, 72, 88);
 }
 .contact-us .title {
-  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
   margin-bottom: 0.5rem;
 }

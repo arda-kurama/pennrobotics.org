@@ -64,7 +64,7 @@
 }
 .landing .hero .title {
   color: white;
-  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
   text-align: center;
   padding: clamp(4rem, 10vw, 6rem) 0;
@@ -79,7 +79,7 @@
 }
 .outreach .title {
   text-align: center;
-  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
   color: rgb(60, 72, 88);
   margin-bottom: 1vw;

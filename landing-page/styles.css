@@ -82,7 +82,7 @@
   background-color: white;
 }
 .main .title {
-  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
   color: rgb(60, 72, 88);
 }
@@ -142,7 +142,7 @@
   color: rgb(60, 72, 88);
 }
 .contact-us .title {
-  font-size: clamp(2.5rem, 10vw, 4rem);
+  font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
   margin-bottom: 0.5rem;
 }
