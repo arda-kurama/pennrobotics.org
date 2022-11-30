@@ -25,9 +25,13 @@
 }
 .landing .navbar img {
   max-width: 100%;
-  padding-top: 10px;
+  padding: 10px;
   height: 100px;
   width: auto;
+  filter: invert(1);
+}
+.landing .navbar .home:hover {
+  border: 1px solid black;
 }
 .landing .navbar .links {
   text-decoration: none;

@@ -31,6 +31,12 @@
       width: auto;
     }
 
+    .home {
+      &:hover {
+        border: 1px solid $primary;
+      }
+    }
+
     .links {
       text-decoration: none;
       position: relative;

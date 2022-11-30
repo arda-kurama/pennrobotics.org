@@ -30,6 +30,9 @@
   width: auto;
   filter: invert(1);
 }
+.landing .navbar .home:hover {
+  border: 1px solid black;
+}
 .landing .navbar .links {
   text-decoration: none;
   position: relative;

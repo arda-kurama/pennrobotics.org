@@ -28,6 +28,9 @@ html {
   height: 100px;
   width: auto;
 }
+.landing .navbar .home:hover {
+  border: 1px solid white;
+}
 .landing .navbar .links {
   text-decoration: none;
   position: relative;
