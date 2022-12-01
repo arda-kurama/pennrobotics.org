@@ -94,13 +94,11 @@ html {
 }
 .landing .hero .content h3 {
   margin-top: 1rem;
-  margin-bottom: 1rem;
   font-size: 24px;
+  width: 150px;
 }
 .landing .hero .content p {
-  line-height: 1.5rem;
   font-size: 16px;
-  max-width: 50ch;
   margin: 0 auto;
   font-weight: 300;
   color: rgb(150, 150, 150);
@@ -343,6 +341,13 @@ html {
     height: 75px;
     padding-top: 7.5px;
   }
+  .landing .hero .content {
+    margin: 0 auto;
+    width: 400px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4vw;
+  }
   .short-circuits .content {
     width: 400px;
     flex-direction: column-reverse;
@@ -400,10 +405,11 @@ html {
   }
   .landing .hero .content {
     flex-direction: column;
-    margin: -4rem 0 0 0;
+    width: 300px;
+    margin-top: -2rem;
   }
-  .landing .hero .content i {
-    margin-top: 2rem;
+  .landing .hero .content h3 {
+    margin: 0 auto;
   }
   .short-circuits .content {
     width: 300px;

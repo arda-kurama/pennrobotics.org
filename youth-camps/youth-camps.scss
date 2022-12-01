@@ -110,14 +110,12 @@ html {
 
       h3 {
         margin-top: 1rem;
-        margin-bottom: 1rem;
         font-size: $subheader;
+        width: 150px;
       }
 
       p {
-        line-height: 1.5rem;
         font-size: $body;
-        max-width: 50ch;
         margin: 0 auto;
         font-weight: 300;
         color: $tertiary;
@@ -402,6 +400,16 @@ html {
         padding-top: 7.5px;
       }
     }
+
+    .hero {
+      .content {
+        margin: 0 auto;
+        width: 400px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4vw;
+      }
+    }
   }
 
   .short-circuits {
@@ -489,10 +497,11 @@ html {
     .hero {
       .content {
         flex-direction: column;
-        margin: -4rem 0 0 0;
+        width: 300px;
+        margin-top: -2rem;
 
-        i {
-          margin-top: 2rem;
+        h3 {
+          margin: 0 auto;
         }
       }
     }

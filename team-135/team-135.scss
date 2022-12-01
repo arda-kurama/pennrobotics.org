@@ -94,17 +94,17 @@
     }
 
     .back {
-      border-radius: 1rem;
+      border-radius: 1vw;
       font-weight: 400;
       font-size: clamp(16px, 3vw, $subheader);
       margin-top: 16vh;
 
       a {
-        background-color: hsl(43, 100%, 50%, 0.8);
+        background-color: $decoration;
         text-transform: uppercase;
         text-decoration: none;
         color: $primary;
-        padding: 2rem;
+        padding: 2vw;
 
         &:hover {
           box-shadow: 0px 2px 10px 1px $decoration;
