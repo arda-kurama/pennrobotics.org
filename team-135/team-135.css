@@ -181,15 +181,21 @@
   font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
 }
-.current-events .subtitle {
+.current-events .videos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.current-events .videos .video .subtitle {
   font-size: clamp(16px, 3vw, 18px);
-  margin: 0 10vw 4vh;
   color: rgb(150, 150, 150);
   font-weight: 400;
+  margin-bottom: 0.5vw;
 }
-.current-events iframe {
-  max-width: 64vw;
-  height: 36vw;
+.current-events .videos .video iframe {
+  width: 42.6667vw;
+  height: 24vw;
 }
 
 .contact-us {
@@ -245,6 +251,13 @@
   .landing .navbar img {
     height: 50px;
     padding: 0;
+  }
+  .current-events .videos {
+    flex-direction: column;
+  }
+  .current-events .videos .video iframe {
+    width: 64vw;
+    height: 36vw;
   }
   .contact-us .content {
     gap: 4vw;

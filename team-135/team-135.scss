@@ -214,16 +214,25 @@
     font-weight: 700;
   }
 
-  .subtitle {
-    font-size: $subtitle;
-    margin: 0 10vw 4vh;
-    color: $tertiary;
-    font-weight: 400;
-  }
+  .videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
 
-  iframe {
-    max-width: 64vw;
-    height: 36vw;
+    .video {
+      .subtitle {
+        font-size: $subtitle;
+        color: $tertiary;
+        font-weight: 400;
+        margin-bottom: 0.5vw;
+      }
+
+      iframe {
+        width: 42.6667vw;
+        height: 24vw;
+      }
+    }
   }
 }
 
@@ -288,6 +297,19 @@
       img {
         height: 50px;
         padding: 0;
+      }
+    }
+  }
+
+  .current-events {
+    .videos {
+      flex-direction: column;
+
+      .video {
+        iframe {
+          width: 64vw;
+          height: 36vw;
+        }
       }
     }
   }
