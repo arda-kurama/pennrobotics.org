@@ -106,8 +106,9 @@
     button {
       display: flex;
       img {
-        width: clamp(175px, 16vw, 250px);
-        height: auto;
+        min-width: clamp(175px, 16vw, 250px);
+        max-width: clamp(175px, 16vw, 250px);
+        height: clamp(125px, 11vw, 175px);
       }
 
       .text {
@@ -231,7 +232,8 @@
     .event {
       button {
         img {
-          width: 150px;
+          min-width: 150px;
+          height: 112.5px;
         }
 
         .text {

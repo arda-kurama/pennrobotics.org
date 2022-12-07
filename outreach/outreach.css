@@ -91,8 +91,9 @@
   display: flex;
 }
 .outreach .event button img {
-  width: clamp(175px, 16vw, 250px);
-  height: auto;
+  min-width: clamp(175px, 16vw, 250px);
+  max-width: clamp(175px, 16vw, 250px);
+  height: clamp(125px, 11vw, 175px);
 }
 .outreach .event button .text {
   margin: auto 0;
@@ -193,7 +194,8 @@
     width: 400px;
   }
   .outreach .event button img {
-    width: 150px;
+    min-width: 150px;
+    height: 112.5px;
   }
   .outreach .event button .text {
     padding: 0 0 0 1.5vw;
