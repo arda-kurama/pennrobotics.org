@@ -148,27 +148,27 @@
   text-align: center;
   font-weight: 700;
   color: white;
-  margin-bottom: 2vh;
+  margin-bottom: -1rem;
 }
 .sponsors .container img {
   width: 100%;
 }
 .sponsors .container .swiper {
-  width: min(400px, 90%);
-  border: 3px solid var(--swiper-color);
+  width: 400px;
   aspect-ratio: 1;
 }
 .sponsors .container .swiper .swiper-slide {
   display: flex;
   align-items: center;
+  padding: 2rem;
 }
 .sponsors .container .swiper .swiper-button-prev,
 .sponsors .container .swiper .swiper-button-next {
-  color: var(--swiper-color);
-  mix-blend-mode: difference;
+  color: white;
+  margin: 10rem 0;
 }
-.sponsors .container .swiper .swiper-pagination-bullet-active {
-  background-color: var(--swiper-color);
+.sponsors .container .swiper .swiper-pagination-bullet {
+  background-color: white;
 }
 
 .current-events {

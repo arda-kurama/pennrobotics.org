@@ -172,7 +172,7 @@
     text-align: center;
     font-weight: 700;
     color: $primary;
-    margin-bottom: 2vh;
+    margin-bottom: -1rem;
   }
 
   .container {
@@ -180,24 +180,23 @@
       width: 100%;
     }
     .swiper {
-      // --swiper-color: white;
-      width: min(400px, 90%);
-      border: 3px solid var(--swiper-color);
+      width: 400px;
       aspect-ratio: 1;
 
       .swiper-slide {
         display: flex;
         align-items: center;
+        padding: 2rem;
       }
 
       .swiper-button-prev,
       .swiper-button-next {
-        color: var(--swiper-color);
-        mix-blend-mode: difference;
+        color: $primary;
+        margin: 10rem 0;
       }
 
-      .swiper-pagination-bullet-active {
-        background-color: var(--swiper-color);
+      .swiper-pagination-bullet {
+        background-color: $primary;
       }
     }
   }
