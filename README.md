@@ -1,4 +1,4 @@
-# Penn Robotics Robotics Website
+# Penn High School Robotics Website
 
 Current Collaborators:
 Arda Kurama
