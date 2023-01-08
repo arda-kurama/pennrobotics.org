@@ -54,7 +54,7 @@
   width: 100%;
 }
 .landing .navbar .donate {
-  background-color: hsl(45deg, 100%, 50%);
+  background-color: rgb(255, 191, 0);
   padding: 0.5em 1em;
   border-radius: 4px;
   text-transform: uppercase;
@@ -63,7 +63,7 @@
   display: none;
 }
 .landing .navbar .donate:hover {
-  box-shadow: 0px 2px 10px 1px hsl(45deg, 100%, 50%);
+  box-shadow: 0px 2px 10px 1px rgb(255, 191, 0);
 }
 .landing .hero {
   font-weight: 700;
@@ -72,7 +72,7 @@
 }
 .landing .hero .title {
   margin-top: 25vh;
-  font-size: clamp(3rem, 10vw, 7.5rem);
+  font-size: clamp(3rem, 10vw, 8rem);
 }
 .landing .hero .typed-title {
   margin-top: 1vh;
@@ -86,14 +86,14 @@
   margin-top: 16vh;
 }
 .landing .hero .back a {
-  background-color: hsl(45deg, 100%, 50%);
+  background-color: rgb(255, 191, 0);
   text-transform: uppercase;
   text-decoration: none;
   color: white;
   padding: 2vw;
 }
 .landing .hero .back a:hover {
-  box-shadow: 0px 2px 10px 1px hsl(45deg, 100%, 50%);
+  box-shadow: 0px 2px 10px 1px rgb(255, 191, 0);
 }
 
 .main {
@@ -113,7 +113,7 @@
 }
 .main .content i {
   font-size: 100px;
-  color: hsl(45deg, 100%, 50%);
+  color: rgb(255, 191, 0);
   transition: transform 200ms ease-in, color 200ms ease-in;
 }
 .main .content i:hover {

@@ -52,7 +52,7 @@ html {
   width: 100%;
 }
 .landing .navbar .donate {
-  background-color: hsl(45deg, 100%, 50%);
+  background-color: rgb(255, 191, 0);
   padding: 0.5em 1em;
   border-radius: 4px;
   text-transform: uppercase;
@@ -61,7 +61,7 @@ html {
   display: none;
 }
 .landing .navbar .donate:hover {
-  box-shadow: 0px 2px 10px 1px hsl(45deg, 100%, 50%);
+  box-shadow: 0px 2px 10px 1px rgb(255, 191, 0);
 }
 .landing .hero {
   text-align: center;
@@ -86,7 +86,7 @@ html {
 }
 .landing .hero .content i {
   font-size: 100px;
-  color: hsl(45deg, 100%, 50%);
+  color: rgb(255, 191, 0);
   transition: transform 200ms ease-in, color 200ms ease-in;
 }
 .landing .hero .content i:hover {
@@ -275,7 +275,7 @@ html {
   margin-bottom: 1vw;
 }
 .ATIA .content .subheader span {
-  color: hsl(45deg, 100%, 50%);
+  color: rgb(255, 191, 0);
 }
 .ATIA .content .accordion {
   background-color: white;
