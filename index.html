@@ -5,35 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Penn Robotics</title>
-    <link rel="stylesheet" href="/landing-page/styles.css" />
+    <link rel="stylesheet" href="/landing-page/index.css" />
+    <script src="hamburger.js" defer></script>
+    <script src="typed.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script
       src="https://kit.fontawesome.com/73232d6f01.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script src="/landing-page/script.js" defer></script>
-    <script
-      async
-      src="https://platform.twitter.com/widgets.js"
-      charset="utf-8"
-    ></script>
   </head>
   <body>
-    <div class="landing">
-      <div class="navbar">
-        <a  href="index.html"
-          ><img class="home" src="/images/main-logo.png" alt="FRC Logo"
-        /></a>
-        <a class="links" href="team-135/team-135.html">Team 135</a>
-        <a class="links" href="youth-camps/youth-camps.html">Youth Camps</a>
-        <a class="links" href="ME/ME.html">Mission to Engineer</a>
+    <div class="navbar">
+      <div class="icons">
+        <a href="index.html">
+          <img class="home" src="main-logo.png" alt="main-logo.png" />
+        </a>
+      </div>
+      <div class="nav-menu">
+        <a class="nav-item" href="team-135.html">Team 135</a>
+        <a class="nav-item" href="youth-camps.html">Youth Camps</a>
+        <a class="nav-item" href="ME.html">Mission to Engineer</a>
         <a
-          class="links donate"
+          class="nav-item"
+          id="donate"
           href="https://www.paypal.com/donate/?cmd=_s-xclick&hosted_button_id=VV4T4NDFKR2N8"
           target="_blank"
           >Donate!</a
         >
       </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+    <div class="landing">
       <div class="hero">
         <div class="title">Penn Robotics</div>
         <div class="typed-title">
@@ -102,24 +108,6 @@
         inspire young minds through diverse experiences."
       </div>
     </div>
-    <!-- <div class="current-events">
-      <div class="title">Current Events</div>
-      <div class="subtitle"></div>
-      <iframe
-        width="1120"
-        height="630"
-        src="https://www.youtube.com/embed/jqvhHVPfpc0"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
-      <a
-        class="twitter-timeline"
-        href="https://twitter.com/FRCteam135?ref_src=twsrc%5Etfw"
-        >Tweets by FRCteam135</a
-      > -->
-    </div>
     <div class="contact-us">
       <div class="title">Contact Us</div>
       <div class="subtitle">
@@ -127,13 +115,16 @@
       </div>
       <div class="content">
         <div class="section">
-          <img src="/landing-page/marsh-pfp.jpg" alt="marsh-pfp.jpg" />
+          <img src="/landing-page/media/marsh-pfp.jpg" alt="marsh-pfp.jpg" />
           <h1>Kyle Marsh</h1>
           <h2>FRC Coach</h2>
           <h3>kmarsh@phm.k12.in.us</h3>
         </div>
         <div class="section">
-          <img src="/landing-page/shelhart-pfp.jpg" alt="shelhart-pfp.jpg" />
+          <img
+            src="/landing-page/media/shelhart-pfp.jpg"
+            alt="shelhart-pfp.jpg"
+          />
           <h1>Scott Shelhart</h1>
           <h2>FRC Coach</h2>
           <h3>sshelhart@phm.k12.in.us</h3>

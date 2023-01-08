@@ -1,4 +1,5 @@
-@import "../landing-page/variables";
+@import "../variables";
+@import "../navbar";
 
 * {
   margin: 0;
@@ -9,74 +10,16 @@
 }
 
 .landing {
-  background-image: url("main-background.jpg");
+  background-image: url("/history/media/main-background.jpg");
   background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
   background-color: hsla(0, 0%, 0%, 0.5);
   background-blend-mode: soft-light;
 
-  .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: hsla(0, 0%, 0%, 0.8);
-    gap: 2vw;
-
-    img {
-      max-width: 100%;
-      padding: 10px;
-      height: 100px;
-      width: auto;
-      filter: invert(1);
-    }
-
-    .home {
-      &:hover {
-        border: 1px solid black;
-      }
-    }
-
-    .links {
-      text-decoration: none;
-      position: relative;
-      color: $primary;
-      font-weight: 300;
-      font-size: 20px;
-
-      &::after {
-        content: "";
-        width: 0%;
-        height: 1px;
-        transition: width 200ms ease-in;
-        background-color: $primary;
-        position: absolute;
-        top: 29px;
-        left: 0;
-      }
-
-      &:hover::after {
-        width: 100%;
-      }
-    }
-
-    .donate {
-      background-color: $decoration;
-      padding: 0.5em 1em;
-      border-radius: 4px;
-      text-transform: uppercase;
-
-      &::after {
-        display: none;
-      }
-
-      &:hover {
-        box-shadow: 0px 2px 10px 1px $decoration;
-      }
-    }
-  }
-
   .hero {
+    padding-top: 12vh;
+
     .title {
       color: $primary;
       font-size: $title;
@@ -123,25 +66,6 @@
 }
 
 @media (max-width: 720px) {
-  .landing {
-    .navbar {
-      padding: 12px 6px;
-
-      .links {
-        font-size: 14px;
-
-        &::after {
-          display: none;
-        }
-      }
-
-      img {
-        height: 50px;
-        padding: 0;
-      }
-    }
-  }
-
   .main {
     width: clamp(250px, 89vw, 600px);
   }
@@ -150,12 +74,6 @@
 @media (max-width: 480px) {
   .landing {
     background-attachment: scroll;
-    .navbar {
-      padding: 1rem;
-      img {
-        display: none;
-      }
-    }
 
     .hero {
       .content {
