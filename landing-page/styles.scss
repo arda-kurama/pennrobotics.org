@@ -9,7 +9,7 @@
 }
 
 .landing {
-  background-image: url("/landing-page/main-background.jpg");
+  background-image: url("/landing-page/media/main-background.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -144,7 +144,7 @@
 }
 
 .quote-section {
-  background-image: url("/landing-page/quote-background.jpg");
+  background-image: url("/landing-page/media/quote-background.jpg");
   background-position: center;
   background-attachment: fixed;
   background-color: hsla(0, 0%, 0%, 0.8);
@@ -161,30 +161,6 @@
     padding: 1em 2em;
   }
 }
-
-// .current-events {
-//   color: $secondary;
-//   background-color: $primary;
-//   text-align: center;
-//   padding-top: 2rem;
-
-//   .title {
-//     font-size: $title;
-//     font-weight: 700;
-//   }
-
-//   .subtitle {
-//     font-size: $subtitle;
-//     margin: 0 10vw 4vh;
-//     color: $tertiary;
-//     font-weight: 400;
-//   }
-
-//   iframe {
-//     max-width: 64vw;
-//     height: 36vw;
-//   }
-// }
 
 .contact-us {
   text-align: center;

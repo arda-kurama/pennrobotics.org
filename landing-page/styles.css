@@ -8,7 +8,7 @@
 }
 
 .landing {
-  background-image: url("/landing-page/main-background.jpg");
+  background-image: url("/landing-page/media/main-background.jpg");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -122,7 +122,7 @@
 }
 
 .quote-section {
-  background-image: url("/landing-page/quote-background.jpg");
+  background-image: url("/landing-page/media/quote-background.jpg");
   background-position: center;
   background-attachment: fixed;
   background-color: hsla(0deg, 0%, 0%, 0.8);

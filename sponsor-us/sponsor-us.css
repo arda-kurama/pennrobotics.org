@@ -8,7 +8,7 @@
 }
 
 .landing {
-  background-image: url("main-background.jpg");
+  background-image: url("/sponsor-us/main-background.jpg");
   background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
