@@ -1,7 +1,7 @@
 .navbar {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,15 +22,25 @@
       }
     }
 
-    img {
-      height: 100px;
-      width: auto;
-      margin: 4px 2vw 0;
-    }
+    a {
+      img {
+        height: 88px;
+        width: auto;
+        margin: 3px 2vw 0 0;
+      }
 
-    .home {
-      &:hover {
-        border: 1px solid $primary;
+      .home {
+        &:hover {
+          border: 1px solid $primary;
+        }
+      }
+
+      .invert {
+        filter: invert(1);
+
+        &:hover {
+          border: 1px solid black;
+        }
       }
     }
   }
@@ -45,7 +55,7 @@
       text-decoration: none;
       position: relative;
       color: $primary;
-      font-size: $subheader;
+      font-size: 24px;
       font-weight: 300;
 
       &::after {
@@ -99,10 +109,11 @@
   .navbar {
     justify-content: space-between;
     padding: 0 8vw;
+
     .nav-menu {
       position: fixed;
       right: -100%;
-      top: 109px;
+      top: 95px;
       flex-direction: column;
       background-color: hsla(0, 0%, 0%, 0.5);
       width: 100%;

@@ -1,5 +1,141 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0deg, 0%, 0%, 0.5);
+}
+.navbar .icons {
+  display: flex;
+  gap: 2vw;
+}
+.navbar .icons i {
+  font-size: 32px;
+  color: white;
+  transition: transform 100ms ease-in, color 100ms ease-in;
+}
+.navbar .icons i:hover {
+  transform: translateY(-2px) scale(1.05);
+  color: rgb(255, 191, 0);
+}
+.navbar .icons a img {
+  height: 88px;
+  width: auto;
+  margin: 3px 2vw 0 0;
+}
+.navbar .icons a .home:hover {
+  border: 1px solid white;
+}
+.navbar .icons a .invert {
+  filter: invert(1);
+}
+.navbar .icons a .invert:hover {
+  border: 1px solid black;
+}
+.navbar .nav-menu {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+  text-align: center;
+}
+.navbar .nav-menu .nav-item {
+  text-decoration: none;
+  position: relative;
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+}
+.navbar .nav-menu .nav-item::after {
+  content: "";
+  width: 0%;
+  height: 1px;
+  transition: width 200ms ease-in;
+  background-color: white;
+  position: absolute;
+  top: 31px;
+  left: 1px;
+}
+.navbar .nav-menu .nav-item:hover::after {
+  width: 100%;
+}
+.navbar .nav-menu #donate {
+  background-color: rgb(255, 191, 0);
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+.navbar .nav-menu #donate::after {
+  display: none;
+}
+.navbar .nav-menu #donate:hover {
+  box-shadow: 0px 2px 10px 1px rgb(255, 191, 0);
+}
+.navbar .hamburger {
+  display: none;
+}
+.navbar .hamburger .bar {
+  display: block;
+  width: 50px;
+  height: 6px;
+  margin: 10px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    justify-content: space-between;
+    padding: 0 8vw;
+  }
+  .navbar .nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 95px;
+    flex-direction: column;
+    background-color: hsla(0deg, 0%, 0%, 0.5);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .navbar .nav-menu .nav-item {
+    padding: 1rem 8vw;
+  }
+  .navbar .nav-menu .nav-item::after {
+    display: none;
+  }
+  .navbar .nav-menu .nav-item:hover {
+    font-weight: 600;
+  }
+  .navbar .nav-menu #donate {
+    padding: 1rem 0;
+    width: 100%;
+    border-radius: 0;
+    background-color: rgba(255, 191, 0, 0.8);
+  }
+  .navbar .nav-menu #donate:hover {
+    box-shadow: 0px 2px 10px 1px rgba(255, 191, 0, 0.8);
+  }
+  .navbar .nav-menu.active {
+    right: 0;
+  }
+  .navbar .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar .hamburger.active .bar:nth-child(1) {
+    transform: translateY(16px) rotate(45deg);
+  }
+  .navbar .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-16px) rotate(-45deg);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -15,54 +151,8 @@
   background-color: hsla(0deg, 0%, 0%, 0.5);
   background-blend-mode: soft-light;
 }
-.landing .navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: hsla(0deg, 0%, 0%, 0.8);
-  gap: 2vw;
-}
-.landing .navbar img {
-  max-width: 100%;
-  padding: 10px;
-  height: 100px;
-  width: auto;
-  filter: invert(1);
-}
-.landing .navbar .home:hover {
-  border: 1px solid black;
-}
-.landing .navbar .links {
-  text-decoration: none;
-  position: relative;
-  color: white;
-  font-weight: 300;
-  font-size: 20px;
-}
-.landing .navbar .links::after {
-  content: "";
-  width: 0%;
-  height: 1px;
-  transition: width 200ms ease-in;
-  background-color: white;
-  position: absolute;
-  top: 29px;
-  left: 0;
-}
-.landing .navbar .links:hover::after {
-  width: 100%;
-}
-.landing .navbar .donate {
-  background-color: rgb(255, 191, 0);
-  padding: 0.5em 1em;
-  border-radius: 4px;
-  text-transform: uppercase;
-}
-.landing .navbar .donate::after {
-  display: none;
-}
-.landing .navbar .donate:hover {
-  box-shadow: 0px 2px 10px 1px rgb(255, 191, 0);
+.landing .hero {
+  padding-top: 12vh;
 }
 .landing .hero .title {
   color: white;
@@ -116,19 +206,6 @@
 }
 
 @media (max-width: 720px) {
-  .landing .navbar {
-    padding: 12px 6px;
-  }
-  .landing .navbar .links {
-    font-size: 14px;
-  }
-  .landing .navbar .links::after {
-    display: none;
-  }
-  .landing .navbar img {
-    height: 50px;
-    padding: 0;
-  }
   .main {
     width: 400px;
   }
@@ -148,12 +225,6 @@
 @media (max-width: 480px) {
   .landing {
     background-attachment: scroll;
-  }
-  .landing .navbar {
-    padding: 1rem;
-  }
-  .landing .navbar img {
-    display: none;
   }
   .main {
     width: 300px;

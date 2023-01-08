@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Team 135</title>
     <link rel="stylesheet" href="/history/history.css" />
+    <script src="hamburger.js" defer></script>
     <script src="/history/js/lightbox-plus-jquery.js"></script>
     <link href="/history/css/lightbox.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="landing">
-      <div class="navbar">
-        <a href="team-135.html"
-          ><img class="home" src="team135-logo.png" alt="team135-logo.png"
-        /></a>
-        <a class="links" href="history.html">History</a>
-        <a class="links" href="outreach.html">Outreach</a>
-        <a class="links" href="subteams.html">Subteams</a>
-        <a class="links donate" href="sponsor-us.html">Sponsor Us!</a>
+    <div class="navbar">
+      <div class="icons">
+        <a href="team-135.html">
+          <img class="invert" src="team135-logo.png" alt="main-logo.png" />
+        </a>
       </div>
+      <div class="nav-menu">
+        <a class="nav-item" href="history.html">History</a>
+        <a class="nav-item" href="outreach.html">Outreach</a>
+        <a class="nav-item" href="subteams.html">Subteams</a>
+        <a class="nav-item" id="donate" href="sponsor-us.html">Sponsor Us!</a>
+      </div>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+    <div class="landing">
       <div class="hero">
         <div class="title">History</div>
       </div>

@@ -3,7 +3,7 @@
 .navbar {
   position: fixed;
   width: 100%;
-  z-index: 1;
+  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,13 +22,19 @@
   transform: translateY(-2px) scale(1.05);
   color: rgb(255, 191, 0);
 }
-.navbar .icons img {
-  height: 100px;
+.navbar .icons a img {
+  height: 88px;
   width: auto;
-  margin: 4px 2vw 0;
+  margin: 3px 2vw 0 0;
 }
-.navbar .icons .home:hover {
+.navbar .icons a .home:hover {
   border: 1px solid white;
+}
+.navbar .icons a .invert {
+  filter: invert(1);
+}
+.navbar .icons a .invert:hover {
+  border: 1px solid black;
 }
 .navbar .nav-menu {
   display: flex;
@@ -88,7 +94,7 @@
   .navbar .nav-menu {
     position: fixed;
     right: -100%;
-    top: 109px;
+    top: 95px;
     flex-direction: column;
     background-color: hsla(0deg, 0%, 0%, 0.5);
     width: 100%;
@@ -153,7 +159,7 @@
 }
 .landing .hero .title {
   padding-top: 36vh;
-  font-size: clamp(3rem, 10vw, 8rem);
+  font-size: clamp(3rem, 10vw, 7.5rem);
 }
 .landing .hero .typed-title {
   margin-top: 1vh;
