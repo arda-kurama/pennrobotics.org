@@ -144,7 +144,7 @@
 }
 
 .landing {
-  background-image: url("/team-135/media/team-135-background.jpg");
+  background-image: url("/team-135/media/team-135-background.webp");
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -222,7 +222,7 @@
 }
 
 .sponsors {
-  background-image: url("/team-135/media/main-logo.jpg");
+  background-image: url("/team-135/media/main-logo.webp");
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
