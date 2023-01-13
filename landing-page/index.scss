@@ -1,5 +1,6 @@
 @import "../variables";
 @import "../navbar";
+@import "../footer";
 
 * {
   margin: 0;
@@ -153,8 +154,6 @@
     }
   }
 }
-
-@import "../footer";
 
 @media (max-width: 720px) {
   .landing {
