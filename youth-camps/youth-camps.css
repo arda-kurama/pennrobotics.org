@@ -20,7 +20,7 @@
 }
 .navbar .icons i:hover {
   transform: translateY(-2px) scale(1.05);
-  color: rgb(255, 191, 0);
+  color: rgb(250, 200, 0);
 }
 .navbar .icons a img {
   height: 88px;
@@ -63,7 +63,7 @@
   width: 100%;
 }
 .navbar .nav-menu #donate {
-  background-color: rgb(255, 191, 0);
+  background-color: rgb(250, 200, 0);
   padding: 0.5rem 1rem;
   border-radius: 4px;
   text-transform: uppercase;
@@ -72,7 +72,7 @@
   display: none;
 }
 .navbar .nav-menu #donate:hover {
-  box-shadow: 0px 2px 10px 1px rgb(255, 191, 0);
+  box-shadow: 0px 2px 10px 1px rgb(250, 200, 0);
 }
 .navbar .hamburger {
   display: none;
@@ -173,7 +173,7 @@ html {
 }
 .landing .hero .content i {
   font-size: 100px;
-  color: rgb(255, 191, 0);
+  color: rgb(250, 200, 0);
   transition: transform 200ms ease-in, color 200ms ease-in;
 }
 .landing .hero .content i:hover {
@@ -369,7 +369,7 @@ html {
   flex-direction: column;
 }
 .workshops .content .section .subheader {
-  background-color: rgb(255, 191, 0);
+  background-color: rgb(250, 200, 0);
   display: flex;
 }
 .workshops .content .section .subheader .text {
