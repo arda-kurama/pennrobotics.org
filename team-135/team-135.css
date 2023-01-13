@@ -288,21 +288,26 @@
   width: 100%;
 }
 .sponsors .container .swiper {
-  width: 400px;
+  width: 300px;
   aspect-ratio: 1;
 }
 .sponsors .container .swiper .swiper-slide {
   display: flex;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem;
 }
-.sponsors .container .swiper .swiper-button-prev,
-.sponsors .container .swiper .swiper-button-next {
-  color: white;
-  margin: 10rem 0;
+.sponsors .preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  flex-wrap: wrap;
+  width: 86vw;
+  margin: 0 auto;
 }
-.sponsors .container .swiper .swiper-pagination-bullet {
-  background-color: white;
+.sponsors .preview img {
+  width: 100px;
+  height: auto;
 }
 
 .current-events {
