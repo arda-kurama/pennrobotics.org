@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.landing {
+  background-image: url("/landing-page/media/quote-background.webp");
+  background-position: center;
+  background-size: cover;
+  background-color: hsla(0deg, 0%, 0%, 0.8);
+  background-blend-mode: soft-light;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  gap: 2vw;
+}
+.landing .text {
+  color: white;
+  text-align: center;
+}
+.landing .text .title {
+  font-size: 7.5rem;
+  font-weight: 700;
+}
+.landing .text .subtitle {
+  margin-top: -1rem;
+  font-size: 24px;
+}
+.landing .text .button {
+  border-radius: 1vw;
+  margin-top: 6vh;
+  font-size: 32px;
+}
+.landing .text .button a {
+  background-color: rgb(250, 200, 0);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 1vw;
+}
+.landing .text .button a:hover {
+  box-shadow: 0px 2px 10px 1px rgb(250, 200, 0);
+}
+.landing img {
+  width: clamp(700px, 55vw, 1000px);
+  height: auto;
+  filter: invert(1);
+}
+
+@media (max-width: 1600px) {
+  .landing {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+}
+@media (max-width: 768px) {
+  .landing .text {
+    width: 90vw;
+  }
+  .landing .text .button {
+    display: block;
+    margin: 4vw auto 0;
+    text-align: center;
+  }
+  .landing img {
+    width: 90vw;
+    height: auto;
+  }
+}/*# sourceMappingURL=404.css.map */
