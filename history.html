@@ -7,11 +7,11 @@
     <title>Team 135</title>
     <link rel="stylesheet" href="/history/history.css" />
     <script src="hamburger.js" defer></script>
-    <script src="/history/js/lightbox-plus-jquery.js"></script>
-    <link href="/history/css/lightbox.css" rel="stylesheet" />
+    <script type="module" src="photoswipe.js"></script>
+    <link rel="stylesheet" href="/photoswipe/photoswipe.css" />
     <script
-    src="https://kit.fontawesome.com/73232d6f01.js"
-    crossorigin="anonymous"
+      src="https://kit.fontawesome.com/73232d6f01.js"
+      crossorigin="anonymous"
     ></script>
   </head>
   <body>
@@ -39,18 +39,16 @@
       </div>
     </div>
     <div class="main">
-      <div class="content">
+      <div class="content" id="my-gallery">
         <div class="section">
           <a
             href="/history/media/2020.webp"
-            rel="lightbox[vacation]"
-            title="2020-2021 - Participated in the Infinite Recharge game season, winning the District Chairman’s Award at FIRST IN District.          "
+            data-pswp-width="1900"
+            data-pswp-height="1585"
           >
             <img
               src="/history/media/2020.webp"
-              width="180"
-              height="180"
-              alt="2020"
+              alt="2020-2021 - Participated in the Infinite Recharge game season, winning the District Chairman’s Award at FIRST IN District."
             />
           </a>
           <p>2020</p>
@@ -58,14 +56,12 @@
         <div class="section">
           <a
             href="/history/media/2019.webp"
-            rel="lightbox[vacation]"
-            title="2019 - Participated in the Destination: Deep Space game season presented by Boeing, winning the Chairman’s Award at the IN FIRST District St. Joseph Event."
+            data-pswp-width="2000"
+            data-pswp-height="1200"
           >
             <img
               src="/history/media/2019.webp"
-              width="180"
-              height="180"
-              alt="2019"
+              alt="2019 - Participated in the Destination: Deep Space game season presented by Boeing, winning the Chairman’s Award at the IN FIRST District St. Joseph Event."
             />
           </a>
           <p>2019</p>
@@ -73,14 +69,12 @@
         <div class="section">
           <a
             href="/history/media/2018.webp"
-            rel="lightbox[vacation]"
-            title="2018 - Participated in the FIRST Power Up, winning the Chairman’s Award at the IN FIRST District St. Joseph Event."
+            data-pswp-width="2300"
+            data-pswp-height="1535"
           >
             <img
               src="/history/media/2018.webp"
-              width="180"
-              height="180"
-              alt="2018"
+              alt="2018 - Participated in the FIRST Power Up, winning the Chairman’s Award at the IN FIRST District St. Joseph Event."
             />
           </a>
           <p>2018</p>
@@ -88,14 +82,12 @@
         <div class="section">
           <a
             href="/history/media/2017.webp"
-            rel="lightbox[vacation]"
-            title="2017 - Participated in the FIRST Steamworks, winning the Chairman’s Award at the IN FIRST District Perry Meridian Event and IN FIRST District State Championship."
+            data-pswp-width="2560"
+            data-pswp-height="1707"
           >
             <img
               src="/history/media/2017.webp"
-              width="180"
-              height="180"
-              alt="2017"
+              alt="2017 - Participated in the FIRST Steamworks, winning the Chairman’s Award at the IN FIRST District Perry Meridian Event and IN FIRST District State Championship."
             />
           </a>
           <p>2017</p>
@@ -103,14 +95,12 @@
         <div class="section">
           <a
             href="/history/media/2016.webp"
-            rel="lightbox[vacation]"
-            title="2016 - Participated in the FIRST Stronghold game season."
+            data-pswp-width="2300"
+            data-pswp-height="1533"
           >
             <img
               src="/history/media/2016.webp"
-              width="180"
-              height="180"
-              alt="2016"
+              alt="2016 - Participated in the FIRST Stronghold game season."
             />
           </a>
           <p>2016</p>
@@ -118,14 +108,12 @@
         <div class="section">
           <a
             href="/history/media/2015.webp"
-            rel="lightbox[vacation]"
-            title="2015 - Participated in the Recycle Rush game season, winning and receiving the Chairman’s Award at the IN District Kokomo City of Firsts Event, as well as the Chairman’s Award at the IN FIRST District Championship."
+            data-pswp-width="1200"
+            data-pswp-height="1800"
           >
             <img
               src="/history/media/2015.webp"
-              width="180"
-              height="180"
-              alt="2015"
+              alt="2015 - Participated in the Recycle Rush game season, winning and receiving the Chairman’s Award at the IN District Kokomo City of Firsts Event, as well as the Chairman’s Award at the IN FIRST District Championship."
             />
           </a>
           <p>2015</p>
@@ -133,14 +121,12 @@
         <div class="section">
           <a
             href="/history/media/2014.webp"
-            rel="lightbox[vacation]"
-            title="2014 - Participated in the Aerial Assist game season, winning at the Crossroads Regional and the Boilermaker Regional events."
+            data-pswp-width="1600"
+            data-pswp-height="2400"
           >
             <img
               src="/history/media/2014.webp"
-              width="180"
-              height="180"
-              alt="2014"
+              alt="2014 - Participated in the Aerial Assist game season, winning at the Crossroads Regional and the Boilermaker Regional events."
             />
           </a>
           <p>2014</p>
@@ -148,14 +134,12 @@
         <div class="section">
           <a
             href="/history/media/2013.webp"
-            rel="lightbox[vacation]"
-            title="2013 - Participated in the Ultimate Ascent game season."
+            data-pswp-width="1200"
+            data-pswp-height="1800"
           >
             <img
               src="/history/media/2013.webp"
-              width="180"
-              height="180"
-              alt="2013"
+              alt="2013 - Participated in the Ultimate Ascent game season."
             />
           </a>
           <p>2013</p>
@@ -163,14 +147,12 @@
         <div class="section">
           <a
             href="/history/media/2012.webp"
-            rel="lightbox[vacation]"
-            title="2012 - Participated in the Rebound Rumble game season."
+            data-pswp-width="1600"
+            data-pswp-height="2400"
           >
             <img
               src="/history/media/2012.webp"
-              width="180"
-              height="180"
-              alt="2012"
+              alt="2012 - Participated in the Rebound Rumble game season."
             />
           </a>
           <p>2012</p>
@@ -178,14 +160,12 @@
         <div class="section">
           <a
             href="/history/media/2011.webp"
-            rel="lightbox[vacation]"
-            title="2011 - Participated in the Logo Motion game season."
+            data-pswp-width="1600"
+            data-pswp-height="2400"
           >
             <img
               src="/history/media/2011.webp"
-              width="180"
-              height="180"
-              alt="2011"
+              alt="2011 - Participated in the Logo Motion game season."
             />
           </a>
           <p>2011</p>
@@ -193,14 +173,12 @@
         <div class="section">
           <a
             href="/history/media/2010.webp"
-            rel="lightbox[vacation]"
-            title="2010 - Participated in the Breakaway game season."
+            data-pswp-width="1600"
+            data-pswp-height="2400"
           >
             <img
               src="/history/media/2010.webp"
-              width="180"
-              height="180"
-              alt="2010"
+              alt="2010 - Participated in the Breakaway game season."
             />
           </a>
           <p>2010</p>
@@ -208,14 +186,12 @@
         <div class="section">
           <a
             href="/history/media/2009.webp"
-            rel="lightbox[vacation]"
-            title="2009 - Participated in the Lunacy game season."
+            data-pswp-width="1815"
+            data-pswp-height="2400"
           >
             <img
               src="/history/media/2009.webp"
-              width="180"
-              height="180"
-              alt="2009"
+              alt="2009 - Participated in the Lunacy game season."
             />
           </a>
           <p>2009</p>
@@ -223,14 +199,12 @@
         <div class="section">
           <a
             href="/history/media/2008.webp"
-            rel="lightbox[vacation]"
-            title="2008 - Participated in the FIRST Overdrive game season."
+            data-pswp-width="1600"
+            data-pswp-height="2400"
           >
             <img
               src="/history/media/2008.webp"
-              width="180"
-              height="180"
-              alt="2008"
+              alt="2008 - Participated in the FIRST Overdrive game season."
             />
           </a>
           <p>2008</p>
@@ -238,14 +212,12 @@
         <div class="section">
           <a
             href="/history/media/2007.webp"
-            rel="lightbox[vacation]"
-            title="2007 - Participated in the Rack ‘n’ Roll game season."
+            data-pswp-width="1600"
+            data-pswp-height="2400"
           >
             <img
               src="/history/media/2007.webp"
-              width="180"
-              height="180"
-              alt="2007"
+              alt="2007 - Participated in the Rack ‘n’ Roll game season."
             />
           </a>
           <p>2007</p>
@@ -253,14 +225,12 @@
         <div class="section">
           <a
             href="/history/media/2006.webp"
-            rel="lightbox[vacation]"
-            title="2006 - Participated in the Aim High game season."
+            data-pswp-width="1600"
+            data-pswp-height="2400"
           >
             <img
               src="/history/media/2006.webp"
-              width="180"
-              height="180"
-              alt="2006"
+              alt="2006 - Participated in the Aim High game season."
             />
           </a>
           <p>2006</p>
@@ -268,14 +238,12 @@
         <div class="section">
           <a
             href="/history/media/2005.webp"
-            rel="lightbox[vacation]"
-            title="2005 - Participated in the Triple Play game season."
+            data-pswp-width="1600"
+            data-pswp-height="2400"
           >
             <img
               src="/history/media/2005.webp"
-              width="180"
-              height="180"
-              alt="2005"
+              alt="2005 - Participated in the Triple Play game season."
             />
           </a>
           <p>2005</p>
@@ -283,14 +251,12 @@
         <div class="section">
           <a
             href="/history/media/2004.webp"
-            rel="lightbox[vacation]"
-            title="2004 - Participated in the FIRST Frenzy: Raising the Bar game season."
+            data-pswp-width="1533"
+            data-pswp-height="2300"
           >
             <img
               src="/history/media/2004.webp"
-              width="180"
-              height="180"
-              alt="2004"
+              alt="2004 - Participated in the FIRST Frenzy: Raising the Bar game season."
             />
           </a>
           <p>2004</p>
@@ -298,14 +264,12 @@
         <div class="section">
           <a
             href="/history/media/2003.webp"
-            rel="lightbox[vacation]"
-            title="2003 - Participated in the Stack Attack game season."
+            data-pswp-width="1600"
+            data-pswp-height="2400"
           >
             <img
               src="/history/media/2003.webp"
-              width="180"
-              height="180"
-              alt="2003"
+              alt="2003 - Participated in the Stack Attack game season."
             />
           </a>
           <p>2003</p>
@@ -313,14 +277,12 @@
         <div class="section">
           <a
             href="/history/media/2002.webp"
-            rel="lightbox[vacation]"
-            title="2002 - Participated in the Zone Zeal game season."
+            data-pswp-width="1600"
+            data-pswp-height="2400"
           >
             <img
               src="/history/media/2002.webp"
-              width="180"
-              height="180"
-              alt="2002"
+              alt="2002 - Participated in the Zone Zeal game season."
             />
           </a>
           <p>2002</p>
@@ -328,14 +290,12 @@
         <div class="section">
           <a
             href="/history/media/2001.webp"
-            rel="lightbox[vacation]"
-            title="2001 - Participated in the Diabolical Dynamics game season."
+            data-pswp-width="1600"
+            data-pswp-height="2400"
           >
             <img
               src="/history/media/2001.webp"
-              width="180"
-              height="180"
-              alt="2001"
+              alt="2001 - Participated in the Diabolical Dynamics game season."
             />
           </a>
           <p>2001</p>
@@ -343,14 +303,12 @@
         <div class="section">
           <a
             href="/history/media/2000.webp"
-            rel="lightbox[vacation]"
-            title="2000 - Participated in the Co-opertition FIRST game season."
+            data-pswp-width="1600"
+            data-pswp-height="2400"
           >
             <img
               src="/history/media/2000.webp"
-              width="180"
-              height="180"
-              alt="2000"
+              alt="2000 - Participated in the Co-opertition FIRST game season."
             />
           </a>
           <p>2000</p>
@@ -358,14 +316,12 @@
         <div class="section">
           <a
             href="/history/media/1999.webp"
-            rel="lightbox[vacation]"
-            title="1999 - Participated in the Double Trouble game season."
+            data-pswp-width="1600"
+            data-pswp-height="2400"
           >
             <img
               src="/history/media/1999.webp"
-              width="180"
-              height="180"
-              alt="1999"
+              alt="1999 - Participated in the Double Trouble game season."
             />
           </a>
           <p>1999</p>
@@ -373,14 +329,12 @@
         <div class="section">
           <a
             href="/history/media/1998.webp"
-            rel="lightbox[vacation]"
-            title="1998 - Participated in the Ladder Logic game season."
+            data-pswp-width="1600"
+            data-pswp-height="2400"
           >
             <img
               src="/history/media/1998.webp"
-              width="180"
-              height="180"
-              alt="1998"
+              alt="1998 - Participated in the Ladder Logic game season."
             />
           </a>
           <p>1998</p>
@@ -390,13 +344,21 @@
     <div class="footer">
       <div class="title">Stay Updated</div>
       <div class="content">
-        <a href="mailto:pennroboticswebsite@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-        <a href="https://www.instagram.com/frcteam135/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://m.facebook.com/frcteam135/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
-        <a href="https://twitter.com/FRCteam135/" target="_blank"><i class="fa-brands fa-square-twitter"></i></a>
+        <a href="mailto:pennroboticswebsite@gmail.com" target="_blank"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+        <a href="https://www.instagram.com/frcteam135/" target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://m.facebook.com/frcteam135/" target="_blank"
+          ><i class="fa-brands fa-square-facebook"></i
+        ></a>
+        <a href="https://twitter.com/FRCteam135/" target="_blank"
+          ><i class="fa-brands fa-square-twitter"></i
+        ></a>
       </div>
       <div class="copywrite">
-        pennrobotics.org &#169 2022
+        pennrobotics.org &copy 2022
         <a class="name" href="https://ardakurama.com" target="_blank"
           >Arda Kurama</a
         >
