@@ -256,6 +256,48 @@
   color: rgb(150, 150, 150);
 }
 
+.sponsors {
+  background-image: url("/team-135/media/main-logo.webp");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-blend-mode: soft-light;
+  padding: 4vh 0vw;
+}
+.sponsors .title {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  text-align: center;
+  font-weight: 700;
+  color: rgb(60, 72, 88);
+  margin-bottom: -1rem;
+}
+.sponsors .container img {
+  width: 100%;
+}
+.sponsors .container .swiper {
+  width: 300px;
+  aspect-ratio: 1;
+}
+.sponsors .container .swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+.sponsors .preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  flex-wrap: wrap;
+  width: 86vw;
+  margin: 0 auto;
+}
+.sponsors .preview img {
+  width: 100px;
+  height: auto;
+}
+
 .quote-section {
   background-image: url("/landing-page/media/quote-background.webp");
   background-position: center;
@@ -341,6 +383,9 @@
   }
   .main .content i {
     margin-top: 2rem;
+  }
+  .sponsors {
+    background-attachment: scroll;
   }
   .quote-section {
     background-attachment: scroll;

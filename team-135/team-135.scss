@@ -99,66 +99,6 @@
     }
   }
 }
-
-.sponsors {
-  background-image: url("/team-135/media/main-logo.webp");
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-color: hsla(0, 0%, 0%, 0.8);
-  background-blend-mode: soft-light;
-  padding: 4vh 0vw;
-
-  .title {
-    font-size: $header;
-    text-align: center;
-    font-weight: 700;
-    color: $primary;
-    margin-bottom: -1rem;
-  }
-
-  .container {
-    img {
-      width: 100%;
-    }
-    .swiper {
-      width: 300px;
-      aspect-ratio: 1;
-
-      .swiper-slide {
-        display: flex;
-        align-items: center;
-        padding: 1rem;
-      }
-
-      // .swiper-button-prev,
-      // .swiper-button-next {
-      //   color: $primary;
-      //   margin: 10rem 0;
-      // }
-
-      // .swiper-pagination-bullet {
-      //   background-color: $primary;
-      // }
-    }
-  }
-
-  .preview {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1vw;
-    flex-wrap: wrap;
-    width: 86vw;
-    margin: 0 auto;
-
-    img {
-      width: 100px;
-      height: auto;
-    }
-  }
-}
-
 .current-events {
   color: $secondary;
   background-color: $primary;
@@ -304,10 +244,6 @@
         margin-top: 2rem;
       }
     }
-  }
-
-  .sponsors {
-    background-attachment: scroll;
   }
 
   .contact-us {
