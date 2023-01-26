@@ -58,7 +58,7 @@
 
 .main {
   text-align: center;
-  margin: 4vw;
+  padding: 2vw;
   color: $secondary;
 
   .title {
@@ -99,11 +99,12 @@
     }
   }
 }
+
 .current-events {
   color: $secondary;
   background-color: $primary;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 2vw;
 
   .title {
     font-size: $title;
@@ -134,7 +135,7 @@
 
 .contact-us {
   text-align: center;
-  margin: 2rem;
+  padding: 2vw 0;
   color: $secondary;
 
   .title {
@@ -155,7 +156,7 @@
     gap: 10vw;
 
     img {
-      width: 100%;
+      max-width: 100%;
       height: auto;
       width: 250px;
       border-radius: 125px;
@@ -165,6 +166,7 @@
     h1 {
       font-size: $subheader;
       font-weight: 700;
+      color: $secondary;
     }
 
     h2 {
@@ -172,29 +174,18 @@
       font-weight: 400;
       color: $secondary;
     }
+
+    h3 {
+      font-size: $body;
+      font-weight: 300;
+      color: $tertiary;
+    }
   }
 }
 
 @media (max-width: 720px) {
   .landing {
     min-height: 80vh;
-
-    .navbar {
-      padding: 12px 6px;
-
-      .links {
-        font-size: 14px;
-
-        &::after {
-          display: none;
-        }
-      }
-
-      img {
-        height: 50px;
-        padding: 0;
-      }
-    }
   }
 
   .current-events {
