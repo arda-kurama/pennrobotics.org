@@ -105,52 +105,61 @@
   }
 }
 
-.contact-us {
-  text-align: center;
-  margin: 2rem;
-  color: $secondary;
+.sponsors {
+  background-image: url("/team-135/media/main-logo.webp");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: $primary;
+  background-blend-mode: soft-light;
+  padding: 2vw 0;
 
   .title {
     font-size: $title;
+    text-align: center;
     font-weight: 700;
-    margin-bottom: 0.5rem;
+    color: $secondary;
+    margin-bottom: -1rem;
   }
 
-  .subtitle {
-    font-size: $subtitle;
-    margin-bottom: 3vw;
-    color: $tertiary;
+  .container {
+    img {
+      width: 100%;
+    }
+    .swiper {
+      width: 300px;
+      aspect-ratio: 1;
+
+      .swiper-slide {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+      }
+
+      // .swiper-button-prev,
+      // .swiper-button-next {
+      //   color: $primary;
+      //   margin: 10rem 0;
+      // }
+
+      // .swiper-pagination-bullet {
+      //   background-color: $primary;
+      // }
+    }
   }
 
-  .content {
+  .preview {
     display: flex;
     justify-content: center;
-    gap: 10vw;
+    align-items: center;
+    gap: 1vw;
+    flex-wrap: wrap;
+    width: 86vw;
+    margin: 0 auto;
 
     img {
-      max-width: 100%;
+      width: 100px;
       height: auto;
-      width: 250px;
-      border-radius: 125px;
-      margin-bottom: 1vw;
-    }
-
-    h1 {
-      font-size: $subheader;
-      font-weight: 700;
-      color: $secondary;
-    }
-
-    h2 {
-      font-size: $subtitle;
-      font-weight: 400;
-      color: $secondary;
-    }
-
-    h3 {
-      font-size: $body;
-      font-weight: 300;
-      color: $tertiary;
     }
   }
 }
@@ -158,17 +167,6 @@
 @media (max-width: 720px) {
   .landing {
     min-height: 80vh;
-  }
-
-  .contact-us {
-    .content {
-      gap: 4vw;
-
-      img {
-        width: 200px;
-        border-radius: 100px;
-      }
-    }
   }
 }
 
@@ -190,7 +188,9 @@
       }
     }
   }
-
+  .sponsors {
+    background-attachment: scroll;
+  }
   .quote-section {
     background-attachment: scroll;
     .title {

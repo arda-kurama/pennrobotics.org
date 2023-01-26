@@ -232,7 +232,7 @@
 
 .main {
   text-align: center;
-  margin: 4vw;
+  padding: 2vw;
   color: rgb(60, 72, 88);
 }
 .main .title {
@@ -268,53 +268,11 @@
   color: rgb(150, 150, 150);
 }
 
-.sponsors {
-  background-image: url("/team-135/media/main-logo.webp");
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-color: hsla(0deg, 0%, 0%, 0.8);
-  background-blend-mode: soft-light;
-  padding: 4vh 0vw;
-}
-.sponsors .title {
-  font-size: clamp(24px, 3vw, 40px);
-  text-align: center;
-  font-weight: 700;
-  color: white;
-  margin-bottom: -1rem;
-}
-.sponsors .container img {
-  width: 100%;
-}
-.sponsors .container .swiper {
-  width: 300px;
-  aspect-ratio: 1;
-}
-.sponsors .container .swiper .swiper-slide {
-  display: flex;
-  align-items: center;
-  padding: 1rem;
-}
-.sponsors .preview {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 1vw;
-  flex-wrap: wrap;
-  width: 86vw;
-  margin: 0 auto;
-}
-.sponsors .preview img {
-  width: 100px;
-  height: auto;
-}
-
 .current-events {
   color: rgb(60, 72, 88);
   background-color: white;
   text-align: center;
-  padding-top: 2rem;
+  padding-top: 2vw;
 }
 .current-events .title {
   font-size: clamp(2.5rem, 8vw, 4rem);
@@ -339,7 +297,7 @@
 
 .contact-us {
   text-align: center;
-  margin: 2rem;
+  padding: 2vw 0;
   color: rgb(60, 72, 88);
 }
 .contact-us .title {
@@ -358,7 +316,7 @@
   gap: 10vw;
 }
 .contact-us .content img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
   width: 250px;
   border-radius: 125px;
@@ -367,29 +325,22 @@
 .contact-us .content h1 {
   font-size: 24px;
   font-weight: 700;
+  color: rgb(60, 72, 88);
 }
 .contact-us .content h2 {
   font-size: clamp(16px, 3vw, 18px);
   font-weight: 400;
   color: rgb(60, 72, 88);
 }
+.contact-us .content h3 {
+  font-size: 16px;
+  font-weight: 300;
+  color: rgb(150, 150, 150);
+}
 
 @media (max-width: 720px) {
   .landing {
     min-height: 80vh;
-  }
-  .landing .navbar {
-    padding: 12px 6px;
-  }
-  .landing .navbar .links {
-    font-size: 14px;
-  }
-  .landing .navbar .links::after {
-    display: none;
-  }
-  .landing .navbar img {
-    height: 50px;
-    padding: 0;
   }
   .current-events .videos {
     flex-direction: column;
@@ -424,9 +375,6 @@
   }
   .main .content i {
     margin-top: 2rem;
-  }
-  .sponsors {
-    background-attachment: scroll;
   }
   .contact-us .content {
     flex-direction: column;
