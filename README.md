@@ -6,9 +6,11 @@
   The base iteration of pennrobotics.org built with HTML, SCSS, and JS, and hosted on Google Cloud Platform
 </p>
 
+<img src="landing.png" alt="landing" />
+
 ## 1. Documentation Outline
 
-This documentation is aimed at future members of Penn Robotics looking to maintain and update this project. This document will contain multiple guides aimed at new web developers, along with information about project structure for those with more experience.
+This documentation is aimed at future members of Penn Robotics looking to maintain and update this project. This document will contain a guide aimed at new web developers, along with information on project structure for those with more experience.
 
 ## 2. Public Forking and Use
 
@@ -49,7 +51,7 @@ This [Sass guide](https://sass-lang.com/guide) further explains these features.
 
 ## 4. Quickstart Guide
 
-These various applications and softwares must be installed to properly edit this project.
+These various applications and softwares must be installed to properly access and edit this project.
 
 ### GitHub Desktop
 
@@ -72,48 +74,7 @@ Once inside VS Code, you will also need the following extensions:
 - Prettier - Code formatter
 - Project Manager
 
-## 5. Website Structure
-
-Here is some information about project file hierarchy, resources used, and hosting information.
-
-### File Hierarchy
-
-This project has 21 files and 10 folders in the parent directory.
-
-#### Files:
-
-- 9 .html
-- 5 .js
-- 3 .scss partials
-- 2 .png images
-- 2 .md (README and LICENSE)
-
-#### Folders:
-
-- 9 webpage folders containing:
-- 1 media folder
-  - numerous .webp images
-- 1 .scss file
-- 1 .css file
-- 1 .css.map file
-- 1 folder containing photoswipe imports
-
-### Resources Used
-
-This project utilizes many JavaScript libraries, GitHub repositories, and online resources for more complex features. These are linked below.
-
-#### Other GitHub repositories:
-
-- https://github.com/mattboldt/typed.js JavaScript typing animation
-- https://github.com/nolimits4web/swiper JavaScript touch slider
-- https://github.com/dimsemenov/PhotoSwipe JavaScript image gallery
-- https://github.com/dev-ggaurav/responsive-hamburger-tutorial HTML, CSS, and JavaScript hamburger menu
-
-#### Websites:
-
-- https://fontawesome.com/ Online icon library
-
-### Hosting Information
+## 5. Hosting Information
 
 This website is hosted on Google Cloud Platform (GCP) under the website-specific email pennroboticswebsite@gmail.com. This email is connected to Email, Google Cloud Platform, Google Domains, Google Search Engine, and Font Awesome. Do not use it for non-website related tasks. Ask Mr. Marsh for its password.
 
@@ -123,16 +84,26 @@ This website is hosted on Google Cloud Platform (GCP) under the website-specific
 
 I followed [this guide](https://cloud.google.com/storage/docs/hosting-static-website) for hosting this project with GCP. If the host breaks or needs updating, re-follow this guide.
 
-## 6. Continuity Plan
+## 6. Resources
+
+This project utilizes many JavaScript libraries, GitHub repositories, and online resources for more complex features. These are linked below.
+
+- https://github.com/mattboldt/typed.js JS typing animation
+- https://github.com/nolimits4web/swiper JS image slider
+- https://github.com/dimsemenov/PhotoSwipe JS image gallery
+- https://github.com/dev-ggaurav/responsive-hamburger-tutorial HTML, CSS, and JS hamburger menu
+- https://fontawesome.com/ Online icon library
+
+## 7. Continuity Plan
 
 The website as I am leaving it will be permanently stored in this GitHub repository. To make updates in the future:
 
 1. Fork this repository
 2. Make the edits
-3. Upload the edited files to the Google Cloud Platform Bucket. Website updates will not show unless uploaded to the GCP Bucket.
+3. Upload the edited files to the Google Cloud Platform Bucket. **Website updates will not show unless uploaded to the GCP Bucket.**
 
-Future members can use any GitHub account to make a project fork, and none of these forked repositories will ever be linked to the project. Make forks as needed, but try to keep everything organized.
+Future members can use any GitHub account to make a project fork, and none of these forked repositories will be linked to the project. Make forks as needed, but try to keep everything organized.
 
-As a fallback, if the website ever falls into an unrepairable position, copy the files in this GitHub repository into the GCP Bucket and the website will return to how it was when I left it.
+As a fallback, if the website ever falls into an unrepairable position, copy the files in this GitHub repository into the GCP Bucket, and the website will return to how it was when I left it.
 
 Good luck Penn Robotics! If you ever have a large problem with this project, contact me at ardakurama@gmail.com.
