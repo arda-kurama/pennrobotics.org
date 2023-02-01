@@ -15,7 +15,7 @@
   background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
-  background-color: hsla(0, 0%, 0%, 0.5);
+  background-color: $background;
   background-blend-mode: soft-light;
 
   .hero {
@@ -52,7 +52,7 @@
 
     .content {
       display: flex;
-      background-color: lightgray;
+      background-color: $light-tert;
 
       img {
         width: clamp(40rem / 2, 85vw / 2, 50rem / 2);
@@ -62,7 +62,7 @@
       p {
         font-weight: 400;
         font-size: $body;
-        color: black;
+        color: $secondary;
         margin: auto auto;
         padding: 1vh 2vw;
       }

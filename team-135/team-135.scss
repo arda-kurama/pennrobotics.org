@@ -15,7 +15,7 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  background-color: hsla(0, 0%, 0%, 0.5);
+  background-color: $background;
   background-blend-mode: soft-light;
   min-height: 90vh;
 
@@ -38,7 +38,7 @@
     .back {
       border-radius: 1vw;
       font-weight: 400;
-      font-size: clamp(16px, 3vw, $subheader);
+      font-size: clamp($body, 3vw, $subheader);
       margin-top: 16vh;
 
       a {
@@ -73,13 +73,13 @@
     justify-content: space-evenly;
 
     i {
-      font-size: 100px;
+      font-size: $icon;
       color: $decoration;
       transition: transform 200ms ease-in, color 200ms ease-in;
 
       &:hover {
         transform: translateY(-7px) scale(1.1);
-        color: hsl(43, 100%, 75%);
+        color: $light-dec;
       }
     }
 

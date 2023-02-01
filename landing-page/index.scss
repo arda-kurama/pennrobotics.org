@@ -15,7 +15,7 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  background-color: hsla(0, 0%, 0%, 0.5);
+  background-color: $background;
   background-blend-mode: soft-light;
   min-height: 90vh;
 
@@ -59,13 +59,13 @@
     justify-content: space-evenly;
 
     i {
-      font-size: 100px;
+      font-size: $icon;
       color: $decoration;
       transition: transform 200ms ease-in, color 200ms ease-in;
 
       &:hover {
         transform: translateY(-7px) scale(1.1);
-        color: hsl(43, 100%, 75%);
+        color: $light-dec;
       }
     }
 
@@ -90,7 +90,7 @@
   background-image: url("/landing-page/media/quote-background.webp");
   background-position: center;
   background-attachment: fixed;
-  background-color: hsla(0, 0%, 0%, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
   background-blend-mode: soft-light;
   padding: 8vh 4vw;
 

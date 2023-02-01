@@ -4,11 +4,17 @@
 $primary: white;
 $secondary: rgb(60, 72, 88);
 $tertiary: rgb(150, 150, 150);
+$light-tert: lightgrey;
 $decoration: rgb(250, 200, 0);
+$trans-dec: rgba(250, 200, 0, 0.8);
+$light-dec: rgb(250, 225, 125);
+$background: rgba(0, 0, 0, 0.5);
+$dark-backround: rgba(0, 0, 0, 0.7);
 
 $cover: clamp(3rem, 10vw, 7.5rem);
 $title: clamp(2.5rem, 8vw, 4rem);
 $subtitle: clamp(16px, 3vw, 18px);
 $header: clamp(24px, 3vw, 40px);
+$icon: 100px;
 $subheader: 24px;
 $body: 16px;

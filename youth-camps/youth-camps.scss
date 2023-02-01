@@ -41,13 +41,13 @@ html {
       margin: 12vh 0;
 
       i {
-        font-size: 100px;
+        font-size: $icon;
         color: $decoration;
         transition: transform 200ms ease-in, color 200ms ease-in;
 
         &:hover {
           transform: translateY(-7px) scale(1.1);
-          color: hsl(43, 100%, 75%);
+          color: $light-dec;
         }
       }
 
@@ -73,7 +73,7 @@ html {
     background-image: url("/youth-camps/media/short-circuits-header.webp");
     background-position: center;
     background-size: cover;
-    background-color: hsla(0, 0%, 0%, 0.7);
+    background-color: $dark-backround;
     background-blend-mode: soft-light;
     padding: clamp(4rem, 10vw, 6rem) 0;
 
@@ -124,7 +124,7 @@ html {
     background-image: url("/youth-camps/media/summer-camp-header.webp");
     background-position: center;
     background-size: cover;
-    background-color: hsla(0, 0%, 0%, 0.7);
+    background-color: $dark-backround;
     background-blend-mode: soft-light;
     padding: clamp(4rem, 10vw, 6rem) 0;
 
@@ -143,7 +143,7 @@ html {
 
     .subtitle {
       color: $secondary;
-      font-size: clamp(18px, 3vw, $subheader);
+      font-size: clamp($body + 2px, 3vw, $subheader);
       font-weight: 400;
       margin-bottom: 1vw;
     }
@@ -178,7 +178,7 @@ html {
     background-image: url("/youth-camps/media/junior-stem-header.webp");
     background-position: top;
     background-size: cover;
-    background-color: hsla(0, 0%, 0%, 0.7);
+    background-color: $dark-backround;
     background-blend-mode: soft-light;
     padding: clamp(4rem, 10vw, 6rem) 0;
 
@@ -198,7 +198,7 @@ html {
     .subtitle {
       color: $secondary;
       font-weight: 400;
-      font-size: clamp(18px, 3vw, $subheader);
+      font-size: clamp($body + 2px, 3vw, $subheader);
       margin-bottom: 1vw;
     }
 
@@ -237,7 +237,7 @@ html {
     background-image: url("/youth-camps/media/workshops-header.webp");
     background-position: center;
     background-size: cover;
-    background-color: hsla(0, 0%, 0%, 0.7);
+    background-color: $dark-backround;
     background-blend-mode: soft-light;
     padding: clamp(4rem, 10vw, 6rem) 0;
 
@@ -259,7 +259,7 @@ html {
     .subtitle {
       color: $secondary;
       font-weight: 400;
-      font-size: clamp(18px, 3vw, $subheader);
+      font-size: clamp($body + 2px, 3vw, $subheader);
       margin-bottom: 1vw;
     }
 
@@ -311,7 +311,7 @@ html {
           color: $secondary;
           line-height: 1.5rem;
           font-weight: 300;
-          background-color: lightgrey;
+          background-color: $light-tert;
           padding: 1vw;
         }
       }
