@@ -127,7 +127,7 @@
       width: 100%;
     }
     .swiper {
-      width: 300px;
+      width: 400px;
       aspect-ratio: 1;
 
       .swiper-slide {
@@ -188,11 +188,20 @@
       }
     }
   }
+
   .sponsors {
     background-attachment: scroll;
+
+    .container {
+      .swiper {
+        width: 300px;
+      }
+    }
   }
+
   .quote-section {
     background-attachment: scroll;
+
     .title {
       border: 5px solid $primary;
     }
