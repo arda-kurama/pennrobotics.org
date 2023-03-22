@@ -306,6 +306,7 @@
 .outreach .event .panel .content .images {
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
   gap: 0.5vw;
 }
 .outreach .event .panel .content .images img {
