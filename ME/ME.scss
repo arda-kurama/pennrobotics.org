@@ -20,9 +20,12 @@ html {
   .hero {
     text-align: center;
     color: $secondary;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
     .title {
-      padding-top: 20vh;
+      margin-top: 20vh;
       font-size: $title;
       font-weight: 700;
       color: $secondary;
@@ -451,8 +454,12 @@ html {
     min-height: 80vh;
 
     .hero {
+      .title {
+        margin-top: 12vh;
+      }
+
       .content {
-        margin: 0 auto;
+        margin: -2vh auto 2vh;
         width: 400px;
         flex-wrap: wrap;
         justify-content: center;
@@ -479,6 +486,7 @@ html {
 
         .subheader {
           padding: 2vw;
+
           img {
             display: none;
           }

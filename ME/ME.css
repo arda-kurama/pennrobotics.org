@@ -201,9 +201,12 @@ html {
 .landing .hero {
   text-align: center;
   color: rgb(60, 72, 88);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 .landing .hero .title {
-  padding-top: 20vh;
+  margin-top: 20vh;
   font-size: clamp(2.5rem, 8vw, 4rem);
   font-weight: 700;
   color: rgb(60, 72, 88);
@@ -568,8 +571,11 @@ html {
   .landing {
     min-height: 80vh;
   }
+  .landing .hero .title {
+    margin-top: 12vh;
+  }
   .landing .hero .content {
-    margin: 0 auto;
+    margin: -2vh auto 2vh;
     width: 400px;
     flex-wrap: wrap;
     justify-content: center;
