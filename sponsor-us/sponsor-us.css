@@ -191,7 +191,7 @@
 }
 
 .landing {
-  background-image: url("sponsor-us/main-background.webp");
+  background-image: url("main-background.webp");
   background-position: bottom;
   background-attachment: fixed;
   background-size: cover;
