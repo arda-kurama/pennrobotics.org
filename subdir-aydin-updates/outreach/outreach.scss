@@ -1,0 +1,258 @@
+@import "../variables";
+@import "../navbar";
+@import "../footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  // border: 1px solid red;
+}
+
+.landing {
+  background-image: url("/outreach/media/main-background.webp");
+  background-position: bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: $background;
+  background-blend-mode: soft-light;
+
+  .hero {
+    padding-top: 12vh;
+
+    .title {
+      color: $primary;
+      font-size: $title;
+      font-weight: 700;
+      text-align: center;
+      padding: clamp(4rem, 10vw, 6rem) 0;
+    }
+  }
+}
+
+.outreach {
+  margin: 2vw auto;
+  width: clamp(40rem, 85vw, 50rem);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+
+  .title {
+    text-align: center;
+    font-size: $title;
+    font-weight: 700;
+    color: $secondary;
+    margin-bottom: 1vw;
+  }
+
+  .event {
+    button {
+      display: flex;
+      img {
+        min-width: clamp(175px, 16vw, 250px);
+        max-width: clamp(175px, 16vw, 250px);
+        height: clamp(125px, 11vw, 175px);
+      }
+
+      .text {
+        margin: auto 0;
+        text-align: left;
+        padding: 1vw 1vw 1vw 18px;
+
+        h1 {
+          font-size: $subheader;
+          font-weight: 500;
+        }
+
+        h3 {
+          color: $tertiary;
+          font-size: $body;
+          font-weight: 500;
+          margin-bottom: 0.5vw;
+        }
+
+        p {
+          font-size: $body;
+          color: $tertiary;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .accordion {
+      background-color: $primary;
+      color: $secondary;
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      outline: none;
+      transition: 0.4s;
+    }
+
+    .active,
+    .accordion:hover {
+      background-color: $light-tert;
+    }
+
+    .accordion:after {
+      content: "\002B";
+      font-size: 4rem;
+      margin: auto 1vw auto 0;
+      color: $secondary;
+      float: right;
+    }
+
+    .active:after {
+      content: "\2212";
+      justify-content: flex-end;
+    }
+
+    .panel {
+      background-color: $primary;
+      display: none;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.2s ease-out;
+
+      .content {
+        display: flex;
+        gap: 1vw;
+        text-align: center;
+        margin: 1vw 0;
+        justify-content: center;
+
+        .main {
+          width: clamp(40rem / 1.75, 85vw / 1.75, 50rem / 1.75);
+          .text {
+            font-size: $body;
+            color: $tertiary;
+            line-height: 1.5rem;
+            font-weight: 400;
+          }
+          img {
+            width: clamp(40rem / 1.75, 85vw / 1.75, 50rem / 1.75);
+            height: auto;
+          }
+        }
+
+        .images {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          gap: 0.5vw;
+
+          img {
+            width: clamp(40rem / 3.5, 85vw / 3.5, 50rem / 3.5);
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .outreach {
+    width: 400px;
+    .event {
+      button {
+        img {
+          min-width: 150px;
+          height: 112.5px;
+        }
+
+        .text {
+          padding: 0 0 0 1.5vw;
+          min-width: 210px;
+
+          h1 {
+            margin: 0;
+          }
+
+          h3 {
+            display: none;
+          }
+
+          p {
+            display: none;
+          }
+        }
+      }
+
+      .panel {
+        .content {
+          flex-direction: column;
+          align-items: center;
+          .main {
+            width: 400px;
+            img {
+              width: 400px;
+            }
+          }
+          .images {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1vw;
+            img {
+              width: 175px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .landing {
+    background-attachment: scroll;
+
+    .hero {
+      .content {
+        flex-direction: column;
+        margin: -4rem 0 0 0;
+
+        i {
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+
+  .outreach {
+    width: 320px;
+
+    .event {
+      button {
+        .text {
+          min-width: 140px;
+          h1 {
+            font-size: $subheader - 4px;
+          }
+        }
+      }
+
+      .panel {
+        .content {
+          .main {
+            width: 320px;
+            img {
+              width: 320px;
+            }
+          }
+          .images {
+            img {
+              width: 150px;
+            }
+          }
+        }
+      }
+
+      .accordion:after {
+        font-size: 3rem;
+      }
+    }
+  }
+}

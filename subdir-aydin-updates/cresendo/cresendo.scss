@@ -1,0 +1,381 @@
+@import "../variables";
+@import "../navbar";
+@import "../footer";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  // border: 1px solid red;
+}
+
+.landing {
+  background-image: url("/cresendo/Media/FRC_Logo.svg.webp");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: $background;
+  background-blend-mode: soft-light;
+  min-height: 90vh;
+
+  .hero {
+    font-weight: 700;
+    color: $primary;
+    text-align: center;
+    .title {
+      padding-top: 18vh;
+      font-size: $cover;
+      
+      
+      .title-image {
+        border-radius: 2vw;
+        // Minimum value, speed of getting to minimum value, maximum value
+        width: clamp(15rem / 1.8, 170vw / 1.8, 150rem / 1.8);
+        height: auto;
+      }
+    }
+
+    .typed-title {
+      margin-top: 1vh;
+      font-weight: 400;
+      font-size: $subtitle;
+    }
+
+    .button {
+      border-radius: 1vw;
+      font-weight: 400;
+      font-size: clamp($body, 3vw, $subheader);
+      margin-top: 5vh;
+
+      a {
+        background-color: $decoration;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: $primary;
+        padding: 24px;
+
+        &:hover {
+          box-shadow: 0px 2px 10px 1px $decoration;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  margin: 2vw auto;
+  width: clamp(0rem, 85vw, 50rem);
+  font-size: $subtitle;
+  color: $secondary;
+  font-weight: 500;
+  text-align: center;
+
+  .title {
+    font-size: $title;
+    font-weight: 700;
+    margin-bottom: 2vh;
+    color: $secondary;
+  }
+  .title-small-margin {
+    font-size: $title;
+    font-weight: 700;
+    margin-bottom: vh;
+    color: $secondary;
+
+
+  }
+  .subheader-paragraph {
+    line-height: 1.5rem;
+    font-size: $body;
+    max-width: 100ch;
+    margin: 0 auto;
+    font-weight: 395;
+    color: $secondary;
+    margin-top: 2.5vh;
+    
+  }
+  .section {
+
+    .videos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1vw;
+  
+      .video {
+        .subtitle {
+          font-size: $subtitle;
+          color: $tertiary;
+          font-weight: 400;
+          margin-bottom: 0.5vw;
+        }
+  
+        iframe {
+          width: 42.6667vw;
+          height: 24vw;
+        }
+      }
+    }
+    margin: 2vw auto;
+
+    .header {
+      border-radius: 2vw;
+
+      font-size: $smaller-title;
+      font-weight: 700;
+      color: $secondary;
+      padding: 0.25vw;
+    }
+
+    .content {
+      border-radius: 2vw;
+      display: flex;
+      background-color: $trans-secondary;
+
+      img {
+        border-radius: 2vw;
+        align-self: center;
+        width: clamp(15rem, 85vw / 1.8, 50rem / 1.8);
+        height: auto;
+      }
+      .hover-enlargeable {
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .hover-enlargeable:hover {
+        transform: scale(1.25); /* You can adjust the scale factor */
+      }
+
+      p {
+        font-weight: 400;
+        font-size: $body;
+        color: $secondary;
+        margin: auto auto;
+        padding: 1vh 2vw;
+      }
+
+      ul {
+        margin: auto auto;
+        text-align: left;
+      }
+
+      li {
+        font-weight: 400;
+        font-size: $body;
+        color: $tertiary;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-evenly;
+
+    i {
+      font-size: $icon;
+      color: $decoration;
+      transition: transform 200ms ease-in, color 200ms ease-in;
+
+      &:hover {
+        transform: translateY(-7px) scale(1.1);
+        color: $light-dec;
+      }
+    }
+
+    h3 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: $subheader;
+    }
+
+    p {
+      line-height: 1.5rem;
+      font-size: $body;
+      max-width: 50ch;
+      margin: 0 auto;
+      font-weight: 300;
+      color: $tertiary;
+    }
+  }
+}
+.main {
+  text-align: center;
+  padding: 2vw;
+  color: $secondary;
+
+    i {
+      font-size: $icon;
+      color: $decoration;
+      transition: transform 200ms ease-in, color 200ms ease-in;
+
+      &:hover {
+        transform: translateY(-7px) scale(1.1);
+        color: $light-dec;
+      }
+    }
+
+    h3 {
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      font-size: $subheader;
+    }
+
+    p {
+      line-height: 1.5rem;
+      font-size: $body;
+      max-width: 50ch;
+      margin: 0 auto;
+      font-weight: 400;
+      color: $tertiary;
+    }
+}
+
+.current-events {
+  color: $secondary;
+  background-color: $primary;
+  text-align: center;
+  padding-top: 2vw;
+
+  .title {
+    font-size: $title;
+    font-weight: 700;
+  }
+
+  .videos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+
+    .video {
+      .subtitle {
+        font-size: $subtitle;
+        color: $tertiary;
+        font-weight: 400;
+        margin-bottom: 0.5vw;
+      }
+
+      iframe {
+        width: 42.6667vw;
+        height: 24vw;
+      }
+    }
+  }
+}
+
+.contact-us {
+  text-align: center;
+  padding: 2vw 0;
+  color: $secondary;
+
+  .title {
+    font-size: $title;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: $subtitle;
+    margin-bottom: 3vw;
+    color: $tertiary;
+  }
+
+  .content {
+    display: flex;
+    justify-content: center;
+    gap: 10vw;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      width: 250px;
+      border-radius: 125px;
+      margin-bottom: 1vw;
+    }
+
+    h1 {
+      font-size: $subheader;
+      font-weight: 700;
+      color: $secondary;
+    }
+
+    h2 {
+      font-size: $subtitle;
+      font-weight: 400;
+      color: $secondary;
+    }
+
+    h3 {
+      font-size: $body;
+      font-weight: 300;
+      color: $tertiary;
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .landing {
+    min-height: 80vh;
+  }
+
+  .current-events {
+    .videos {
+      flex-direction: column;
+
+      .video {
+        iframe {
+          width: 64vw;
+          height: 36vw;
+        }
+      }
+    }
+  }
+
+  .contact-us {
+    .content {
+      gap: 4vw;
+
+      img {
+        width: 200px;
+        border-radius: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .landing {
+    background-attachment: scroll;
+    .navbar {
+      padding: 1rem;
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .main {
+    .title {
+      margin-bottom: -1rem;
+    }
+    .content {
+      flex-direction: column;
+
+      i {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .contact-us {
+    .content {
+      flex-direction: column;
+      padding: none;
+    }
+
+    .title {
+      margin: 0;
+    }
+  }
+}

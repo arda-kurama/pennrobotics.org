@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+  background-color: black;
+}
+
+.content {
+  margin-top: 100px;
+  height: 100vh;
+  width: 100vw;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+main {
+  background-image: url("../landing/background.png");
+  background-position: center 0%;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  overflow-y: scroll;
+  place-items: center;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 10rem;
+  z-index: 2;
+  transition: transform 500ms cubic-bezier(0.13, 0.53, 0.38, 0.97);
+}
+
+.hero {
+  padding-top: 6vh;
+  background-color: grey;
+}
+.hero .titleH {
+  font-size: clamp(2.5rem, 8vw, 4rem);
+  font-weight: 700;
+  text-align: center;
+  padding: clamp(4rem, 10vw, 6rem) 0;
+}
+
+.main {
+  background-color: gainsboro;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 2rem;
+}
+.main .section {
+  font-size: clamp(16px, 3vw, 18px);
+  margin: 2rem;
+  line-height: 2rem;
+}
+.main .section li {
+  margin-left: 2rem;
+}
+
+@media (max-width: 800px) {
+  .content {
+    padding: 2rem;
+    padding-top: 4rem;
+  }
+}
+@media (max-width: 800px) and (max-width: 480px) {
+  .content {
+    padding: 0.5rem;
+    padding-top: 4rem;
+  }
+  .section {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=sa-pp.css.map */
